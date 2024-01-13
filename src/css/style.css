@@ -1,0 +1,11 @@
+#vinyl_brand {
+    display: none !important;
+}
+
+#copyright {
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
