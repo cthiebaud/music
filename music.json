@@ -1,10 +1,7 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "order": [
-    "dancing",
-    "sensation"
-  ],
+  "order": ["dancing", "sensation", "bateau", "luiza", "ciaccona"],
   "songs": {
     "dancing": {
       "date": "2020-03-25",
@@ -36,7 +33,45 @@
           "title": "Sensation"
         }
       ],
-      "markdown": "https://www.poetica.fr/poeme-533/arthur-rimbaud-sensation/",
+      "instagram": false
+    },
+    "bateau": {
+      "date": "2018-06-11",
+      "text": "Le Bateau ivre",
+      "duration": "6:33",
+      "watch": [
+        {
+          "url": "https://youtu.be/a3Ek2EYkGsw",
+          "id": "a3Ek2EYkGsw",
+          "title": "Le Bateau ivre (The drunken Boat) as of Monday, 11th of June 2018, around 8:20 AM."
+        }
+      ],
+      "instagram": false
+    },
+    "luiza": {
+      "date": "May 12, 2022",
+      "text": "Luiza (Jobim)",
+      "duration": "2:43",
+      "watch": [
+        {
+          "url": "https://youtu.be/BZLM1YYqD9g",
+          "id": "BZLM1YYqD9g",
+          "title": "Luiza / Tom Jobim"
+        }
+      ],
+      "instagram": false
+    },
+    "ciaccona": {
+      "date": "Sep 25, 2022",
+      "text": "Ciaccona (Bach)",
+      "duration": "15:34",
+      "watch": [
+        {
+          "url": "https://youtu.be/Vslz1tDsaWw",
+          "id": "Vslz1tDsaWw",
+          "title": "J.S. BACH, Ciaccona from Violin Partita in D minor No. 2 BWV 1004"
+        }
+      ],
       "instagram": false
     }
   }
