@@ -41,8 +41,9 @@ a {
   text-decoration: none;
 }
 
-header,
+/* header, */
 header #vinyl_share,
+header #sort_button,
 header .navbar-toggler {
   display: none;
 }

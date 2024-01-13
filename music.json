@@ -1,7 +1,10 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "order": ["dancing"],
+  "order": [
+    "dancing",
+    "sensation"
+  ],
   "songs": {
     "dancing": {
       "date": "2020-03-25",
@@ -20,6 +23,21 @@
           "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
         }
       ]
+    },
+    "sensation": {
+      "date": "2021-01-22",
+      "text": "Sensation",
+      "duration": "5:33",
+      "bpm": "107",
+      "watch": [
+        {
+          "url": "https://youtu.be/l_bjho9aLRE",
+          "id": "l_bjho9aLRE",
+          "title": "Sensation"
+        }
+      ],
+      "markdown": "https://www.poetica.fr/poeme-533/arthur-rimbaud-sensation/",
+      "instagram": false
     }
   }
 }
