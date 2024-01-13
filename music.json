@@ -1,49 +1,17 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "order": ["dancing", "sensation", "bateau", "luiza", "ciaccona"],
+  "order": ["ciaccona", "luiza", "arpege", "sensation", "bateau" ],
   "songs": {
-    "dancing": {
-      "date": "2020-03-25",
-      "text": "Socially Distant / Close Dancing",
-      "duration": "3:45",
-      "bpm": "64",
+    "ciaccona": {
+      "date": "Sep 25, 2022",
+      "text": "Ciaccona (Bach)",
+      "duration": "15:34",
       "watch": [
         {
-          "url": "https://youtu.be/K6rk5tG71rI",
-          "id": "K6rk5tG71rI",
-          "title": "Mother by Bong Joon-ho (2009) + nième avatar de Matsubaba - 2020"
-        },
-        {
-          "url": "https://youtu.be/bkUuBwnKb6I",
-          "id": "bkUuBwnKb6I",
-          "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
-        }
-      ]
-    },
-    "sensation": {
-      "date": "2021-01-22",
-      "text": "Sensation",
-      "duration": "5:33",
-      "bpm": "107",
-      "watch": [
-        {
-          "url": "https://youtu.be/l_bjho9aLRE",
-          "id": "l_bjho9aLRE",
-          "title": "Sensation"
-        }
-      ],
-      "instagram": false
-    },
-    "bateau": {
-      "date": "2018-06-11",
-      "text": "Le Bateau ivre",
-      "duration": "6:33",
-      "watch": [
-        {
-          "url": "https://youtu.be/a3Ek2EYkGsw",
-          "id": "a3Ek2EYkGsw",
-          "title": "Le Bateau ivre (The drunken Boat) as of Monday, 11th of June 2018, around 8:20 AM."
+          "url": "https://youtu.be/Vslz1tDsaWw",
+          "id": "Vslz1tDsaWw",
+          "title": "J.S. BACH, Ciaccona from Violin Partita in D minor No. 2 BWV 1004"
         }
       ],
       "instagram": false
@@ -61,15 +29,41 @@
       ],
       "instagram": false
     },
-    "ciaccona": {
-      "date": "Sep 25, 2022",
-      "text": "Ciaccona (Bach)",
-      "duration": "15:34",
+    "sensation": {
+      "date": "Jan 22, 2021",
+      "text": "Sensation",
+      "duration": "5:33",
       "watch": [
         {
-          "url": "https://youtu.be/Vslz1tDsaWw",
-          "id": "Vslz1tDsaWw",
-          "title": "J.S. BACH, Ciaccona from Violin Partita in D minor No. 2 BWV 1004"
+          "url": "https://youtu.be/l_bjho9aLRE",
+          "id": "l_bjho9aLRE",
+          "title": "Sensation"
+        }
+      ],
+      "instagram": false
+    },
+    "arpege": {
+      "date": "Oct 11, 2021",
+      "text": "Petit Arpège pour la Route",
+      "duration": "1:00",
+      "watch": [
+        {
+          "url": "https://www.youtube.com/shorts/k34E54Aas6U",
+          "id": "k34E54Aas6U",
+          "title": "Petit Arpège pour la Route"
+        }
+      ],
+      "instagram": false
+    },
+    "bateau": {
+      "date": "Jun 11, 2018",
+      "text": "Le Bateau ivre",
+      "duration": "6:33",
+      "watch": [
+        {
+          "url": "https://youtu.be/a3Ek2EYkGsw",
+          "id": "a3Ek2EYkGsw",
+          "title": "Le Bateau ivre (The drunken Boat) as of Monday, 11th of June 2018, around 8:20 AM."
         }
       ],
       "instagram": false
