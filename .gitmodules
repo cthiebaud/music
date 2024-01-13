@@ -1,0 +1,3 @@
+[submodule "vinyl"]
+	path = vinyl
+	url = https://github.com/cthiebaud/vinyl.git
