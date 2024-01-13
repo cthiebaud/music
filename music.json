@@ -1,10 +1,34 @@
 {
   "id": "music",
-  "copyright": "Copyright © 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>. All Rights Reserved.",
+  "copyright": "Copyright © 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a> All Rights Reserved",
   "navbarheader": "/header.html",
   "brandlink": "/vinyl/showdown.html?/README.md",
-  "order": [
-  ],
+  "order": ["dancing"],
   "songs": {
+    "dancing": {
+      "date": "2020-03-25",
+      "text": "Socially Distant/Close Dancing",
+      "duration": "3:49",
+      "bpm": "64",
+      "watch": [
+        {
+          "url": "https://youtu.be/K6rk5tG71rI",
+          "id": "K6rk5tG71rI",
+          "title": "Mother by Bong Joon-ho (2009) + nième avatar de Matsubaba - 2020"
+        },
+        {
+          "url": "https://youtu.be/bkUuBwnKb6I",
+          "id": "bkUuBwnKb6I",
+          "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
+        }
+      ],
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/matsubaba",
+          "id": "1099388935",
+          "title": "nième avatar de Matsubaba - 2021"
+        }
+      ]
+    }
   }
 }
