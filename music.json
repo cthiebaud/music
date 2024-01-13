@@ -1,14 +1,12 @@
 {
   "id": "music",
-  "copyright": "Copyright © 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a> All Rights Reserved",
-  "navbarheader": "/header.html",
-  "brandlink": "/vinyl/showdown.html?/README.md",
+  "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
   "order": ["dancing"],
   "songs": {
     "dancing": {
       "date": "2020-03-25",
-      "text": "Socially Distant/Close Dancing",
-      "duration": "3:49",
+      "text": "Socially Distant / Close Dancing",
+      "duration": "3:45",
       "bpm": "64",
       "watch": [
         {
@@ -20,13 +18,6 @@
           "url": "https://youtu.be/bkUuBwnKb6I",
           "id": "bkUuBwnKb6I",
           "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
-        }
-      ],
-      "listen": [
-        {
-          "url": "https://soundcloud.com/christophe-thiebaud/matsubaba",
-          "id": "1099388935",
-          "title": "nième avatar de Matsubaba - 2021"
         }
       ]
     }
