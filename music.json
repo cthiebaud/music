@@ -2,21 +2,24 @@
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
   "order": [
-    "ciaccona",
-    "luiza",
     "arpege",
-    "sensation",
     "bateau",
-    "matin",
-    "larme",
     "botanist",
-    "klam",
     "brouillard",
     "bwv1006",
+    "ciaccona",
+    "dancing",
     "javanaise",
-    "dancing"
+    "klam",
+    "larme",
+    "luiza",
+    "matin",
+    "romantik",
+    "sensation",
+    "tour",
+    "ukraine"
   ],
-  "later": ["partirons"],
+  "later": ["partirons", "wickedness"],
   "navbarheader": "/header.html",
   "songs": {
     "ciaccona": {
@@ -109,8 +112,20 @@
         }
       ]
     },
+    "ukraine": {
+      "date": "Mar 17, 2021",
+      "text": "Do♮ for Ukraine",
+      "duration": "4:55",
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/music-for-the-furious",
+          "id": "1229854291",
+          "title": ""
+        }
+      ]
+    },
     "dancing": {
-      "date": "2020-03-25",
+      "date": "Mar 25, 2020",
       "text": "Socially Distant, Socially Close Dancing",
       "duration": "3:44",
       "watch": [
@@ -193,6 +208,30 @@
           "url": "https://youtu.be/OHp12oUx81A",
           "id": "OHp12oUx81A",
           "title": "BWV 1006 (w/o 'a') with some borrowings from BWV 29"
+        }
+      ]
+    },
+    "romantik": {
+      "date": "Mar 27, 2021",
+      "text": "Romantik Funk",
+      "duration": "2:46",
+      "watch": [
+        {
+          "url": "https://youtu.be/PpFmCNtK8zU",
+          "id": "PpFmCNtK8zU",
+          "title": ""
+        }
+      ]
+    },
+    "tour": {
+      "date": "Jan 8, 2021",
+      "text": "Chanson de la plus haute tour (Rimbaud)",
+      "duration": "5:45",
+      "watch": [
+        {
+          "url": "https://youtu.be/7lKeQ91LtFk",
+          "id": "7lKeQ91LtFk",
+          "title": ""
         }
       ]
     },
