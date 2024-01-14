@@ -10,7 +10,8 @@
     "matin",
     "larme",
     "botanist",
-    "klam"
+    "klam",
+    "partirons"
   ],
   "navbarheader": "/header.html",
   "songs": {
@@ -123,6 +124,18 @@
         {
           "url": "https://youtu.be/7gvf_1oQ9iY",
           "id": "7gvf_1oQ9iY"
+        }
+      ]
+    },
+    "partirons": {
+      "date": "Aug 4, 2021",
+      "text": "Nous Partirons (Mugnier)",
+      "duration": "2:07",
+      "watch": [
+        {
+          "url": "https://youtu.be/8VOp8qk9-a4",
+          "id": "8VOp8qk9-a4",
+          "title": "Tel Reverdy à Solesme (…)"
         }
       ]
     }
