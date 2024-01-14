@@ -13,8 +13,13 @@
 }
 
 :root {
-  --bs-body-font-family: 'IndieFlower'; /* Default font family */
   --bs-font-monospace: 'Inconsolata', 'Courier New', monospace;
+  --bs-body-font-family: var(--bs-font-monospace);
+  --ct-title-font-family: 'IndieFlower'; /* Default font family */
+}
+
+.card-text {
+  font-family: var(--ct-title-font-family);
 }
 
 html,
@@ -43,10 +48,10 @@ a {
 
 /* header, 
 header #sort_button,
-*/
 header #vinyl_brand,
-header #vinyl_share,
-header .navbar-toggler {
+*/
+header .navbar-toggler,
+header #vinyl_share {
   display: none !important;
 }
 
@@ -65,4 +70,9 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin-top: auto;
+}
+
+/* remove down triangle */
+#sort_button .dropdown-toggle:after {
+  content: none;
 }
