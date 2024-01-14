@@ -71,8 +71,3 @@ footer {
     position: relative;
     margin-top: auto;
 }
-
-/* remove down triangle */
-#sort_button .dropdown-toggle:after {
-  content: none;
-}
