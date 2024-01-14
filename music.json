@@ -13,7 +13,8 @@
     "klam",
     "brouillard",
     "bwv1006",
-    "javanaise"
+    "javanaise",
+    "dancing"
   ],
   "later": ["partirons"],
   "navbarheader": "/header.html",
@@ -105,6 +106,30 @@
           "url": "https://soundcloud.com/christophe-thiebaud/larme-1",
           "id": "265722765",
           "title": "With Flavio Piscopo (percussioni) - 2016"
+        }
+      ]
+    },
+    "dancing": {
+      "date": "2020-03-25",
+      "text": "Socially Distant, Socially Close Dancing",
+      "duration": "3:44",
+      "watch": [
+        {
+          "url": "https://youtu.be/K6rk5tG71rI",
+          "id": "K6rk5tG71rI",
+          "title": "Mother by Bong Joon-ho (2009) + nième avatar de Matsubaba - 2020"
+        },
+        {
+          "url": "https://youtu.be/bkUuBwnKb6I",
+          "id": "bkUuBwnKb6I",
+          "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
+        }
+      ],
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/matsubaba",
+          "id": "1099388935",
+          "title": "nième avatar de Matsubaba - 2021"
         }
       ]
     },
