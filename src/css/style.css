@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Inconsolata';
-  src: url('/Inconsolata-Regular.ttf') format('truetype');
+  src: url('/fonts/Inconsolata/static/Inconsolata-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IndieFlower';
-  src: url('/IndieFlower-Regular.ttf') format('truetype');
+  src: url('/fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,11 +41,13 @@ a {
   text-decoration: none;
 }
 
-/* header, */
-header #vinyl_share,
+/* header, 
 header #sort_button,
+*/
+header #vinyl_brand,
+header #vinyl_share,
 header .navbar-toggler {
-  display: none;
+  display: none !important;
 }
 
 body {
