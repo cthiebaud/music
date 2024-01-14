@@ -18,6 +18,9 @@
   --ct-title-font-family: 'IndieFlower'; /* Default font family */
 }
 
+.card-body {
+  padding: .5rem;
+}
 .card-text {
   font-family: var(--ct-title-font-family);
 }

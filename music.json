@@ -1,7 +1,17 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "order": ["ciaccona", "luiza", "arpege", "sensation", "bateau" ],
+  "order": [
+    "ciaccona",
+    "luiza",
+    "arpege",
+    "sensation",
+    "bateau",
+    "matin",
+    "larme",
+    "botanist",
+    "klam"
+  ],
   "navbarheader": "/header.html",
   "songs": {
     "ciaccona": {
@@ -32,7 +42,7 @@
     },
     "sensation": {
       "date": "Jan 22, 2021",
-      "text": "Sensation",
+      "text": "Sensation (Rimbaud)",
       "duration": "5:33",
       "watch": [
         {
@@ -58,7 +68,7 @@
     },
     "bateau": {
       "date": "Jun 11, 2018",
-      "text": "Le Bateau ivre",
+      "text": "Le Bateau ivre (Rimbaud)",
       "duration": "6:33",
       "watch": [
         {
@@ -68,6 +78,53 @@
         }
       ],
       "instagram": false
+    },
+    "matin": {
+      "date": "Apr 28, 2020",
+      "text": "Bonne pensée du matin (Rimbaud)",
+      "duration": "3:17",
+      "watch": [
+        {
+          "url": "https://youtu.be/KHRBZ7buOFk",
+          "id": "KHRBZ7buOFk",
+          "title": "Pendant le premier confinement, sur notre balcon à San Lazzaro di Savena - mai 2020"
+        }
+      ]
+    },
+    "larme": {
+      "date": "Jun 1, 2016",
+      "text": "Larme (Rimbaud)",
+      "duration": "3:47",
+      "bpm": "55",
+      "watch": [
+        {
+          "url": "https://youtu.be/Zk_YubAnJmM",
+          "id": "Zk_YubAnJmM",
+          "title": "With Flavio Piscopo (percussioni) - 2016"
+        }
+      ]
+    },
+    "botanist": {
+      "date": "Feb 28, 2021",
+      "text": "Après 'Les filles du botaniste'",
+      "duration": "4:55",
+      "watch": [
+        {
+          "url": "https://youtu.be/53zvSln5rvY",
+          "id": "53zvSln5rvY"
+        }
+      ]
+    },
+    "klam": {
+      "date": "Oct 28, 2021",
+      "text": "Après 'Les filles du botaniste'",
+      "duration": "5:26",
+      "watch": [
+        {
+          "url": "https://youtu.be/7gvf_1oQ9iY",
+          "id": "7gvf_1oQ9iY"
+        }
+      ]
     }
   }
 }
