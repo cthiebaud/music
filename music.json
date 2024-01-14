@@ -11,7 +11,9 @@
     "larme",
     "botanist",
     "klam",
-    "partirons"
+    "partirons",
+    "brouillard",
+    "bwv1006"
   ],
   "navbarheader": "/header.html",
   "songs": {
@@ -136,6 +138,35 @@
           "url": "https://youtu.be/8VOp8qk9-a4",
           "id": "8VOp8qk9-a4",
           "title": "Tel Reverdy à Solesme (…)"
+        }
+      ]
+    },
+    "brouillard": {
+      "date": "Mar 29, 2020",
+      "text": "Psycho Brouillard",
+      "duration": "3:54",
+      "watch": [
+        {
+          "url": "https://youtu.be/ehCW0AkOp2Q",
+          "id": "ehCW0AkOp2Q",
+          "title": "Alfred Hitchcock, 1960"
+        },
+        {
+          "url": "https://youtu.be/wDe2REZxvMo",
+          "id": "wDe2REZxvMo",
+          "title": "Gus Van Sant, 1998"
+        }
+      ]
+    },
+    "bwv1006": {
+      "date": "Oct 15, 2019",
+      "text": "BWV 1006 (Bach)",
+      "duration": "4:22",
+      "watch": [
+        {
+          "url": "https://youtu.be/OHp12oUx81A",
+          "id": "OHp12oUx81A",
+          "title": "BWV 1006 (w/o 'a') with some borrowings from BWV 29"
         }
       ]
     }
