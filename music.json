@@ -24,7 +24,7 @@
   "songs": {
     "ciaccona": {
       "date": "Sep 25, 2022",
-      "text": "Ciaccona (Bach)",
+      "text": "Ciaccona",
       "duration": "15:34",
       "watch": [
         {
@@ -37,7 +37,7 @@
     },
     "luiza": {
       "date": "May 12, 2022",
-      "text": "Luiza (Jobim)",
+      "text": "Luiza",
       "duration": "2:43",
       "watch": [
         {
@@ -50,7 +50,7 @@
     },
     "sensation": {
       "date": "Jan 22, 2021",
-      "text": "Sensation (Rimbaud)",
+      "text": "Sensation",
       "duration": "5:33",
       "watch": [
         {
@@ -76,20 +76,20 @@
     },
     "bateau": {
       "date": "Jun 11, 2018",
-      "text": "Le Bateau ivre (Rimbaud)",
+      "text": "Le Bateau ivre",
       "duration": "6:33",
       "watch": [
         {
           "url": "https://youtu.be/a3Ek2EYkGsw",
           "id": "a3Ek2EYkGsw",
-          "title": "Le Bateau ivre (The drunken Boat) as of Monday, 11th of June 2018, around 8:20 AM."
+          "title": "Le Bateau ivre as of Monday, 11th of June 2018, around 8:20 AM."
         }
       ],
       "instagram": false
     },
     "matin": {
       "date": "Apr 28, 2020",
-      "text": "Bonne pensée du matin (Rimbaud)",
+      "text": "Bonne pensée du matin",
       "duration": "3:17",
       "watch": [
         {
@@ -101,14 +101,14 @@
     },
     "larme": {
       "date": "Jun 1, 2016",
-      "text": "Larme (Rimbaud)",
+      "text": "Larme",
       "duration": "3:47",
       "bpm": "55",
       "listen": [
         {
           "url": "https://soundcloud.com/christophe-thiebaud/larme-1",
           "id": "265722765",
-          "title": "With Flavio Piscopo (percussioni) - 2016"
+          "title": "With Flavio Piscopo - 2016"
         }
       ]
     },
@@ -132,7 +132,7 @@
         {
           "url": "https://youtu.be/K6rk5tG71rI",
           "id": "K6rk5tG71rI",
-          "title": "Mother by Bong Joon-ho (2009) + nième avatar de Matsubaba - 2020"
+          "title": "Mother by Bong Joon-ho + nième avatar de Matsubaba - 2020"
         },
         {
           "url": "https://youtu.be/bkUuBwnKb6I",
@@ -172,13 +172,13 @@
     },
     "partirons": {
       "date": "Aug 4, 2021",
-      "text": "Nous Partirons (avec Erin)",
+      "text": "Nous Partirons",
       "duration": "2:07",
       "watch": [
         {
           "url": "https://youtu.be/8VOp8qk9-a4",
           "id": "8VOp8qk9-a4",
-          "title": "Tel Reverdy à Solesme (…)"
+          "title": "Tel Reverdy à Solesme"
         }
       ]
     },
@@ -201,13 +201,13 @@
     },
     "bwv1006": {
       "date": "Oct 15, 2019",
-      "text": "BWV 1006 (Bach)",
+      "text": "BWV 1006",
       "duration": "4:22",
       "watch": [
         {
           "url": "https://youtu.be/OHp12oUx81A",
           "id": "OHp12oUx81A",
-          "title": "BWV 1006 (w/o 'a') with some borrowings from BWV 29"
+          "title": "BWV 1006 with some borrowings from BWV 29"
         }
       ]
     },
@@ -225,7 +225,7 @@
     },
     "tour": {
       "date": "Jan 8, 2021",
-      "text": "Chanson de la plus haute tour (Rimbaud)",
+      "text": "Chanson de la plus haute tour",
       "duration": "5:45",
       "watch": [
         {
@@ -237,7 +237,7 @@
     },
     "javanaise": {
       "date": "Apr 2, 2013",
-      "text": "La Javanaise (de Gainsbourg et avec Enrica)",
+      "text": "La Javanaise",
       "duration": "2:59",
       "watch": [
         {
