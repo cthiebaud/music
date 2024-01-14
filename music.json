@@ -11,10 +11,11 @@
     "larme",
     "botanist",
     "klam",
-    "partirons",
     "brouillard",
-    "bwv1006"
+    "bwv1006",
+    "javanaise"
   ],
+  "later": ["partirons"],
   "navbarheader": "/header.html",
   "songs": {
     "ciaccona": {
@@ -167,6 +168,18 @@
           "url": "https://youtu.be/OHp12oUx81A",
           "id": "OHp12oUx81A",
           "title": "BWV 1006 (w/o 'a') with some borrowings from BWV 29"
+        }
+      ]
+    },
+    "javanaise": {
+      "date": "Apr 2, 2013",
+      "text": "La Javanaise (de Gainsbourg et avec Enrica)",
+      "duration": "2:59",
+      "watch": [
+        {
+          "url": "https://youtu.be/PU9O-sCusUE",
+          "id": "PU9O-sCusUE",
+          "title": "J'avoue, j'en ai bavé, pas vous, mon amour"
         }
       ]
     }
