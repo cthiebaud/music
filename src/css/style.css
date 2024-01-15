@@ -15,7 +15,7 @@
 :root {
   --bs-font-monospace: 'Inconsolata', 'Courier New', monospace;
   --bs-body-font-family: var(--bs-font-monospace);
-  --ct-title-font-family: 'IndieFlower'; /* Default font family */
+  --ct-title-font-family: 'IndieFlower'; 
 }
 
 .card-body {
@@ -25,34 +25,14 @@
   font-family: var(--ct-title-font-family);
 }
 
-html,
-body,
-header .navbar {
-  /* background-color: aliceblue !important; */
-}
-button,
-a {
-  /*
-  background-color: white !important;
-  color: black !important;
-  */ 
-}
-#vinyl_brand {
-  /* display: none !important; */
-}
-
-#copyright {
-  /*  color: white; */
+#vinyl_brand_svg {
+  height: 48px;
 }
 
 #copyright a {
   text-decoration: none;
 }
 
-/* header, 
-header #sort_button,
-header #vinyl_brand,
-*/
 header .navbar-toggler,
 header #vinyl_share {
   display: none !important;
