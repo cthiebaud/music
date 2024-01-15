@@ -17,7 +17,8 @@
     "romantik",
     "sensation",
     "tour",
-    "ukraine"
+    "ukraine",
+    "lushlife"
   ],
   "later": ["partirons", "wickedness"],
   "navbarheader": "/header.html",
@@ -120,6 +121,19 @@
         {
           "url": "https://soundcloud.com/christophe-thiebaud/music-for-the-furious",
           "id": "1229854291",
+          "title": ""
+        }
+      ]
+    },
+    
+    "lushlife": {
+      "date": "2015",
+      "text": "Lush Life",
+      "duration": "2:50",
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/lush-life",
+          "id": "201678919",
           "title": ""
         }
       ]
