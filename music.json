@@ -7,20 +7,25 @@
     "botanist",
     "brouillard",
     "bwv1006",
+    "bwv1011",
     "ciaccona",
     "dancing",
     "javanaise",
     "klam",
     "larme",
     "luiza",
+    "lushlife",
     "matin",
+    "nociaccona",
+
     "romantik",
     "sensation",
     "tour",
     "ukraine",
-    "lushlife"
+    "volver",
+    "wickedness"
   ],
-  "later": ["partirons", "wickedness"],
+  "later": ["partirons"],
   "navbarheader": "/header.html",
   "songs": {
     "ciaccona": {
@@ -125,7 +130,19 @@
         }
       ]
     },
-    
+
+    "volver": {
+      "date": "2012",
+      "text": "Volver",
+      "duration": "3:40",
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/volver",
+          "id": "57683844",
+          "title": "Yo adivino el parpadeo"
+        }
+      ]
+    },
     "lushlife": {
       "date": "2015",
       "text": "Lush Life",
@@ -225,6 +242,18 @@
         }
       ]
     },
+    "bwv1011": {
+      "date": "Aug 23, 2009",
+      "text": "BWV 1011",
+      "duration": "5:22",
+      "watch": [
+        {
+          "url": "https://youtu.be/CrIuALTQEWA",
+          "id": "CrIuALTQEWA",
+          "title": "BWV 1011 1. prelude JS Bach cello suite #5"
+        }
+      ]
+    },
     "romantik": {
       "date": "Mar 27, 2021",
       "text": "Romantik Funk",
@@ -258,6 +287,30 @@
           "url": "https://youtu.be/PU9O-sCusUE",
           "id": "PU9O-sCusUE",
           "title": "J'avoue, j'en ai bavé, pas vous, mon amour"
+        }
+      ]
+    },
+    "wickedness": {
+      "date": "Mar 20, 2021",
+      "text": "Wickedness",
+      "duration": "4:19",
+      "watch": [
+        {
+          "url": "https://youtu.be/miJTYad2DPw",
+          "id": "miJTYad2DPw",
+          "title": "Bibi Andersson in a scene from Persona, by Ingmar Bergman, 1966."
+        }
+      ]
+    },
+    "nociaccona": {
+      "date": "Jul 11, 2021",
+      "text": "Ain't No Ciaccona",
+      "duration": "0:43",
+      "watch": [
+        {
+          "url": "https://youtu.be/gwPqswsfbUY",
+          "id": "gwPqswsfbUY",
+          "title": "Ceci n'est pas la chaconne de Bach."
         }
       ]
     }
