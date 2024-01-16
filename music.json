@@ -1,7 +1,7 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "brandLogoSVG": "/vinyl_record",
+  "brandLogoSVG": ["/vinyl_record.svg", "/vinyl_record-rotating.svg"],
   "order": [
     "arpege",
     "bateau",

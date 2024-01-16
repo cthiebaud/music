@@ -27,7 +27,21 @@
 
 #vinyl_brand_svg {
   height: 48px;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: center;
+  background-size: contain;
+  /* background-image: url(); */
 }
+
+#vinyl_brand_svg.started {
+  /* background-image: url(); */
+}
+
+#vinyl_brand_svg {
+  height: 48px;
+}
+
 
 #copyright a {
   text-decoration: none;
