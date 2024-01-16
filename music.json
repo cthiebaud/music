@@ -1,7 +1,7 @@
 {
   "id": "music",
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
-  "brandLogo": "/vinyl_record.svg",
+  "brandLogoSVG": "/vinyl_record",
   "order": [
     "arpege",
     "bateau",
@@ -299,6 +299,13 @@
           "url": "https://youtu.be/miJTYad2DPw",
           "id": "miJTYad2DPw",
           "title": "Bibi Andersson in a scene from Persona, by Ingmar Bergman, 1966."
+        }
+      ],
+      "listen": [
+        {
+          "url": "https://soundcloud.com/christophe-thiebaud/wickedness",
+          "id": "1011694336",
+          "title": "Méchanceté"
         }
       ]
     },
