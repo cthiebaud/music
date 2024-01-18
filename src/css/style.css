@@ -18,53 +18,7 @@
   --ct-title-font-family: 'IndieFlower'; 
 }
 
-.card-body {
-  padding: .5rem;
-}
 .card-text {
   font-family: var(--ct-title-font-family);
 }
 
-#vinyl_brand_svg {
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position-x: 0;
-  background-position-y: center;
-  background-size: contain;
-  /* background-image: url(); */
-}
-
-#vinyl_brand_svg.started {
-  /* background-image: url(); */
-}
-
-#vinyl_brand_svg {
-  height: 48px;
-}
-
-
-#copyright a {
-  text-decoration: none;
-}
-
-header .navbar-toggler,
-header #vinyl_share {
-  display: none !important;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    box-sizing: border-box;
-    position: relative;
-    margin-top: auto;
-}
