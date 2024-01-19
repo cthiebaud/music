@@ -3,7 +3,7 @@
   "copyright": "© 2024 <a href='/vinyl/showdown.html?/README.md' target='_'>Christophe Thiebaud</a>",
   "github": "https://github.com/cthiebaud/music",
   "brandLogoSVG": ["/vinyl_record.svg", "/vinyl_record-rotating.svg"],
-  "order": [
+  "orderedKeys": [
     "arpege",
     "bateau",
     "botanist",
@@ -32,73 +32,74 @@
       "date": "Sep 25, 2022",
       "text": "Ciaccona",
       "duration": "15:34",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/Vslz1tDsaWw",
           "id": "Vslz1tDsaWw",
           "title": "J.S. BACH, Ciaccona from Violin Partita in D minor No. 2 BWV 1004"
         }
-      ],
-      "instagram": false
+      ]
     },
     "luiza": {
       "date": "May 12, 2022",
       "text": "Luiza",
       "duration": "2:43",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/BZLM1YYqD9g",
           "id": "BZLM1YYqD9g",
           "title": "Luiza / Tom Jobim"
         }
-      ],
-      "instagram": false
+      ]
     },
     "sensation": {
       "date": "Jan 22, 2021",
       "text": "Sensation",
       "duration": "5:33",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/l_bjho9aLRE",
           "id": "l_bjho9aLRE",
           "title": "Sensation"
         }
-      ],
-      "instagram": false
+      ]
     },
     "arpege": {
       "date": "Oct 11, 2021",
       "text": "Petit Arpège pour la Route",
       "duration": "1:00",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://www.youtube.com/shorts/k34E54Aas6U",
           "id": "k34E54Aas6U",
           "title": "Petit Arpège pour la Route"
         }
-      ],
-      "instagram": false
+      ]
     },
     "bateau": {
       "date": "Jun 11, 2018",
       "text": "Le Bateau ivre",
       "duration": "6:33",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/a3Ek2EYkGsw",
           "id": "a3Ek2EYkGsw",
           "title": "Le Bateau ivre as of Monday, 11th of June 2018, around 8:20 AM."
         }
-      ],
-      "instagram": false
+      ]
     },
     "matin": {
       "date": "Apr 28, 2020",
       "text": "Bonne pensée du matin",
       "duration": "3:17",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/KHRBZ7buOFk",
           "id": "KHRBZ7buOFk",
           "title": "Pendant le premier confinement, sur notre balcon à San Lazzaro di Savena - mai 2020"
@@ -109,8 +110,9 @@
       "date": "Jun 1, 2016",
       "text": "Larme",
       "duration": "3:47",
-      "listen": [
+      "media": [
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/larme-1",
           "id": "265722765",
           "title": "With Flavio Piscopo - 2016"
@@ -121,8 +123,9 @@
       "date": "Mar 17, 2021",
       "text": "Do♮ for Ukraine",
       "duration": "4:55",
-      "listen": [
+      "media": [
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/music-for-the-furious",
           "id": "1229854291",
           "title": ""
@@ -134,8 +137,9 @@
       "date": "2012",
       "text": "Volver",
       "duration": "3:40",
-      "listen": [
+      "media": [
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/volver",
           "id": "57683844",
           "title": "Yo adivino el parpadeo"
@@ -146,8 +150,9 @@
       "date": "2015",
       "text": "Lush Life",
       "duration": "2:50",
-      "listen": [
+      "media": [
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/lush-life",
           "id": "201678919",
           "title": ""
@@ -158,20 +163,21 @@
       "date": "Mar 25, 2020",
       "text": "Socially Distant, Socially Close Dancing",
       "duration": "3:44",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/K6rk5tG71rI",
           "id": "K6rk5tG71rI",
           "title": "Mother by Bong Joon-ho + nième avatar de Matsubaba - 2020"
         },
         {
+          "type": "video",
           "url": "https://youtu.be/bkUuBwnKb6I",
           "id": "bkUuBwnKb6I",
           "title": "J'ai impitoyablement coupé tous les plan où Emmanuelle Seigner n'apparaît pas de cette scène légendaire de Frantic de Roman Polanski - 1988"
-        }
-      ],
-      "listen": [
+        },
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/matsubaba",
           "id": "1099388935",
           "title": "nième avatar de Matsubaba - 2021"
@@ -182,8 +188,9 @@
       "date": "Feb 28, 2021",
       "text": "Après 'Les filles du botaniste'",
       "duration": "4:55",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/i8_9mvtQetY",
           "id": "i8_9mvtQetY"
         }
@@ -193,8 +200,9 @@
       "date": "Oct 28, 2021",
       "text": "Après 'Les filles du botaniste'",
       "duration": "5:26",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/7gvf_1oQ9iY",
           "id": "7gvf_1oQ9iY"
         }
@@ -204,8 +212,9 @@
       "date": "Aug 4, 2021",
       "text": "Nous Partirons",
       "duration": "2:07",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/8VOp8qk9-a4",
           "id": "8VOp8qk9-a4",
           "title": "Tel Reverdy à Solesme"
@@ -216,13 +225,15 @@
       "date": "Mar 29, 2020",
       "text": "Psycho Brouillard",
       "duration": "3:54",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/ehCW0AkOp2Q",
           "id": "ehCW0AkOp2Q",
           "title": "Alfred Hitchcock, 1960"
         },
         {
+          "type": "video",
           "url": "https://youtu.be/wDe2REZxvMo",
           "id": "wDe2REZxvMo",
           "title": "Gus Van Sant, 1998"
@@ -233,8 +244,9 @@
       "date": "Oct 15, 2019",
       "text": "BWV 1006",
       "duration": "4:22",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/OHp12oUx81A",
           "id": "OHp12oUx81A",
           "title": "BWV 1006 with some borrowings from BWV 29"
@@ -245,8 +257,9 @@
       "date": "Aug 23, 2009",
       "text": "BWV 1011",
       "duration": "5:22",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/CrIuALTQEWA",
           "id": "CrIuALTQEWA",
           "title": "BWV 1011 1. prelude JS Bach cello suite #5"
@@ -257,8 +270,9 @@
       "date": "Mar 27, 2021",
       "text": "Romantik Funk",
       "duration": "2:46",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/PpFmCNtK8zU",
           "id": "PpFmCNtK8zU",
           "title": ""
@@ -269,8 +283,9 @@
       "date": "Jan 8, 2021",
       "text": "Chanson de la plus haute tour",
       "duration": "5:45",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/7lKeQ91LtFk",
           "id": "7lKeQ91LtFk",
           "title": ""
@@ -281,8 +296,9 @@
       "date": "Apr 2, 2013",
       "text": "La Javanaise",
       "duration": "2:59",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/PU9O-sCusUE",
           "id": "PU9O-sCusUE",
           "title": "J'avoue, j'en ai bavé, pas vous, mon amour"
@@ -293,15 +309,15 @@
       "date": "Mar 20, 2021",
       "text": "Wickedness",
       "duration": "4:19",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/miJTYad2DPw",
           "id": "miJTYad2DPw",
           "title": "Bibi Andersson in a scene from Persona, by Ingmar Bergman, 1966."
-        }
-      ],
-      "listen": [
+        },
         {
+          "type": "sound",
           "url": "https://soundcloud.com/christophe-thiebaud/wickedness",
           "id": "1011694336",
           "title": "Méchanceté"
@@ -312,8 +328,9 @@
       "date": "Jul 11, 2021",
       "text": "Ain't No Ciaccona",
       "duration": "0:43",
-      "watch": [
+      "media": [
         {
+          "type": "video",
           "url": "https://youtu.be/gwPqswsfbUY",
           "id": "gwPqswsfbUY",
           "title": "Ceci n'est pas la chaconne de Bach."
