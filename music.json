@@ -24,6 +24,7 @@
     "sensation",
     "tour",
     "ukraine",
+    "voisin",
     "volver",
     "wickedness"
   ],
@@ -339,7 +340,6 @@
       ]
     },
     "alerte": {
-      
       "date": "1984",
       "text": "Concert du groupe Alerte",
       "duration": "13:19",
@@ -349,6 +349,19 @@
           "url": "https://youtu.be/OZuS8QQsQK8",
           "id": "OZuS8QQsQK8",
           "title": "1984: Concert du groupe «Alerte», a.k.a. «WAM», a.k.a. «Les Fils à Papa»"
+        }
+      ]
+    },
+    "voisin": {
+      "date": "Aug, 2014",
+      "text": "Mon Voisin",
+      "duration": "3:13",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/4NDbYKhYKsc",
+          "id": "4NDbYKhYKsc",
+          "title": "trad. ital. Enrica"
         }
       ]
     }
