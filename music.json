@@ -4,6 +4,7 @@
   "github": "https://github.com/cthiebaud/music",
   "brandLogoSVG": ["/vinyl_record.svg", "/vinyl_record-rotating.svg"],
   "orderedKeys": [
+    "alerte",
     "arpege",
     "bateau",
     "botanist",
@@ -334,6 +335,20 @@
           "url": "https://youtu.be/gwPqswsfbUY",
           "id": "gwPqswsfbUY",
           "title": "Ceci n'est pas la chaconne de Bach."
+        }
+      ]
+    },
+    "alerte": {
+      
+      "date": "1984",
+      "text": "Concert du groupe Alerte",
+      "duration": "13:19",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/OZuS8QQsQK8",
+          "id": "OZuS8QQsQK8",
+          "title": "1984: Concert du groupe «Alerte», a.k.a. «WAM», a.k.a. «Les Fils à Papa»"
         }
       ]
     }
