@@ -13,6 +13,7 @@
     "bwv1011",
     "ciaccona",
     "dancing",
+    "glisplendidiquarantenni",
     "javanaise",
     "klam",
     "larme",
@@ -339,9 +340,22 @@
         }
       ]
     },
+    "glisplendidiquarantenni": {
+      "date": "2001",
+      "text": "Gli Splendidi Quarantenni",
+      "duration": "22:10",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/u-g2YFbIRtU",
+          "id": "u-g2YFbIRtU?",
+          "title": "Concert du groupe 'Gli Splendidi Quarantenni'"
+        }
+      ]
+    },
     "alerte": {
       "date": "1984",
-      "text": "Concert du groupe Alerte",
+      "text": "Alerte",
       "duration": "13:19",
       "media": [
         {
