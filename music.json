@@ -4,6 +4,7 @@
   "github": "https://github.com/cthiebaud/music",
   "brandLogoSVG": ["/vinyl_record.svg", "/vinyl_record-rotating.svg"],
   "orderedKeys": [
+    "bateau2",
     "alerte",
     "arpege",
     "bateau",
@@ -93,6 +94,19 @@
           "url": "https://youtu.be/a3Ek2EYkGsw",
           "id": "a3Ek2EYkGsw",
           "title": "Le Bateau ivre as of Monday, 11th of June 2018, around 8:20 AM."
+        }
+      ]
+    },
+    "bateau2": {
+      "date": "Aug 18, 2024",
+      "text": "Le Bateau ivre",
+      "duration": "6:55",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/42uEeiyZkqc",
+          "id": "42uEeiyZkqc",
+          "title": "Nième arrangement de ma musique pour \"Le Bateau ivre\" de Arthur Rimbaud."
         }
       ]
     },
@@ -341,7 +355,7 @@
       ]
     },
     "glisplendidiquarantenni": {
-      "date": "2001",
+      "date": "Dec 31, 2000",
       "text": "Gli Splendidi Quarantenni",
       "duration": "22:10",
       "media": [
