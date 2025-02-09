@@ -41,9 +41,8 @@
       "media": [
         {
           "type": "facebook",
-          "id": "1317957976059064",
           "url": "https://www.facebook.com/christophe.thiebaud/videos/1317957976059064/",
-          "encodedUrl": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F1317957976059064%2F",
+          "id": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F1317957976059064%2F",
           "title": "Man in the Mirror"
         }
       ]
@@ -55,9 +54,8 @@
       "media": [
         {
           "type": "facebook",
-          "id": "1989277884914288",
           "url": "https://www.facebook.com/christophe.thiebaud/videos/1989277884914288/",
-          "encodedUrl": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F1989277884914288%2F",
+          "id": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F1989277884914288%2F",
           "title": "Giant Steps"
         }
       ]
@@ -69,9 +67,8 @@
       "media": [
         {
           "type": "facebook",
-          "id": "887791276707412",
           "url": "https://www.facebook.com/christophe.thiebaud/videos/887791276707412/",
-          "encodedUrl": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F887791276707412%2F",
+          "id": "https%3A%2F%2Fwww.facebook.com%2Fchristophe.thiebaud%2Fvideos%2F887791276707412%2F",
           "title": "Sans Titre"
         }
       ]
