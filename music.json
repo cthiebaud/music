@@ -4,6 +4,7 @@
   "github": "https://github.com/cthiebaud/music",
   "brandLogoSVG": ["/vinyl_record.svg", "/vinyl_record-rotating.svg"],
   "orderedKeys": [
+    "bwv1006_3",
     "maninthemirror",
     "giantsteps",
     "sanstitre",
@@ -35,6 +36,19 @@
   ],
   "later": ["partirons"],
   "songs": {
+    "bwv1006_3": {
+      "date": "June 25, 2025",
+      "text": "BWV 1006",
+      "duration": "5:11",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/R7IS2Wb3v7E",
+          "id": "R7IS2Wb3v7E",
+          "title": "Preludio from Violin Partita #3 BWV1006 w/ BWV29 borrowings"
+        }
+      ]
+    },
     "maninthemirror": {
       "date": "Jan 30, 2025",
       "text": "Man in the Mirror",
