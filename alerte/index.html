@@ -84,24 +84,146 @@
       font-weight: 600;
     }
 
-    .track-title .tag {
-      font-size: 0.75rem;
-      color: var(--accent);
-      font-variant-numeric: tabular-nums;
-      opacity: 0.85;
-      white-space: nowrap;
+    .player-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
     }
 
     audio {
-      width: 100%;
+      flex: 1 1 200px;
+      min-width: 0;
       height: 36px;
     }
 
     footer {
       margin-top: 2.5rem;
-      font-size: 0.8rem;
-      opacity: 0.5;
-      text-align: center;
+    }
+
+    .note {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+    }
+
+    .note-langs {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .note-langs button {
+      font: inherit;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      background: transparent;
+      color: var(--fg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.25rem 0.65rem;
+      cursor: pointer;
+      opacity: 0.55;
+    }
+
+    .note-langs button:hover {
+      opacity: 0.85;
+    }
+
+    .note-langs button.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      opacity: 1;
+    }
+
+    .note p {
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      opacity: 0.75;
+      display: none;
+    }
+
+    .note p.active {
+      display: block;
+    }
+
+    .note p a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 0.15rem;
+    }
+
+    .stars button {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 1.3rem;
+      line-height: 1;
+      color: var(--border);
+      cursor: pointer;
+    }
+
+    .stars button.filled {
+      color: var(--accent);
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-send,
+    .btn-clear {
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.55rem 1.1rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-send {
+      color: #25d366;
+      border: 1px solid #25d366;
+      background: none;
+    }
+
+    .btn-send:hover {
+      background: #25d366;
+      color: #fff;
+    }
+
+    .btn-send[aria-disabled="true"] {
+      color: var(--fg);
+      border-color: var(--border);
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .btn-clear {
+      color: var(--fg);
+      border: 1px solid var(--border);
+      background: none;
+      opacity: 0.7;
+    }
+
+    .btn-clear:hover {
+      opacity: 1;
+      border-color: var(--accent);
+      color: var(--accent);
     }
   </style>
 </head>
@@ -115,56 +237,242 @@
       <li class="track">
         <div class="track-title">
           <h2>Original</h2>
-          <span class="tag">00</span>
         </div>
-        <audio controls preload="none" src="00_alerte-original.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="00_alerte-original.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Normal</h2>
-          <span class="tag">01</span>
         </div>
-        <audio controls preload="none" src="01_alerte_normal.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="01_alerte_normal.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Jazzy Salsa</h2>
-          <span class="tag">02</span>
         </div>
-        <audio controls preload="none" src="02_alerte_jazzy_salsa.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="02_alerte_jazzy_salsa.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Canadien</h2>
-          <span class="tag">03</span>
         </div>
-        <audio controls preload="none" src="03_alerte_canadien.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="03_alerte_canadien.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Italien</h2>
-          <span class="tag">04</span>
         </div>
-        <audio controls preload="none" src="04_alerte_italien.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="04_alerte_italien.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Bavarois</h2>
-          <span class="tag">05</span>
         </div>
-        <audio controls preload="none" src="05_alerte_bavarois.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="05_alerte_bavarois.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
       <li class="track">
         <div class="track-title">
           <h2>Bollywood</h2>
-          <span class="tag">06</span>
         </div>
-        <audio controls preload="none" src="06_alerte_bollywood.mp3"></audio>
+        <div class="player-row">
+          <audio controls preload="none" src="06_alerte_bollywood.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+              <button type="button" data-value="1" aria-label="1 étoile">★</button>
+              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+            </div>
+        </div>
       </li>
     </ul>
 
-    <footer>Converted from ~/_Suno/Alerte — originals untouched.</footer>
+    <div class="actions">
+      <a id="sendAll" class="btn-send" href="#" target="_blank" rel="noopener" aria-disabled="true">Envoyer via WhatsApp</a>
+      <button type="button" id="clearAll" class="btn-clear">Effacer mes votes</button>
+    </div>
+
+    <footer>
+      <div class="note">
+        <div class="note-langs" role="tablist" aria-label="Language">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="it">IT</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+        <p data-lang="en" class="active">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not touch Suno's first draft in any way — what you hear is exactly what it produced. The original French text was translated into English, German and Italian by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
+        <p data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai absolument pas retouché le premier jet généré par Suno. Le texte original en français a été traduit en anglais, allemand et italien par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
+        <p data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho ritoccato in alcun modo la prima bozza generata da Suno. Il testo originale in francese è stato tradotto in inglese, tedesco e italiano da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
+        <p data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Den ersten von Suno erzeugten Entwurf habe ich in keiner Weise angerührt. Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Englische, Deutsche und Italienische übersetzt.</p>
+      </div>
+    </footer>
   </main>
+
+  <script>
+    const langButtons = document.querySelectorAll('.note-langs button');
+    const langParagraphs = document.querySelectorAll('.note p[data-lang]');
+    const availableLangs = ['en', 'fr', 'it', 'de'];
+
+    const WHATSAPP_NUMBER = '393755042951';
+    const sendAllBtn = document.getElementById('sendAll');
+    const clearAllBtn = document.getElementById('clearAll');
+    const ratings = {};
+    let currentLang = 'en';
+
+    function storageKey(title) {
+      return 'alerte-rating-' + title;
+    }
+
+    const introByLang = {
+      en: 'My ratings for Alerte:',
+      fr: 'Mes notes pour Alerte :',
+      it: 'Le mie valutazioni per Alerte:',
+      de: 'Meine Bewertungen für Alerte:'
+    };
+
+    const buttonLabelsByLang = {
+      en: { send: 'Send via WhatsApp', clear: 'Clear my ratings' },
+      fr: { send: 'Envoyer via WhatsApp', clear: 'Effacer mes votes' },
+      it: { send: 'Invia via WhatsApp', clear: 'Cancella le mie valutazioni' },
+      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen' }
+    };
+
+    function updateSendAllButton() {
+      const lines = [];
+      document.querySelectorAll('li.track').forEach(track => {
+        const title = track.querySelector('h2').textContent.trim();
+        const value = ratings[title];
+        if (value > 0) {
+          const stars = '★'.repeat(value) + '☆'.repeat(5 - value);
+          lines.push(`${title} : ${stars} (${value}/5)`);
+        }
+      });
+
+      if (lines.length === 0) {
+        sendAllBtn.setAttribute('aria-disabled', 'true');
+        sendAllBtn.href = '#';
+        return;
+      }
+
+      const message = `${introByLang[currentLang]}\n${lines.join('\n')}`;
+      sendAllBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      sendAllBtn.removeAttribute('aria-disabled');
+    }
+
+    sendAllBtn.addEventListener('click', e => {
+      if (sendAllBtn.getAttribute('aria-disabled') === 'true') e.preventDefault();
+    });
+
+    function setLang(lang) {
+      currentLang = lang;
+      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      langParagraphs.forEach(p => p.classList.toggle('active', p.dataset.lang === lang));
+      sendAllBtn.textContent = buttonLabelsByLang[lang].send;
+      clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
+      updateSendAllButton();
+    }
+
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+
+    const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+    setLang(availableLangs.includes(browserLang) ? browserLang : 'en');
+
+    clearAllBtn.addEventListener('click', () => {
+      document.querySelectorAll('li.track').forEach(track => {
+        const title = track.querySelector('h2').textContent.trim();
+        delete ratings[title];
+        try { localStorage.removeItem(storageKey(title)); } catch (e) { /* ignore */ }
+        track.querySelectorAll('.stars button').forEach(b => b.classList.remove('filled'));
+      });
+      updateSendAllButton();
+    });
+
+    document.querySelectorAll('li.track').forEach(track => {
+      const title = track.querySelector('h2').textContent.trim();
+      const starButtons = track.querySelectorAll('.stars button');
+      const starsContainer = track.querySelector('.stars');
+
+      function paint(value) {
+        starButtons.forEach(b => b.classList.toggle('filled', Number(b.dataset.value) <= value));
+      }
+
+      function setRating(value) {
+        ratings[title] = value;
+        paint(value);
+        try { localStorage.setItem(storageKey(title), String(value)); } catch (e) { /* ignore */ }
+        updateSendAllButton();
+      }
+
+      starButtons.forEach(btn => {
+        btn.addEventListener('click', () => setRating(Number(btn.dataset.value)));
+        btn.addEventListener('mouseenter', () => paint(Number(btn.dataset.value)));
+      });
+
+      starsContainer.addEventListener('mouseleave', () => paint(ratings[title] || 0));
+
+      let saved = 0;
+      try { saved = Number(localStorage.getItem(storageKey(title))) || 0; } catch (e) { /* ignore */ }
+      if (saved > 0) setRating(saved);
+    });
+
+    updateSendAllButton();
+  </script>
 </body>
 
 </html>
