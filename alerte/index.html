@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alerte — variations</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f2;
+      --fg: #1a1a1a;
+      --card: #ffffff;
+      --border: #e2ddd4;
+      --accent: #b5482f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17161a;
+        --fg: #f0eee9;
+        --card: #221f26;
+        --border: #35323a;
+        --accent: #e08a6c;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 2.5rem 1.25rem 4rem;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    p.subtitle {
+      margin: 0 0 2rem;
+      opacity: 0.65;
+      font-size: 0.95rem;
+    }
+
+    ul.tracks {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    li.track {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+    }
+
+    .track-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+      gap: 0.5rem;
+    }
+
+    .track-title h2 {
+      font-size: 1.05rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .track-title .tag {
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+      opacity: 0.85;
+      white-space: nowrap;
+    }
+
+    audio {
+      width: 100%;
+      height: 36px;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Alerte</h1>
+    <p class="subtitle">Variations</p>
+
+    <ul class="tracks">
+      <li class="track">
+        <div class="track-title">
+          <h2>Original</h2>
+          <span class="tag">00</span>
+        </div>
+        <audio controls preload="none" src="00_alerte-original.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Normal</h2>
+          <span class="tag">01</span>
+        </div>
+        <audio controls preload="none" src="01_alerte_normal.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Jazzy Salsa</h2>
+          <span class="tag">02</span>
+        </div>
+        <audio controls preload="none" src="02_alerte_jazzy_salsa.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Canadien</h2>
+          <span class="tag">03</span>
+        </div>
+        <audio controls preload="none" src="03_alerte_canadien.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Italien</h2>
+          <span class="tag">04</span>
+        </div>
+        <audio controls preload="none" src="04_alerte_italien.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Bavarois</h2>
+          <span class="tag">05</span>
+        </div>
+        <audio controls preload="none" src="05_alerte_bavarois.mp3"></audio>
+      </li>
+      <li class="track">
+        <div class="track-title">
+          <h2>Bollywood</h2>
+          <span class="tag">06</span>
+        </div>
+        <audio controls preload="none" src="06_alerte_bollywood.mp3"></audio>
+      </li>
+    </ul>
+
+    <footer>Converted from ~/_Suno/Alerte — originals untouched.</footer>
+  </main>
+</body>
+
+</html>
