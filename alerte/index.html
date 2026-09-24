@@ -72,10 +72,31 @@
 
     .track-title {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
       margin-bottom: 0.6rem;
       gap: 0.5rem;
+    }
+
+    .nuance-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .track-title-text {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-width: 0;
     }
 
     .track-title h2 {
@@ -253,12 +274,14 @@
 <body>
   <main>
     <h1>Alerte</h1>
-    <p class="subtitle">Variations · <a href="paroles.html" style="color: var(--accent);">Paroles</a></p>
+    <p class="subtitle" id="subtitle">Dix nuances d'Alerte</p>
 
     <ul class="tracks">
       <li class="track" data-key="original">
         <div class="track-title">
-          <h2>Original</h2>
+          <div class="track-title-text">
+            <h2>Original</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -281,7 +304,10 @@
       </li>
       <li class="track" data-key="normal">
         <div class="track-title">
-          <h2>Normal</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">1</span>
+            <h2>Normal</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -304,7 +330,10 @@
       </li>
       <li class="track" data-key="jazzy-salsa">
         <div class="track-title">
-          <h2>Jazzy Salsa</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">2</span>
+            <h2>Jazzy Salsa</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -327,7 +356,10 @@
       </li>
       <li class="track" data-key="canadien">
         <div class="track-title">
-          <h2>Canadien</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">3</span>
+            <h2>Canadien</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -350,7 +382,10 @@
       </li>
       <li class="track" data-key="italien">
         <div class="track-title">
-          <h2>Italien</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">4</span>
+            <h2>Italien</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#it" target="_blank" rel="noopener" aria-label="Paroles (IT)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -373,7 +408,10 @@
       </li>
       <li class="track" data-key="bavarois">
         <div class="track-title">
-          <h2>Bavarois</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">5</span>
+            <h2>Bavarois</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#de" target="_blank" rel="noopener" aria-label="Paroles (DE)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -396,7 +434,10 @@
       </li>
       <li class="track" data-key="bollywood">
         <div class="track-title">
-          <h2>Bollywood</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">6</span>
+            <h2>Bollywood</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#en" target="_blank" rel="noopener" aria-label="Paroles (EN)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -419,7 +460,10 @@
       </li>
       <li class="track" data-key="amerique-du-sud">
         <div class="track-title">
-          <h2>Amérique du Sud</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">7</span>
+            <h2>Amérique du Sud</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#es" target="_blank" rel="noopener" aria-label="Paroles (ES)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -442,7 +486,10 @@
       </li>
       <li class="track" data-key="death-metal-ukrainien">
         <div class="track-title">
-          <h2>Death Metal Ukrainien</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">8</span>
+            <h2>Death Metal Ukrainien</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#ua" target="_blank" rel="noopener" aria-label="Paroles (UA)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -465,7 +512,10 @@
       </li>
       <li class="track" data-key="east-coast-hip-hop">
         <div class="track-title">
-          <h2>East Coast Hip Hop</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">9</span>
+            <h2>East Coast Hip Hop</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#en-hh" target="_blank" rel="noopener" aria-label="Paroles (EN)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -488,7 +538,10 @@
       </li>
       <li class="track" data-key="egyptian">
         <div class="track-title">
-          <h2>Egyptian</h2>
+          <div class="track-title-text">
+            <span class="nuance-badge">10</span>
+            <h2>Egyptian</h2>
+          </div>
           <a class="lyrics-link" href="paroles.html#ar" target="_blank" rel="noopener" aria-label="Paroles (AR)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -523,11 +576,13 @@
           <button type="button" data-lang="fr">FR</button>
           <button type="button" data-lang="it">IT</button>
           <button type="button" data-lang="de">DE</button>
+          <button type="button" data-lang="es">ES</button>
         </div>
-        <p data-lang="en" class="active">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not touch Suno's first draft in any way — what you hear is exactly what it produced. The original French text was translated into English, German and Italian by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
-        <p data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai absolument pas retouché le premier jet généré par Suno. Le texte original en français a été traduit en anglais, allemand et italien par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
-        <p data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho ritoccato in alcun modo la prima bozza generata da Suno. Il testo originale in francese è stato tradotto in inglese, tedesco e italiano da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>.</p>
-        <p data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Den ersten von Suno erzeugten Entwurf habe ich in keiner Weise angerührt. Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Englische, Deutsche und Italienische übersetzt.</p>
+        <p data-lang="en" class="active">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not touch Suno's first draft in any way — what you hear is exactly what it produced. The original French text was translated into English (standard and hip-hop versions), German, Italian, Spanish, Ukrainian and Egyptian Arabic by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.</p>
+        <p data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai absolument pas retouché le premier jet généré par Suno. Le texte original en français a été traduit en anglais (version standard et version hip-hop), allemand, italien, espagnol, ukrainien et arabe (égyptien) par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Tu peux lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.</p>
+        <p data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho ritoccato in alcun modo la prima bozza generata da Suno. Il testo originale in francese è stato tradotto in inglese (versione standard e versione hip-hop), tedesco, italiano, spagnolo, ucraino e arabo egiziano da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puoi leggere il testo in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.</p>
+        <p data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Den ersten von Suno erzeugten Entwurf habe ich in keiner Weise angerührt. Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Englische (Standard- und Hip-Hop-Version), Deutsche, Italienische, Spanische, Ukrainische und Ägyptisch-Arabische übersetzt. Die Texte in all diesen Sprachen findest du auf der <a href="paroles.html">Liedtext-Seite</a>.</p>
+        <p data-lang="es">Una palabra rápida sobre cómo surgió esto: subí el original al plan gratuito de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> y le pedí que generara los estilos que escuchas arriba. No toqué el primer borrador de Suno en absoluto: lo que escuchas es exactamente lo que produjo. El texto original en francés fue traducido al inglés (versión estándar y versión hip-hop), alemán, italiano, español, ucraniano y árabe egipcio por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puedes leer las letras en todos estos idiomas en la <a href="paroles.html">página de las letras</a>.</p>
       </div>
     </footer>
   </main>
@@ -535,7 +590,7 @@
   <script>
     const langButtons = document.querySelectorAll('.note-langs button');
     const langParagraphs = document.querySelectorAll('.note p[data-lang]');
-    const availableLangs = ['en', 'fr', 'it', 'de'];
+    const availableLangs = ['en', 'fr', 'it', 'de', 'es'];
 
     const WHATSAPP_NUMBER = '393755042951';
     const sendAllBtn = document.getElementById('sendAll');
@@ -548,31 +603,41 @@
     }
 
     const TRACK_TITLES = {
-      'original': { en: 'Original', fr: 'Original', it: 'Originale', de: 'Original' },
-      'normal': { en: 'Normal', fr: 'Normal', it: 'Normale', de: 'Normal' },
-      'jazzy-salsa': { en: 'Jazzy Salsa', fr: 'Jazzy Salsa', it: 'Jazzy Salsa', de: 'Jazzy Salsa' },
-      'canadien': { en: 'Canadian', fr: 'Canadien', it: 'Canadese', de: 'Kanadisch' },
-      'italien': { en: 'Italian', fr: 'Italien', it: 'Italiano', de: 'Italienisch' },
-      'bavarois': { en: 'Bavarian', fr: 'Bavarois', it: 'Bavarese', de: 'Bayerisch' },
-      'bollywood': { en: 'Bollywood', fr: 'Bollywood', it: 'Bollywood', de: 'Bollywood' },
-      'amerique-du-sud': { en: 'South America', fr: 'Amérique du Sud', it: 'Sud America', de: 'Südamerika' },
-      'death-metal-ukrainien': { en: 'Ukrainian Death Metal', fr: 'Death Metal Ukrainien', it: 'Death Metal Ucraino', de: 'Ukrainischer Death Metal' },
-      'east-coast-hip-hop': { en: 'East Coast Hip Hop', fr: 'East Coast Hip Hop', it: 'East Coast Hip Hop', de: 'East Coast Hip Hop' },
-      'egyptian': { en: 'Egyptian', fr: 'Égyptien', it: 'Egiziano', de: 'Ägyptisch' }
+      'original': { en: 'Original', fr: 'Original', it: 'Originale', de: 'Original', es: 'Original' },
+      'normal': { en: 'Normal', fr: 'Normal', it: 'Normale', de: 'Normal', es: 'Normal' },
+      'jazzy-salsa': { en: 'Jazzy Salsa', fr: 'Jazzy Salsa', it: 'Jazzy Salsa', de: 'Jazzy Salsa', es: 'Jazzy Salsa' },
+      'canadien': { en: 'Canadian', fr: 'Canadien', it: 'Canadese', de: 'Kanadisch', es: 'Canadiense' },
+      'italien': { en: 'Italian', fr: 'Italien', it: 'Italiano', de: 'Italienisch', es: 'Italiano' },
+      'bavarois': { en: 'Bavarian', fr: 'Bavarois', it: 'Bavarese', de: 'Bayerisch', es: 'Bávaro' },
+      'bollywood': { en: 'Bollywood', fr: 'Bollywood', it: 'Bollywood', de: 'Bollywood', es: 'Bollywood' },
+      'amerique-du-sud': { en: 'South America', fr: 'Amérique du Sud', it: 'Sud America', de: 'Südamerika', es: 'Sudamérica' },
+      'death-metal-ukrainien': { en: 'Ukrainian Death Metal', fr: 'Death Metal Ukrainien', it: 'Death Metal Ucraino', de: 'Ukrainischer Death Metal', es: 'Death Metal Ucraniano' },
+      'east-coast-hip-hop': { en: 'East Coast Hip Hop', fr: 'East Coast Hip Hop', it: 'East Coast Hip Hop', de: 'East Coast Hip Hop', es: 'East Coast Hip Hop' },
+      'egyptian': { en: 'Egyptian', fr: 'Égyptien', it: 'Egiziano', de: 'Ägyptisch', es: 'Egipcio' }
     };
 
     const introByLang = {
       en: 'My ratings for Alerte:',
       fr: 'Mes notes pour Alerte :',
       it: 'Le mie valutazioni per Alerte:',
-      de: 'Meine Bewertungen für Alerte:'
+      de: 'Meine Bewertungen für Alerte:',
+      es: 'Mis valoraciones para Alerte:'
     };
 
     const buttonLabelsByLang = {
       en: { send: 'Send via WhatsApp', clear: 'Clear my ratings' },
       fr: { send: 'Envoyer via WhatsApp', clear: 'Effacer mes votes' },
       it: { send: 'Invia via WhatsApp', clear: 'Cancella le mie valutazioni' },
-      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen' }
+      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen' },
+      es: { send: 'Enviar por WhatsApp', clear: 'Borrar mis valoraciones' }
+    };
+
+    const subtitleByLang = {
+      en: 'Ten Shades of Alerte',
+      fr: "Dix nuances d'Alerte",
+      it: 'Dieci sfumature di Alerte',
+      de: 'Zehn Schattierungen von Alerte',
+      es: 'Diez sombras de Alerte'
     };
 
     function updateSendAllButton() {
@@ -607,6 +672,7 @@
       langParagraphs.forEach(p => p.classList.toggle('active', p.dataset.lang === lang));
       sendAllBtn.textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
+      document.getElementById('subtitle').textContent = subtitleByLang[lang];
       document.querySelectorAll('li.track').forEach(track => {
         const titles = TRACK_TITLES[track.dataset.key];
         if (titles) track.querySelector('h2').textContent = titles[lang] || titles.fr;
