@@ -84,6 +84,28 @@
       font-weight: 600;
     }
 
+    .lyrics-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex-shrink: 0;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      opacity: 0.75;
+    }
+
+    .lyrics-link:hover {
+      opacity: 1;
+    }
+
+    .lyrics-link svg {
+      width: 14px;
+      height: 14px;
+    }
+
     .player-row {
       display: flex;
       align-items: center;
@@ -231,12 +253,20 @@
 <body>
   <main>
     <h1>Alerte</h1>
-    <p class="subtitle">Variations</p>
+    <p class="subtitle">Variations · <a href="paroles.html" style="color: var(--accent);">Paroles</a></p>
 
     <ul class="tracks">
       <li class="track">
         <div class="track-title">
           <h2>Original</h2>
+          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>FR</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="00_alerte-original.mp3"></audio>
@@ -252,6 +282,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Normal</h2>
+          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>FR</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="01_alerte_normal.mp3"></audio>
@@ -267,6 +305,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Jazzy Salsa</h2>
+          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>FR</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="02_alerte_jazzy_salsa.mp3"></audio>
@@ -282,6 +328,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Canadien</h2>
+          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>FR</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="03_alerte_canadien.mp3"></audio>
@@ -297,6 +351,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Italien</h2>
+          <a class="lyrics-link" href="paroles.html#it" target="_blank" rel="noopener" aria-label="Paroles (IT)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>IT</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="04_alerte_italien.mp3"></audio>
@@ -312,6 +374,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Bavarois</h2>
+          <a class="lyrics-link" href="paroles.html#de" target="_blank" rel="noopener" aria-label="Paroles (DE)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>DE</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="05_alerte_bavarois.mp3"></audio>
@@ -327,6 +397,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Bollywood</h2>
+          <a class="lyrics-link" href="paroles.html#en" target="_blank" rel="noopener" aria-label="Paroles (EN)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>EN</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="06_alerte_bollywood.mp3"></audio>
@@ -342,6 +420,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Amérique du Sud</h2>
+          <a class="lyrics-link" href="paroles.html#es" target="_blank" rel="noopener" aria-label="Paroles (ES)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>ES</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="07_alerte_amerique_du_sud.mp3"></audio>
@@ -357,6 +443,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Death Metal Ukrainien</h2>
+          <a class="lyrics-link" href="paroles.html#ua" target="_blank" rel="noopener" aria-label="Paroles (UA)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>UA</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="08_alerte_death_metal_ukrainien.mp3"></audio>
@@ -372,6 +466,14 @@
       <li class="track">
         <div class="track-title">
           <h2>East Coast Hip Hop</h2>
+          <a class="lyrics-link" href="paroles.html#en-hh" target="_blank" rel="noopener" aria-label="Paroles (EN)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>EN</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="09_alerte_east_coast_hip_hop.mp3"></audio>
@@ -387,6 +489,14 @@
       <li class="track">
         <div class="track-title">
           <h2>Egyptian</h2>
+          <a class="lyrics-link" href="paroles.html#ar" target="_blank" rel="noopener" aria-label="Paroles (AR)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>AR</span>
+          </a>
         </div>
         <div class="player-row">
           <audio controls preload="none" src="10_alerte_egyptian.mp3"></audio>
