@@ -381,6 +381,7 @@
             "src": "guess-what.mp3",
             "code": null,
             "label": null,
+            "rateable": false,
             "titles": {
                   "en": "Guess What?",
                   "fr": "Devine ?",
@@ -408,6 +409,10 @@
         }
 
         node.querySelector('.track-audio').src = t.src;
+
+        if (t.rateable === false) {
+          node.querySelector('.stars').remove();
+        }
 
         const link = node.querySelector('.track-lyrics-link');
         if (t.code) {
@@ -595,8 +600,9 @@
 
     document.querySelectorAll('li[data-key]').forEach(track => {
       const key = track.dataset.key;
-      const starButtons = track.querySelectorAll('.stars button');
       const starsContainer = track.querySelector('.stars');
+      if (!starsContainer) return;
+      const starButtons = track.querySelectorAll('.stars button');
 
       function paint(value) {
         starButtons.forEach(b => b.classList.toggle('filled', Number(b.dataset.value) <= value));
