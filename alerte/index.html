@@ -274,7 +274,7 @@
 <body>
   <main>
     <h1>Alerte</h1>
-    <p class="subtitle" id="subtitle">Onze nuances d'Alerte</p>
+    <p class="subtitle" id="subtitle">Treize nuances d'Alerte</p>
 
     <ul class="tracks">
       <li class="track" data-key="original">
@@ -588,6 +588,58 @@
           </div>
         </div>
       </li>
+      <li class="track" data-key="k-pop">
+        <div class="track-title">
+          <div class="track-title-text">
+            <span class="nuance-badge">12</span>
+            <h2>K-pop</h2>
+          </div>
+          <a class="lyrics-link" href="paroles.html#ko" target="_blank" rel="noopener" aria-label="Paroles (KO)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>KO</span>
+          </a>
+        </div>
+        <div class="player-row">
+          <audio controls preload="none" src="12_k-pop.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+            <button type="button" data-value="1" aria-label="1 étoile">★</button>
+            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+          </div>
+        </div>
+      </li>
+      <li class="track" data-key="flamenco">
+        <div class="track-title">
+          <div class="track-title-text">
+            <span class="nuance-badge">13</span>
+            <h2>Flamenco</h2>
+          </div>
+          <a class="lyrics-link" href="paroles.html#es-fl" target="_blank" rel="noopener" aria-label="Paroles (ES)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>ES</span>
+          </a>
+        </div>
+        <div class="player-row">
+          <audio controls preload="none" src="13_flamenco.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+            <button type="button" data-value="1" aria-label="1 étoile">★</button>
+            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+          </div>
+        </div>
+      </li>
     </ul>
 
     <div class="actions">
@@ -640,7 +692,9 @@
       'death-metal-ukrainien': { en: 'Ukrainian Death Metal', fr: 'Death Metal Ukrainien', it: 'Death Metal Ucraino', de: 'Ukrainischer Death Metal', es: 'Death Metal Ucraniano' },
       'east-coast-hip-hop': { en: 'East Coast Hip Hop', fr: 'East Coast Hip Hop', it: 'East Coast Hip Hop', de: 'East Coast Hip Hop', es: 'East Coast Hip Hop' },
       'egyptian': { en: 'Egyptian', fr: 'Égyptien', it: 'Egiziano', de: 'Ägyptisch', es: 'Egipcio' },
-      'andre-rieu-meets-wagner': { en: 'André Rieu Meets Wagner', fr: 'André Rieu rencontre Wagner', it: 'André Rieu incontra Wagner', de: 'André Rieu trifft Wagner', es: 'André Rieu se encuentra con Wagner' }
+      'andre-rieu-meets-wagner': { en: 'André Rieu Meets Wagner', fr: 'André Rieu rencontre Wagner', it: 'André Rieu incontra Wagner', de: 'André Rieu trifft Wagner', es: 'André Rieu se encuentra con Wagner' },
+      'k-pop': { en: 'K-pop', fr: 'K-pop', it: 'K-pop', de: 'K-pop', es: 'K-pop' },
+      'flamenco': { en: 'Flamenco', fr: 'Flamenco', it: 'Flamenco', de: 'Flamenco', es: 'Flamenco' }
     };
 
     const introByLang = {
@@ -660,11 +714,11 @@
     };
 
     const subtitleByLang = {
-      en: 'Eleven Shades of Alerte',
-      fr: "Onze nuances d'Alerte",
-      it: 'Undici sfumature di Alerte',
-      de: 'Elf Schattierungen von Alerte',
-      es: 'Once sombras de Alerte'
+      en: 'Thirteen Shades of Alerte',
+      fr: "Treize nuances d'Alerte",
+      it: 'Tredici sfumature di Alerte',
+      de: 'Dreizehn Schattierungen von Alerte',
+      es: 'Trece sombras de Alerte'
     };
 
     function updateSendAllButton() {

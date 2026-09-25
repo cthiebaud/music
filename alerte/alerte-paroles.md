@@ -565,3 +565,171 @@ Broke outta the pen this mornin'
 </div>
 
 ---
+
+## 한국어 (K-pop 버전)
+
+**[Intro: 4 bars, synth and siren]**
+
+**[Verse 1]**  
+[lead vocal]  
+모두가 그 얘기뿐이야  
+라디오도, 텔레비전도  
+난리 났어, 문을 걸어 잠가  
+거리엔 개미 한 마리 없어
+
+**[Chorus]**  
+[group chant]  
+경보  
+경보  
+경보  
+경보  
+경보  
+경보  
+공공의 적 넘버원  
+아침에 탈옥했어
+
+**[Verse 2]**  
+[rap]  
+이 땅 어딘가에 숨어 있어  
+경보만 울리면 바로 쏴  
+경찰이 온 동네를 뒤져  
+신문마다 그의 얼굴
+
+**[Chorus]**  
+[group chant]  
+경보  
+경보  
+경보  
+경보  
+경보  
+경보  
+공공의 적 넘버원  
+아침에 탈옥했어
+
+**[Verse 3]**  
+[lead vocal, softer]  
+미쳤어, 완전 돌았어  
+사이코패스, 위험한 광인  
+이제 무슨 짓을 할지 몰라  
+착한 사람들아, 기도해
+
+**[Chorus]**  
+[group chant]  
+경보  
+경보  
+경보  
+경보  
+경보  
+경보  
+공공의 적 넘버원  
+아침에 탈옥했어
+
+**[Dance break]**
+
+**[Verse 4]**  
+[lead vocal, intense, building]  
+칠 년 동안 감옥살이  
+저지르지도 않은 죄로  
+그가 말했지, 내가 나가면  
+날 심판한 자들 다 죽일 거야  
+배심원, 증인, 판사까지  
+단 한 명도 못 피해
+
+**[Chorus]**  
+[full group, powerful]  
+경보  
+경보  
+경보  
+경보  
+경보  
+경보  
+공공의 적 넘버원  
+아침에 탈옥했어
+
+**[Outro: siren fade]**
+
+---
+
+## Español (Andalucía)
+
+**[Intro: 8 bars, flamenco guitar falseta]**
+
+**[Verse 1]**  
+[cantaora, melismatic]  
+Nadie habla de otra cosa  
+La radio, la televisión  
+Hay pánico, la gente se atrinchera  
+En la calle no hay ni un alma
+
+**[Chorus]**  
+[cantaora with palmas]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+El enemigo número uno  
+Se fugó esta mañana
+
+**[Verse 2]**  
+[cantaora, melismatic]  
+Se esconde en algún rincón de la tierra  
+Con el dedo en el gatillo  
+Lo busca la Guardia Civil  
+Su cara sale en to' los diarios
+
+**[Chorus]**  
+[cantaora with palmas]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+El enemigo número uno  
+Se fugó esta mañana
+
+**[Instrumental: flamenco guitar solo, palmas]**
+
+**[Verse 3]**  
+[cantaora, melismatic]  
+Es un loco, un desquiciado  
+Un psicópata, un peligro andante  
+Quién sabe ahora qué va a hacer  
+Buena gente, pónganse a rezar
+
+**[Chorus]**  
+[cantaora with palmas]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+El enemigo número uno  
+Se fugó esta mañana
+
+**[Verse 4]**  
+[female voice a cappella, carcelera style, raw and slow]  
+Pasó siete años en la trena  
+Por un crimen que no cometió  
+Dijo: cuando salga de aquí  
+Mato a todos los que me condenaron  
+Jurados, testigos y jueces  
+Ni uno solo se va a salvar
+
+**[Chorus]**  
+[cantaora, guitar and palmas return, full intensity]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+El enemigo número uno  
+Se fugó esta mañana
+
+**[Outro: guitar, final palmas]**
+
+---
