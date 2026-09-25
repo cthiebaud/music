@@ -31,6 +31,13 @@
       text-align: right;
     }
 
+    .repeat-count {
+      color: var(--bs-secondary-color);
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
     .nav-tabs .nav-link {
       color: var(--bs-secondary-color);
     }
@@ -81,6 +88,26 @@
       if (line) lines.push(line.trim());
 
       return lines;
+    }
+
+    function collapseRepeatedLines(lines) {
+      const result = [];
+      let i = 0;
+      while (i < lines.length) {
+        let j = i;
+        while (j < lines.length && lines[j] === lines[i]) j++;
+        const count = j - i;
+        result.push({ text: lines[i], count: count >= 2 ? count : null });
+        i = j;
+      }
+      return result;
+    }
+
+    function sortSections(sections) {
+      if (sections.length === 0) return sections;
+      const [original, ...rest] = sections;
+      rest.sort((a, b) => a.title.localeCompare(b.title));
+      return [original, ...rest];
     }
 
     function parseLyrics(markdown) {
@@ -183,7 +210,17 @@
 
           const text = document.createElement('p');
           text.className = 'lyrics-text';
-          text.textContent = block.lines.join('\n');
+          const collapsed = collapseRepeatedLines(block.lines);
+          collapsed.forEach((line, idx) => {
+            text.appendChild(document.createTextNode(line.text));
+            if (line.count) {
+              const badge = document.createElement('span');
+              badge.className = 'repeat-count';
+              badge.textContent = ` [×${line.count}]`;
+              text.appendChild(badge);
+            }
+            if (idx < collapsed.length - 1) text.appendChild(document.createElement('br'));
+          });
 
           verse.appendChild(label);
           verse.appendChild(text);
@@ -203,7 +240,7 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.text();
       })
-      .then(markdown => renderLyrics(parseLyrics(markdown)))
+      .then(markdown => renderLyrics(sortSections(parseLyrics(markdown))))
       .catch(err => {
         document.getElementById('loading').textContent =
           'Impossible de charger les paroles (' + err.message + ').';
