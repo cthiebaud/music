@@ -5,116 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alerte — variations</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
   <style>
     :root {
-      color-scheme: light dark;
-      --bg: #f7f5f2;
-      --fg: #1a1a1a;
-      --card: #ffffff;
-      --border: #e2ddd4;
       --accent: #b5482f;
     }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #17161a;
-        --fg: #f0eee9;
-        --card: #221f26;
-        --border: #35323a;
-        --accent: #e08a6c;
-      }
+    [data-bs-theme="dark"] {
+      --accent: #e08a6c;
     }
-
-    * { box-sizing: border-box; }
 
     body {
-      margin: 0;
-      padding: 2.5rem 1.25rem 4rem;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-    }
-
-    main {
-      width: 100%;
-      max-width: 640px;
+      padding: 2.5rem 0 4rem;
     }
 
     h1 {
-      font-size: 1.75rem;
-      margin: 0 0 0.25rem;
       letter-spacing: -0.01em;
     }
 
-    p.subtitle {
-      margin: 0 0 2rem;
-      opacity: 0.65;
-      font-size: 0.95rem;
-    }
-
-    ul.tracks {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-    }
-
-    li.track {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem 1.1rem;
-    }
-
-    .track-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.6rem;
-      gap: 0.5rem;
-    }
-
-    .nuance-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    .track-title-text {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      min-width: 0;
-    }
-
-    .track-title h2 {
-      font-size: 1.05rem;
-      margin: 0;
-      font-weight: 600;
-    }
-
     .lyrics-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      flex-shrink: 0;
       color: var(--accent);
-      text-decoration: none;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
       opacity: 0.75;
     }
 
@@ -127,90 +39,18 @@
       height: 14px;
     }
 
-    .player-row {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    audio {
-      flex: 1 1 200px;
-      min-width: 0;
-      height: 36px;
-    }
-
-    footer {
-      margin-top: 2.5rem;
-    }
-
-    .note {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem 1.1rem;
-    }
-
-    .note-langs {
-      display: flex;
-      gap: 0.4rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .note-langs button {
-      font: inherit;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      background: transparent;
-      color: var(--fg);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.25rem 0.65rem;
-      cursor: pointer;
-      opacity: 0.55;
-    }
-
-    .note-langs button:hover {
-      opacity: 0.85;
-    }
-
-    .note-langs button.active {
-      color: var(--accent);
-      border-color: var(--accent);
-      opacity: 1;
-    }
-
-    .note p {
-      margin: 0;
-      font-size: 0.85rem;
-      line-height: 1.5;
-      opacity: 0.75;
-      display: none;
-    }
-
-    .note p.active {
-      display: block;
-    }
-
-    .note p a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
     .stars {
       display: flex;
-      gap: 0.15rem;
+      gap: 0.1rem;
     }
 
     .stars button {
       background: none;
       border: none;
       padding: 0;
-      font-size: 1.3rem;
+      font-size: 1.05rem;
       line-height: 1;
-      color: var(--border);
+      color: var(--bs-border-color);
       cursor: pointer;
     }
 
@@ -218,482 +58,345 @@
       color: var(--accent);
     }
 
-    .actions {
-      display: flex;
-      justify-content: center;
-      gap: 0.6rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
+    .chevron-btn {
+      color: var(--bs-secondary-color);
     }
 
-    .btn-send,
-    .btn-clear {
-      font: inherit;
-      font-size: 0.85rem;
-      font-weight: 600;
-      border-radius: 999px;
-      padding: 0.55rem 1.1rem;
-      text-decoration: none;
-      cursor: pointer;
+    .chevron-btn svg {
+      transition: transform 0.15s ease;
     }
 
-    .btn-send {
-      color: #25d366;
-      border: 1px solid #25d366;
-      background: none;
+    .chevron-btn[aria-expanded="true"] svg {
+      transform: rotate(180deg);
     }
 
-    .btn-send:hover {
-      background: #25d366;
-      color: #fff;
-    }
-
-    .btn-send[aria-disabled="true"] {
-      color: var(--fg);
-      border-color: var(--border);
-      opacity: 0.4;
-      pointer-events: none;
-      cursor: not-allowed;
-    }
-
-    .btn-clear {
-      color: var(--fg);
-      border: 1px solid var(--border);
-      background: none;
-      opacity: 0.7;
-    }
-
-    .btn-clear:hover {
-      opacity: 1;
+    .note-langs .btn.active {
+      color: var(--accent);
       border-color: var(--accent);
+    }
+
+    .note-text a {
       color: var(--accent);
     }
   </style>
 </head>
 
-<body>
-  <main>
-    <h1>Alerte</h1>
-    <p class="subtitle" id="subtitle">Quatorze nuances d'Alerte</p>
+<body data-bs-theme="light">
+  <div class="container" style="max-width: 640px;">
+    <h1 class="h3 mb-1">Alerte</h1>
+    <p class="text-body-secondary mb-4" id="subtitle">Quatorze nuances d'Alerte</p>
 
-    <ul class="tracks">
-      <li class="track" data-key="original">
-        <div class="track-title">
-          <div class="track-title-text">
-            <h2>Original</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>FR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="00_alerte-original.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="normal">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">1</span>
-            <h2>Normal</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>FR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="01_alerte_normal.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="jazzy-salsa">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">2</span>
-            <h2>Jazzy Salsa</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>FR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="02_alerte_jazzy_salsa.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="canadien">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">3</span>
-            <h2>Canadien</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>FR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="03_alerte_canadien.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="italien">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">4</span>
-            <h2>Italien</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#it" target="_blank" rel="noopener" aria-label="Paroles (IT)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>IT</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="04_alerte_italien.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="bavarois">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">5</span>
-            <h2>Bavarois</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#de" target="_blank" rel="noopener" aria-label="Paroles (DE)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>DE</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="05_alerte_bavarois.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="bollywood">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">6</span>
-            <h2>Bollywood</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#en" target="_blank" rel="noopener" aria-label="Paroles (EN)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>EN</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="06_alerte_bollywood.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-              <button type="button" data-value="1" aria-label="1 étoile">★</button>
-              <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-              <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-              <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-              <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-            </div>
-        </div>
-      </li>
-      <li class="track" data-key="amerique-du-sud">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">7</span>
-            <h2>Amérique du Sud</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#es" target="_blank" rel="noopener" aria-label="Paroles (ES)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>ES</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="07_alerte_amerique_du_sud.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="death-metal-ukrainien">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">8</span>
-            <h2>Death Metal Ukrainien</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#ua" target="_blank" rel="noopener" aria-label="Paroles (UA)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>UA</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="08_alerte_death_metal_ukrainien.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="east-coast-hip-hop">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">9</span>
-            <h2>East Coast Hip Hop</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#en-hh" target="_blank" rel="noopener" aria-label="Paroles (EN)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>EN</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="09_alerte_east_coast_hip_hop.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="egyptian">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">10</span>
-            <h2>Egyptian</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#ar" target="_blank" rel="noopener" aria-label="Paroles (AR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>AR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="10_alerte_egyptian.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="andre-rieu-meets-wagner">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">11</span>
-            <h2>André Rieu Meets Wagner</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#fr" target="_blank" rel="noopener" aria-label="Paroles (FR)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>FR</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="11_alerte_andre_rieu_meets_wagner.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="k-pop">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">12</span>
-            <h2>K-pop</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#ko" target="_blank" rel="noopener" aria-label="Paroles (KO)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>KO</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="12_k-pop.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="flamenco">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">13</span>
-            <h2>Flamenco</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#es-fl" target="_blank" rel="noopener" aria-label="Paroles (ES)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>ES</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="13_flamenco.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-      <li class="track" data-key="scottish-gaelic">
-        <div class="track-title">
-          <div class="track-title-text">
-            <span class="nuance-badge">14</span>
-            <h2>Scottish Gaelic</h2>
-          </div>
-          <a class="lyrics-link" href="paroles.html#gd" target="_blank" rel="noopener" aria-label="Paroles (GD)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="16" y2="12"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-            <span>GD</span>
-          </a>
-        </div>
-        <div class="player-row">
-          <audio controls preload="none" src="14_scottish-gaelic.mp3"></audio>
-          <div class="stars" role="radiogroup" aria-label="Note">
-            <button type="button" data-value="1" aria-label="1 étoile">★</button>
-            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
-            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
-            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
-            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <ul class="list-unstyled vstack gap-3 mb-4" id="trackList"></ul>
 
-    <div class="actions">
-      <a id="sendAll" class="btn-send" href="#" target="_blank" rel="noopener" aria-disabled="true">Envoyer via WhatsApp</a>
-      <button type="button" id="clearAll" class="btn-clear">Effacer mes votes</button>
+    <template id="track-template">
+      <li>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge rounded-pill text-bg-light border track-badge"></span>
+                <h2 class="h6 mb-0 track-title"></h2>
+              </div>
+              <a class="lyrics-link d-inline-flex align-items-center gap-1 small text-decoration-none track-lyrics-link"
+                target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <line x1="4" y1="6" x2="20" y2="6"></line>
+                  <line x1="4" y1="12" x2="16" y2="12"></line>
+                  <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+                <span class="track-lyrics-label"></span>
+              </a>
+            </div>
+            <div class="player-row d-flex align-items-center gap-2 flex-wrap">
+              <audio controls preload="none" class="flex-grow-1 track-audio" style="min-width: 160px; height: 36px;"></audio>
+              <div class="stars" role="radiogroup" aria-label="Note">
+                <button type="button" data-value="1" aria-label="1 étoile">★</button>
+                <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+                <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+                <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+                <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+      <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">Envoyer via WhatsApp</a>
+      <button type="button" id="clearAll" class="btn btn-outline-secondary btn-sm rounded-pill">Effacer mes votes</button>
     </div>
 
     <footer>
-      <div class="note">
-        <div class="note-langs" role="tablist" aria-label="Language">
-          <button type="button" data-lang="en" class="active">EN</button>
-          <button type="button" data-lang="fr">FR</button>
-          <button type="button" data-lang="it">IT</button>
-          <button type="button" data-lang="de">DE</button>
-          <button type="button" data-lang="es">ES</button>
+      <div class="card">
+        <div class="card-body">
+          <div class="btn-group btn-group-sm note-langs mb-3" role="group" aria-label="Language">
+            <button type="button" class="btn btn-outline-secondary active" data-lang="en">EN</button>
+            <button type="button" class="btn btn-outline-secondary" data-lang="fr">FR</button>
+            <button type="button" class="btn btn-outline-secondary" data-lang="it">IT</button>
+            <button type="button" class="btn btn-outline-secondary" data-lang="de">DE</button>
+            <button type="button" class="btn btn-outline-secondary" data-lang="es">ES</button>
+          </div>
+          <p class="note-text small text-body-secondary mb-0" data-lang="en">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not touch Suno's first draft in any way — what you hear is exactly what it produced. The original French text was translated into English (standard and hip-hop versions), German, Italian, Spanish (standard and Andalusian/flamenco versions), Ukrainian, Egyptian Arabic, Korean (K-pop version) and Scottish Gaelic by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.</p>
+          <p class="note-text small text-body-secondary mb-0 d-none" data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai absolument pas retouché le premier jet généré par Suno. Le texte original en français a été traduit en anglais (version standard et version hip-hop), allemand, italien, espagnol (version standard et version andalouse/flamenco), ukrainien, arabe (égyptien), coréen (version K-pop) et gaélique écossais par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Tu peux lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.</p>
+          <p class="note-text small text-body-secondary mb-0 d-none" data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho ritoccato in alcun modo la prima bozza generata da Suno. Il testo originale in francese è stato tradotto in inglese (versione standard e versione hip-hop), tedesco, italiano, spagnolo (versione standard e versione andalusa/flamenco), ucraino, arabo egiziano, coreano (versione K-pop) e gaelico scozzese da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puoi leggere il testo in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.</p>
+          <p class="note-text small text-body-secondary mb-0 d-none" data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Den ersten von Suno erzeugten Entwurf habe ich in keiner Weise angerührt. Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Englische (Standard- und Hip-Hop-Version), Deutsche, Italienische, Spanische (Standard- und andalusische/Flamenco-Version), Ukrainische, Ägyptisch-Arabische, Koreanische (K-Pop-Version) und Schottisch-Gälische übersetzt. Die Texte in all diesen Sprachen findest du auf der <a href="paroles.html">Liedtext-Seite</a>.</p>
+          <p class="note-text small text-body-secondary mb-0 d-none" data-lang="es">Una palabra rápida sobre cómo surgió esto: subí el original al plan gratuito de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> y le pedí que generara los estilos que escuchas arriba. No toqué el primer borrador de Suno en absoluto: lo que escuchas es exactamente lo que produjo. El texto original en francés fue traducido al inglés (versión estándar y versión hip-hop), alemán, italiano, español (versión estándar y versión andaluza/flamenco), ucraniano, árabe egipcio, coreano (versión K-pop) y gaélico escocés por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puedes leer las letras en todos estos idiomas en la <a href="paroles.html">página de las letras</a>.</p>
         </div>
-        <p data-lang="en" class="active">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not touch Suno's first draft in any way — what you hear is exactly what it produced. The original French text was translated into English (standard and hip-hop versions), German, Italian, Spanish (standard and Andalusian/flamenco versions), Ukrainian, Egyptian Arabic, Korean (K-pop version) and Scottish Gaelic by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.</p>
-        <p data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai absolument pas retouché le premier jet généré par Suno. Le texte original en français a été traduit en anglais (version standard et version hip-hop), allemand, italien, espagnol (version standard et version andalouse/flamenco), ukrainien, arabe (égyptien), coréen (version K-pop) et gaélique écossais par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Tu peux lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.</p>
-        <p data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho ritoccato in alcun modo la prima bozza generata da Suno. Il testo originale in francese è stato tradotto in inglese (versione standard e versione hip-hop), tedesco, italiano, spagnolo (versione standard e versione andalusa/flamenco), ucraino, arabo egiziano, coreano (versione K-pop) e gaelico scozzese da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puoi leggere il testo in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.</p>
-        <p data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Den ersten von Suno erzeugten Entwurf habe ich in keiner Weise angerührt. Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Englische (Standard- und Hip-Hop-Version), Deutsche, Italienische, Spanische (Standard- und andalusische/Flamenco-Version), Ukrainische, Ägyptisch-Arabische, Koreanische (K-Pop-Version) und Schottisch-Gälische übersetzt. Die Texte in all diesen Sprachen findest du auf der <a href="paroles.html">Liedtext-Seite</a>.</p>
-        <p data-lang="es">Una palabra rápida sobre cómo surgió esto: subí el original al plan gratuito de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> y le pedí que generara los estilos que escuchas arriba. No toqué el primer borrador de Suno en absoluto: lo que escuchas es exactamente lo que produjo. El texto original en francés fue traducido al inglés (versión estándar y versión hip-hop), alemán, italiano, español (versión estándar y versión andaluza/flamenco), ucraniano, árabe egipcio, coreano (versión K-pop) y gaélico escocés por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Puedes leer las letras en todos estos idiomas en la <a href="paroles.html">página de las letras</a>.</p>
       </div>
     </footer>
-  </main>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.setAttribute('data-bs-theme', 'dark');
+    }
+
+    const TRACKS = [
+      {
+            "key": "original",
+            "badge": null,
+            "src": "00_alerte-original.mp3",
+            "code": "fr",
+            "label": "FR",
+            "titles": {
+                  "en": "Original",
+                  "fr": "Original",
+                  "it": "Originale",
+                  "de": "Original",
+                  "es": "Original"
+            }
+      },
+      {
+            "key": "normal",
+            "badge": 1,
+            "src": "01_alerte_normal.mp3",
+            "code": "fr",
+            "label": "FR",
+            "titles": {
+                  "en": "Normal",
+                  "fr": "Normal",
+                  "it": "Normale",
+                  "de": "Normal",
+                  "es": "Normal"
+            }
+      },
+      {
+            "key": "jazzy-salsa",
+            "badge": 2,
+            "src": "02_alerte_jazzy_salsa.mp3",
+            "code": "fr",
+            "label": "FR",
+            "titles": {
+                  "en": "Jazzy Salsa",
+                  "fr": "Jazzy Salsa",
+                  "it": "Jazzy Salsa",
+                  "de": "Jazzy Salsa",
+                  "es": "Jazzy Salsa"
+            }
+      },
+      {
+            "key": "canadien",
+            "badge": 3,
+            "src": "03_alerte_canadien.mp3",
+            "code": "fr",
+            "label": "FR",
+            "titles": {
+                  "en": "Canadian",
+                  "fr": "Canadien",
+                  "it": "Canadese",
+                  "de": "Kanadisch",
+                  "es": "Canadiense"
+            }
+      },
+      {
+            "key": "italien",
+            "badge": 4,
+            "src": "04_alerte_italien.mp3",
+            "code": "it",
+            "label": "IT",
+            "titles": {
+                  "en": "Italian",
+                  "fr": "Italien",
+                  "it": "Italiano",
+                  "de": "Italienisch",
+                  "es": "Italiano"
+            }
+      },
+      {
+            "key": "bavarois",
+            "badge": 5,
+            "src": "05_alerte_bavarois.mp3",
+            "code": "de",
+            "label": "DE",
+            "titles": {
+                  "en": "Bavarian",
+                  "fr": "Bavarois",
+                  "it": "Bavarese",
+                  "de": "Bayerisch",
+                  "es": "Bávaro"
+            }
+      },
+      {
+            "key": "bollywood",
+            "badge": 6,
+            "src": "06_alerte_bollywood.mp3",
+            "code": "en",
+            "label": "EN",
+            "titles": {
+                  "en": "Bollywood",
+                  "fr": "Bollywood",
+                  "it": "Bollywood",
+                  "de": "Bollywood",
+                  "es": "Bollywood"
+            }
+      },
+      {
+            "key": "amerique-du-sud",
+            "badge": 7,
+            "src": "07_alerte_amerique_du_sud.mp3",
+            "code": "es",
+            "label": "ES",
+            "titles": {
+                  "en": "South America",
+                  "fr": "Amérique du Sud",
+                  "it": "Sud America",
+                  "de": "Südamerika",
+                  "es": "Sudamérica"
+            }
+      },
+      {
+            "key": "death-metal-ukrainien",
+            "badge": 8,
+            "src": "08_alerte_death_metal_ukrainien.mp3",
+            "code": "ua",
+            "label": "UA",
+            "titles": {
+                  "en": "Ukrainian Death Metal",
+                  "fr": "Death Metal Ukrainien",
+                  "it": "Death Metal Ucraino",
+                  "de": "Ukrainischer Death Metal",
+                  "es": "Death Metal Ucraniano"
+            }
+      },
+      {
+            "key": "east-coast-hip-hop",
+            "badge": 9,
+            "src": "09_alerte_east_coast_hip_hop.mp3",
+            "code": "en-hh",
+            "label": "EN",
+            "titles": {
+                  "en": "East Coast Hip Hop",
+                  "fr": "East Coast Hip Hop",
+                  "it": "East Coast Hip Hop",
+                  "de": "East Coast Hip Hop",
+                  "es": "East Coast Hip Hop"
+            }
+      },
+      {
+            "key": "egyptian",
+            "badge": 10,
+            "src": "10_alerte_egyptian.mp3",
+            "code": "ar",
+            "label": "AR",
+            "titles": {
+                  "en": "Egyptian",
+                  "fr": "Égyptien",
+                  "it": "Egiziano",
+                  "de": "Ägyptisch",
+                  "es": "Egipcio"
+            }
+      },
+      {
+            "key": "andre-rieu-meets-wagner",
+            "badge": 11,
+            "src": "11_alerte_andre_rieu_meets_wagner.mp3",
+            "code": "fr",
+            "label": "FR",
+            "titles": {
+                  "en": "André Rieu Meets Wagner",
+                  "fr": "André Rieu rencontre Wagner",
+                  "it": "André Rieu incontra Wagner",
+                  "de": "André Rieu trifft Wagner",
+                  "es": "André Rieu se encuentra con Wagner"
+            }
+      },
+      {
+            "key": "k-pop",
+            "badge": 12,
+            "src": "12_k-pop.mp3",
+            "code": "ko",
+            "label": "KO",
+            "titles": {
+                  "en": "K-pop",
+                  "fr": "K-pop",
+                  "it": "K-pop",
+                  "de": "K-pop",
+                  "es": "K-pop"
+            }
+      },
+      {
+            "key": "flamenco",
+            "badge": 13,
+            "src": "13_flamenco.mp3",
+            "code": "es-fl",
+            "label": "ES",
+            "titles": {
+                  "en": "Flamenco",
+                  "fr": "Flamenco",
+                  "it": "Flamenco",
+                  "de": "Flamenco",
+                  "es": "Flamenco"
+            }
+      },
+      {
+            "key": "scottish-gaelic",
+            "badge": 14,
+            "src": "14_scottish-gaelic.mp3",
+            "code": "gd",
+            "label": "GD",
+            "titles": {
+                  "en": "Scottish Gaelic",
+                  "fr": "Gaélique écossais",
+                  "it": "Gaelico scozzese",
+                  "de": "Schottisch-Gälisch",
+                  "es": "Gaélico escocés"
+            }
+      }
+];
+    const TRACKS_BY_KEY = Object.fromEntries(TRACKS.map(t => [t.key, t]));
+
+    function renderTracks() {
+      const template = document.getElementById('track-template');
+      const list = document.getElementById('trackList');
+      TRACKS.forEach(t => {
+        const node = template.content.cloneNode(true);
+        const li = node.querySelector('li');
+        li.dataset.key = t.key;
+
+        const badgeEl = node.querySelector('.track-badge');
+        if (t.badge != null) {
+          badgeEl.textContent = t.badge;
+        } else {
+          badgeEl.remove();
+        }
+
+        node.querySelector('.track-audio').src = t.src;
+
+        const link = node.querySelector('.track-lyrics-link');
+        link.href = 'paroles.html#' + t.code;
+        link.setAttribute('aria-label', 'Paroles (' + t.label + ')');
+        node.querySelector('.track-lyrics-label').textContent = t.label;
+
+        list.appendChild(node);
+      });
+    }
+
+    renderTracks();
+
     const langButtons = document.querySelectorAll('.note-langs button');
-    const langParagraphs = document.querySelectorAll('.note p[data-lang]');
+    const langParagraphs = document.querySelectorAll('.note-text[data-lang]');
     const availableLangs = ['en', 'fr', 'it', 'de', 'es'];
 
     const WHATSAPP_NUMBER = '393755042951';
@@ -706,22 +409,14 @@
       return 'alerte-rating-' + key;
     }
 
-    const TRACK_TITLES = {
-      'original': { en: 'Original', fr: 'Original', it: 'Originale', de: 'Original', es: 'Original' },
-      'normal': { en: 'Normal', fr: 'Normal', it: 'Normale', de: 'Normal', es: 'Normal' },
-      'jazzy-salsa': { en: 'Jazzy Salsa', fr: 'Jazzy Salsa', it: 'Jazzy Salsa', de: 'Jazzy Salsa', es: 'Jazzy Salsa' },
-      'canadien': { en: 'Canadian', fr: 'Canadien', it: 'Canadese', de: 'Kanadisch', es: 'Canadiense' },
-      'italien': { en: 'Italian', fr: 'Italien', it: 'Italiano', de: 'Italienisch', es: 'Italiano' },
-      'bavarois': { en: 'Bavarian', fr: 'Bavarois', it: 'Bavarese', de: 'Bayerisch', es: 'Bávaro' },
-      'bollywood': { en: 'Bollywood', fr: 'Bollywood', it: 'Bollywood', de: 'Bollywood', es: 'Bollywood' },
-      'amerique-du-sud': { en: 'South America', fr: 'Amérique du Sud', it: 'Sud America', de: 'Südamerika', es: 'Sudamérica' },
-      'death-metal-ukrainien': { en: 'Ukrainian Death Metal', fr: 'Death Metal Ukrainien', it: 'Death Metal Ucraino', de: 'Ukrainischer Death Metal', es: 'Death Metal Ucraniano' },
-      'east-coast-hip-hop': { en: 'East Coast Hip Hop', fr: 'East Coast Hip Hop', it: 'East Coast Hip Hop', de: 'East Coast Hip Hop', es: 'East Coast Hip Hop' },
-      'egyptian': { en: 'Egyptian', fr: 'Égyptien', it: 'Egiziano', de: 'Ägyptisch', es: 'Egipcio' },
-      'andre-rieu-meets-wagner': { en: 'André Rieu Meets Wagner', fr: 'André Rieu rencontre Wagner', it: 'André Rieu incontra Wagner', de: 'André Rieu trifft Wagner', es: 'André Rieu se encuentra con Wagner' },
-      'k-pop': { en: 'K-pop', fr: 'K-pop', it: 'K-pop', de: 'K-pop', es: 'K-pop' },
-      'flamenco': { en: 'Flamenco', fr: 'Flamenco', it: 'Flamenco', de: 'Flamenco', es: 'Flamenco' },
-      'scottish-gaelic': { en: 'Scottish Gaelic', fr: 'Gaélique écossais', it: 'Gaelico scozzese', de: 'Schottisch-Gälisch', es: 'Gaélico escocés' }
+    let STYLE_DESCRIPTIONS = {};
+
+    const styleSummaryByLang = {
+      en: 'Suno style',
+      fr: 'Style Suno',
+      it: 'Stile Suno',
+      de: 'Suno-Stil',
+      es: 'Estilo Suno'
     };
 
     const introByLang = {
@@ -750,7 +445,7 @@
 
     function updateSendAllButton() {
       const lines = [];
-      document.querySelectorAll('li.track').forEach(track => {
+      document.querySelectorAll('li[data-key]').forEach(track => {
         const value = ratings[track.dataset.key];
         if (value > 0) {
           const title = track.querySelector('h2').textContent.trim();
@@ -760,31 +455,83 @@
       });
 
       if (lines.length === 0) {
+        sendAllBtn.classList.add('disabled');
         sendAllBtn.setAttribute('aria-disabled', 'true');
+        sendAllBtn.setAttribute('tabindex', '-1');
         sendAllBtn.href = '#';
         return;
       }
 
       const message = `${introByLang[currentLang]}\n${lines.join('\n')}`;
       sendAllBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      sendAllBtn.classList.remove('disabled');
       sendAllBtn.removeAttribute('aria-disabled');
+      sendAllBtn.removeAttribute('tabindex');
     }
 
     sendAllBtn.addEventListener('click', e => {
-      if (sendAllBtn.getAttribute('aria-disabled') === 'true') e.preventDefault();
+      if (sendAllBtn.classList.contains('disabled')) e.preventDefault();
     });
+
+    function applyStyleDescriptions() {
+      document.querySelectorAll('li[data-key]').forEach(track => {
+        const desc = STYLE_DESCRIPTIONS[track.dataset.key];
+        if (!desc) return;
+
+        const cardBody = track.querySelector('.card-body');
+        const playerRow = track.querySelector('.player-row');
+        let collapseEl = track.querySelector('.style-collapse');
+        let toggleBtn = track.querySelector('.chevron-btn');
+
+        if (!collapseEl) {
+          const collapseId = 'style-collapse-' + track.dataset.key;
+
+          toggleBtn = document.createElement('button');
+          toggleBtn.type = 'button';
+          toggleBtn.className = 'chevron-btn btn btn-sm btn-link ms-auto p-0';
+          toggleBtn.setAttribute('data-bs-toggle', 'collapse');
+          toggleBtn.setAttribute('data-bs-target', '#' + collapseId);
+          toggleBtn.setAttribute('aria-expanded', 'false');
+          toggleBtn.setAttribute('aria-controls', collapseId);
+          toggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+          playerRow.appendChild(toggleBtn);
+
+          collapseEl = document.createElement('div');
+          collapseEl.className = 'collapse style-collapse mt-2';
+          collapseEl.id = collapseId;
+
+          const text = document.createElement('p');
+          text.className = 'style-text small text-body-secondary mb-0';
+          collapseEl.appendChild(text);
+
+          cardBody.appendChild(collapseEl);
+        }
+
+        toggleBtn.setAttribute('aria-label', styleSummaryByLang[currentLang]);
+        collapseEl.querySelector('.style-text').textContent = desc[currentLang] || desc.fr || desc.en;
+      });
+    }
+
+    fetch('alerte-styles.json')
+      .then(res => (res.ok ? res.json() : {}))
+      .then(data => {
+        STYLE_DESCRIPTIONS = data;
+        applyStyleDescriptions();
+      })
+      .catch(() => { /* style descriptions are optional */ });
 
     function setLang(lang) {
       currentLang = lang;
       langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-      langParagraphs.forEach(p => p.classList.toggle('active', p.dataset.lang === lang));
+      langParagraphs.forEach(p => p.classList.toggle('d-none', p.dataset.lang !== lang));
       sendAllBtn.textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
       document.getElementById('subtitle').textContent = subtitleByLang[lang];
-      document.querySelectorAll('li.track').forEach(track => {
-        const titles = TRACK_TITLES[track.dataset.key];
-        if (titles) track.querySelector('h2').textContent = titles[lang] || titles.fr;
+      document.querySelectorAll('li[data-key]').forEach(track => {
+        const t = TRACKS_BY_KEY[track.dataset.key];
+        if (t) track.querySelector('h2').textContent = t.titles[lang] || t.titles.fr;
       });
+      applyStyleDescriptions();
       updateSendAllButton();
     }
 
@@ -796,7 +543,7 @@
     setLang(availableLangs.includes(browserLang) ? browserLang : 'en');
 
     clearAllBtn.addEventListener('click', () => {
-      document.querySelectorAll('li.track').forEach(track => {
+      document.querySelectorAll('li[data-key]').forEach(track => {
         const key = track.dataset.key;
         delete ratings[key];
         try { localStorage.removeItem(storageKey(key)); } catch (e) { /* ignore */ }
@@ -805,7 +552,7 @@
       updateSendAllButton();
     });
 
-    document.querySelectorAll('li.track').forEach(track => {
+    document.querySelectorAll('li[data-key]').forEach(track => {
       const key = track.dataset.key;
       const starButtons = track.querySelectorAll('.stars button');
       const starsContainer = track.querySelector('.stars');
