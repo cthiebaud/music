@@ -363,6 +363,20 @@
                   "de": "Schottisch-Gälisch",
                   "es": "Gaélico escocés"
             }
+      },
+      {
+            "key": "guess-what",
+            "badge": null,
+            "src": "guess-what.mp3",
+            "code": null,
+            "label": null,
+            "titles": {
+                  "en": "Guess What?",
+                  "fr": "Devine ?",
+                  "it": "Indovina?",
+                  "de": "Rate mal?",
+                  "es": "¿Adivina?"
+            }
       }
 ];
     const TRACKS_BY_KEY = Object.fromEntries(TRACKS.map(t => [t.key, t]));
@@ -385,9 +399,13 @@
         node.querySelector('.track-audio').src = t.src;
 
         const link = node.querySelector('.track-lyrics-link');
-        link.href = 'paroles.html#' + t.code;
-        link.setAttribute('aria-label', 'Paroles (' + t.label + ')');
-        node.querySelector('.track-lyrics-label').textContent = t.label;
+        if (t.code) {
+          link.href = 'paroles.html#' + t.code;
+          link.setAttribute('aria-label', 'Paroles (' + t.label + ')');
+          node.querySelector('.track-lyrics-label').textContent = t.label;
+        } else {
+          link.remove();
+        }
 
         list.appendChild(node);
       });
