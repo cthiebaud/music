@@ -274,7 +274,7 @@
 <body>
   <main>
     <h1>Alerte</h1>
-    <p class="subtitle" id="subtitle">Treize nuances d'Alerte</p>
+    <p class="subtitle" id="subtitle">Quatorze nuances d'Alerte</p>
 
     <ul class="tracks">
       <li class="track" data-key="original">
@@ -640,6 +640,32 @@
           </div>
         </div>
       </li>
+      <li class="track" data-key="scottish-gaelic">
+        <div class="track-title">
+          <div class="track-title-text">
+            <span class="nuance-badge">14</span>
+            <h2>Scottish Gaelic</h2>
+          </div>
+          <a class="lyrics-link" href="paroles.html#gd" target="_blank" rel="noopener" aria-label="Paroles (GD)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="16" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>GD</span>
+          </a>
+        </div>
+        <div class="player-row">
+          <audio controls preload="none" src="14_scottish-gaelic.mp3"></audio>
+          <div class="stars" role="radiogroup" aria-label="Note">
+            <button type="button" data-value="1" aria-label="1 étoile">★</button>
+            <button type="button" data-value="2" aria-label="2 étoiles">★</button>
+            <button type="button" data-value="3" aria-label="3 étoiles">★</button>
+            <button type="button" data-value="4" aria-label="4 étoiles">★</button>
+            <button type="button" data-value="5" aria-label="5 étoiles">★</button>
+          </div>
+        </div>
+      </li>
     </ul>
 
     <div class="actions">
@@ -694,7 +720,8 @@
       'egyptian': { en: 'Egyptian', fr: 'Égyptien', it: 'Egiziano', de: 'Ägyptisch', es: 'Egipcio' },
       'andre-rieu-meets-wagner': { en: 'André Rieu Meets Wagner', fr: 'André Rieu rencontre Wagner', it: 'André Rieu incontra Wagner', de: 'André Rieu trifft Wagner', es: 'André Rieu se encuentra con Wagner' },
       'k-pop': { en: 'K-pop', fr: 'K-pop', it: 'K-pop', de: 'K-pop', es: 'K-pop' },
-      'flamenco': { en: 'Flamenco', fr: 'Flamenco', it: 'Flamenco', de: 'Flamenco', es: 'Flamenco' }
+      'flamenco': { en: 'Flamenco', fr: 'Flamenco', it: 'Flamenco', de: 'Flamenco', es: 'Flamenco' },
+      'scottish-gaelic': { en: 'Scottish Gaelic', fr: 'Gaélique écossais', it: 'Gaelico scozzese', de: 'Schottisch-Gälisch', es: 'Gaélico escocés' }
     };
 
     const introByLang = {
@@ -714,11 +741,11 @@
     };
 
     const subtitleByLang = {
-      en: 'Thirteen Shades of Alerte',
-      fr: "Treize nuances d'Alerte",
-      it: 'Tredici sfumature di Alerte',
-      de: 'Dreizehn Schattierungen von Alerte',
-      es: 'Trece sombras de Alerte'
+      en: 'Fourteen Shades of Alerte',
+      fr: "Quatorze nuances d'Alerte",
+      it: 'Quattordici sfumature di Alerte',
+      de: 'Vierzehn Schattierungen von Alerte',
+      es: 'Catorce sombras de Alerte'
     };
 
     function updateSendAllButton() {

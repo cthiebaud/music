@@ -733,3 +733,84 @@ Se fugó esta mañana
 **[Outro: guitar, final palmas]**
 
 ---
+
+## Gàidhlig
+
+**[Intro: 8 bars, bagpipe drones and clàrsach]**
+
+**[Verse 1]**  
+Tha a h-uile duine a' bruidhinn air  
+Air an rèidio, air an telebhisean  
+Tha an sluagh fo eagal, na dorsan dùinte  
+Chan eil duine air na sràidean
+
+**[Chorus]**  
+[pipes and drums]  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Nàmhaid a' phobaill, àireamh a h-aon  
+Theich e madainn an-diugh
+
+**[Verse 2]**  
+Tha e am falach an àiteigin  
+Deiseil gu losgadh aig a' chiad chaismeachd  
+Tha na poilis ga shireadh anns gach àite  
+Tha a dhealbh anns gach pàipear-naidheachd
+
+**[Chorus]**  
+[pipes and drums]  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Nàmhaid a' phobaill, àireamh a h-aon  
+Theich e madainn an-diugh
+
+**[Instrumental: bagpipes solo]**
+
+**[Verse 3]**  
+Tha e às a chiall, gu tur air chuthach  
+Duine cunnartach, gun tròcair  
+Cò aig tha fios dè nì e a-nis  
+A dhaoine còire, dèanaibh ùrnaigh
+
+**[Chorus]**  
+[pipes and drums]  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Nàmhaid a' phobaill, àireamh a h-aon  
+Theich e madainn an-diugh
+
+**[Verse 4]**  
+[voice and drones only, slow]  
+Seachd bliadhna sa phrìosan  
+Airson eucoir nach do rinn e  
+Thuirt e: nuair a gheibh mi mach  
+Marbhaidh mi gach duine a dhìt mi  
+An diùraidh, na fianaisean, na britheamhan  
+Cha teich fiù 's aon dhiubh
+
+**[Chorus]**  
+[full pipe band, powerful]  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Caismeachd  
+Nàmhaid a' phobaill, àireamh a h-aon  
+Theich e madainn an-diugh
+
+**[Outro: bagpipe drones fade]**
+
+---
