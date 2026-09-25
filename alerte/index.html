@@ -413,6 +413,14 @@
 
     renderTracks();
 
+    document.querySelectorAll('audio').forEach(audio => {
+      audio.addEventListener('play', () => {
+        document.querySelectorAll('audio').forEach(other => {
+          if (other !== audio && !other.paused) other.pause();
+        });
+      });
+    });
+
     const langButtons = document.querySelectorAll('.note-langs button');
     const langParagraphs = document.querySelectorAll('.note-text[data-lang]');
     const availableLangs = ['en', 'fr', 'it', 'de', 'es'];
@@ -517,6 +525,7 @@
           collapseEl = document.createElement('div');
           collapseEl.className = 'collapse style-collapse mt-2';
           collapseEl.id = collapseId;
+          collapseEl.setAttribute('data-bs-parent', '#trackList');
 
           const text = document.createElement('p');
           text.className = 'style-text small text-body-secondary mb-0';
