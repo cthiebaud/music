@@ -104,7 +104,7 @@
                 <h2 class="h6 mb-0 track-title"></h2>
               </div>
               <a class="lyrics-link d-inline-flex align-items-center gap-1 small text-decoration-none track-lyrics-link"
-                target="alerte-paroles" rel="noopener">
+                target="alerte-paroles">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <line x1="4" y1="6" x2="20" y2="6"></line>
                   <line x1="4" y1="12" x2="16" y2="12"></line>
@@ -156,6 +156,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="alerte-shared.js"></script>
   <script>
+    // Name this tab so a link back from paroles.html (target="alerte-index")
+    // reuses it instead of opening a new one, however this tab was opened.
+    window.name = 'alerte-index';
+
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.setAttribute('data-bs-theme', 'dark');
     }
@@ -410,6 +414,10 @@
           link.href = 'paroles.html#' + t.code;
           link.setAttribute('aria-label', 'Paroles (' + t.label + ')');
           node.querySelector('.track-lyrics-label').textContent = t.label;
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            openOrFocusNamed(link.href, 'alerte-paroles');
+          });
         } else {
           link.remove();
         }
@@ -419,6 +427,11 @@
     }
 
     renderTracks();
+
+    document.getElementById('pageNavLink').addEventListener('click', e => {
+      e.preventDefault();
+      openOrFocusNamed(e.currentTarget.href, 'alerte-paroles');
+    });
 
     document.querySelectorAll('audio').forEach(audio => {
       audio.addEventListener('play', () => {

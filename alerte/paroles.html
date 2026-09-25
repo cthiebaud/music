@@ -67,6 +67,10 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@18.0.14/lib/marked.umd.min.js"></script>
   <script src="alerte-shared.js"></script>
   <script>
+    // Name this tab so a link back from index.html (target="alerte-paroles")
+    // reuses it instead of opening a new one, however this tab was opened.
+    window.name = 'alerte-paroles';
+
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.setAttribute('data-bs-theme', 'dark');
     }
@@ -74,6 +78,11 @@
     const headerLang = detectAlerteLang();
     document.getElementById('subtitle').textContent = ALERTE_SUBTITLE_BY_LANG[headerLang];
     document.getElementById('pageNavLink').textContent = ALERTE_NAV_LABELS.music[headerLang];
+
+    document.getElementById('pageNavLink').addEventListener('click', e => {
+      e.preventDefault();
+      openOrFocusNamed(e.currentTarget.href, 'alerte-index');
+    });
 
     function linesFromInline(inline, startIndex) {
       const lines = [];
