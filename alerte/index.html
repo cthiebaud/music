@@ -30,6 +30,7 @@
       opacity: 0.75;
     }
 
+
     .lyrics-link:hover {
       opacity: 1;
     }
@@ -83,8 +84,13 @@
 
 <body data-bs-theme="light">
   <div class="container" style="max-width: 640px;">
-    <h1 class="h3 mb-1">Alerte</h1>
-    <p class="text-body-secondary mb-4" id="subtitle">Quatorze nuances d'Alerte</p>
+    <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
+      <div class="d-flex flex-column">
+        <h1 class="h3 mb-0">Alerte</h1>
+        <p class="text-body-secondary mb-0" id="subtitle">Quatorze nuances d'Alerte</p>
+      </div>
+      <a href="paroles.html" target="alerte-paroles" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Paroles</a>
+    </div>
 
     <ul class="list-unstyled vstack gap-3 mb-4" id="trackList"></ul>
 
@@ -98,7 +104,7 @@
                 <h2 class="h6 mb-0 track-title"></h2>
               </div>
               <a class="lyrics-link d-inline-flex align-items-center gap-1 small text-decoration-none track-lyrics-link"
-                target="_blank" rel="noopener">
+                target="alerte-paroles" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <line x1="4" y1="6" x2="20" y2="6"></line>
                   <line x1="4" y1="12" x2="16" y2="12"></line>
@@ -148,6 +154,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="alerte-shared.js"></script>
   <script>
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.setAttribute('data-bs-theme', 'dark');
@@ -423,7 +430,7 @@
 
     const langButtons = document.querySelectorAll('.note-langs button');
     const langParagraphs = document.querySelectorAll('.note-text[data-lang]');
-    const availableLangs = ['en', 'fr', 'it', 'de', 'es'];
+    const availableLangs = ALERTE_AVAILABLE_LANGS;
 
     const WHATSAPP_NUMBER = '393755042951';
     const sendAllBtn = document.getElementById('sendAll');
@@ -461,13 +468,7 @@
       es: { send: 'Enviar por WhatsApp', clear: 'Borrar mis valoraciones' }
     };
 
-    const subtitleByLang = {
-      en: 'Fourteen Shades of Alerte',
-      fr: "Quatorze nuances d'Alerte",
-      it: 'Quattordici sfumature di Alerte',
-      de: 'Vierzehn Schattierungen von Alerte',
-      es: 'Catorce sombras de Alerte'
-    };
+    const subtitleByLang = ALERTE_SUBTITLE_BY_LANG;
 
     function updateSendAllButton() {
       const lines = [];
@@ -554,6 +555,7 @@
       sendAllBtn.textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
       document.getElementById('subtitle').textContent = subtitleByLang[lang];
+      document.getElementById('pageNavLink').textContent = ALERTE_NAV_LABELS.lyrics[lang];
       document.querySelectorAll('li[data-key]').forEach(track => {
         const t = TRACKS_BY_KEY[track.dataset.key];
         if (t) track.querySelector('h2').textContent = t.titles[lang] || t.titles.fr;
@@ -566,8 +568,7 @@
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
 
-    const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
-    setLang(availableLangs.includes(browserLang) ? browserLang : 'en');
+    setLang(detectAlerteLang());
 
     clearAllBtn.addEventListener('click', () => {
       document.querySelectorAll('li[data-key]').forEach(track => {
