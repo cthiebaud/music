@@ -814,3 +814,87 @@ Theich e madainn an-diugh
 **[Outro: bagpipe drones fade]**
 
 ---
+
+## Português (Brasil)
+
+**[Intro: 8 bars, nylon guitar and tense strings]**
+
+**[Verse 1]**  
+[cool detached male vocal]  
+Todo mundo só fala disso  
+No rádio, na televisão  
+Que pânico, o povo se tranca  
+Nas ruas, nem uma alma
+
+**[Chorus]**  
+[solo female vocal, single voice, cool and tense, upright bass holds a sustained E pedal point throughout the chorus]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Verse 2]**  
+[female vocal, restrained tension]  
+Se esconde em algum canto da terra  
+Pronto pra atirar ao menor alerta  
+A polícia vasculha a cidade  
+A foto dele em todo jornal
+
+**[Chorus]**  
+[solo female vocal, single voice, cool and tense, upright bass holds a sustained E pedal point throughout the chorus]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Instrumental: tense strings and flute, nylon guitar]**
+
+**[Verse 3]**  
+[cool detached male vocal]  
+É um louco, um desvairado  
+Um psicopata, um perigo à solta  
+Quem sabe agora o que ele vai fazer  
+Gente boa, vamos rezar
+
+**[Chorus]**  
+[solo female vocal, single voice, cool and tense, upright bass holds a sustained E pedal point throughout the chorus]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Verse 4]**  
+[female vocal, urgent and haunted, still restrained]  
+Passou sete anos na prisão  
+Por um crime que não cometeu  
+Ele disse: quando eu sair  
+Vou matar quem me condenou  
+Jurados, testemunhas, juízes  
+Nem um só vai escapar
+
+**[Chorus]**  
+[solo female vocal, single voice, cool and tense, upright bass holds a sustained E pedal point throughout the chorus]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Outro: strings and guitar fade]**
+
+---

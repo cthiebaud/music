@@ -4,11 +4,11 @@
 const ALERTE_AVAILABLE_LANGS = ['en', 'fr', 'it', 'de', 'es'];
 
 const ALERTE_SUBTITLE_BY_LANG = {
-  en: 'Fourteen Shades of Alerte',
-  fr: "Quatorze nuances d'Alerte",
-  it: 'Quattordici sfumature di Alerte',
-  de: 'Vierzehn Schattierungen von Alerte',
-  es: 'Catorce sombras de Alerte'
+  en: 'Eighteen Shades of Alerte',
+  fr: "Dix-huit nuances d'Alerte",
+  it: 'Diciotto sfumature di Alerte',
+  de: 'Achtzehn Schattierungen von Alerte',
+  es: 'Dieciocho sombras de Alerte'
 };
 
 const ALERTE_NAV_LABELS = {
