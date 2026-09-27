@@ -63,6 +63,16 @@
       color: var(--bs-secondary-color);
     }
 
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      color: var(--bs-secondary-color);
+    }
+
+    .download-btn:hover {
+      color: var(--bs-body-color);
+    }
+
     .chevron-btn svg {
       transition: transform 0.15s ease;
     }
@@ -103,15 +113,24 @@
                 <span class="badge rounded-pill text-bg-light border track-badge"></span>
                 <h2 class="h6 mb-0 track-title"></h2>
               </div>
-              <a class="lyrics-link d-inline-flex align-items-center gap-1 small text-decoration-none track-lyrics-link"
-                target="alerte-paroles">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                  <line x1="4" y1="6" x2="20" y2="6"></line>
-                  <line x1="4" y1="12" x2="16" y2="12"></line>
-                  <line x1="4" y1="18" x2="20" y2="18"></line>
-                </svg>
-                <span class="track-lyrics-label"></span>
-              </a>
+              <div class="d-flex align-items-center gap-2">
+                <a class="lyrics-link d-inline-flex align-items-center gap-1 small text-decoration-none track-lyrics-link"
+                  target="alerte-paroles">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="12" x2="16" y2="12"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                  </svg>
+                  <span class="track-lyrics-label"></span>
+                </a>
+                <a class="download-btn track-download" download title="Télécharger" aria-label="Télécharger">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                    <path d="M12 3v12"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <path d="M5 19h14"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="player-row d-flex align-items-center gap-2 flex-wrap">
               <audio controls preload="none" class="flex-grow-1 track-audio" style="min-width: 160px; height: 36px;"></audio>
@@ -465,6 +484,7 @@
         }
 
         node.querySelector('.track-audio').src = t.src;
+        node.querySelector('.track-download').href = t.src;
 
         if (t.rateable === false) {
           node.querySelector('.stars').remove();
