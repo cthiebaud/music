@@ -2,6 +2,15 @@
 <html lang="fr">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDQNBYVEQS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TDQNBYVEQS');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alerte — variations</title>
@@ -457,6 +466,7 @@
             "code": null,
             "label": null,
             "rateable": false,
+            "downloadable": false,
             "titles": {
                   "en": "Guess What?",
                   "fr": "Devine ?",
@@ -484,7 +494,21 @@
         }
 
         node.querySelector('.track-audio').src = t.src;
-        node.querySelector('.track-download').href = t.src;
+
+        const downloadLink = node.querySelector('.track-download');
+        if (t.downloadable === false) {
+          downloadLink.remove();
+        } else {
+          downloadLink.href = t.src;
+          downloadLink.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'track_download', {
+                track_key: t.key,
+                track_title: t.titles.en
+              });
+            }
+          });
+        }
 
         if (t.rateable === false) {
           node.querySelector('.stars').remove();
