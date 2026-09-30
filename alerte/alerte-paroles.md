@@ -420,7 +420,7 @@ Se fugó esta mañana
 
 ---
 
-## English (hip-hop version)
+## English (hip-hop)
 
 **[Verse 1]**  
 Yo... y'all heard?  
@@ -566,7 +566,7 @@ Broke outta the pen this mornin'
 
 ---
 
-## 한국어 (K-pop 버전)
+## 한국어 (K-pop)
 
 **[Intro: 4 bars, synth and siren]**
 
@@ -1146,7 +1146,7 @@ Entfloh er im Morgengraun
 
 ---
 
-## English (Delta blues version)
+## English (Delta blues)
 
 **[Intro: 1 bar, bottleneck slide lick]**
 
