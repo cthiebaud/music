@@ -979,3 +979,269 @@ Fugiu hoje de manhã
 **[Outro: guitarra portuguesa, final chord]**
 
 ---
+
+## Latina
+
+**[Intro: hurdy-gurdy drone alone, 2 bars]**
+
+**[Verse 1]**  
+[schola in unison, hurdy-gurdy drone]  
+Omnes de hoc solo loquuntur  
+Radiophonia, televisio  
+Pavor ingens, portas claudunt  
+In viis nulla anima
+
+**[Chorus]**  
+[solo cantor over hurdy-gurdy drone]  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Hostis publicus primus  
+Hodie mane fugit
+
+**[Verse 2]**  
+[schola in unison, hurdy-gurdy drone]  
+Latet alicubi in terra  
+Paratus ferire ad primum signum  
+Custodes eum ubique quaerunt  
+Vultus eius in actis diurnis
+
+**[Chorus]**  
+[solo cantor over hurdy-gurdy drone]  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Hostis publicus primus  
+Hodie mane fugit
+
+**[Verse 3]**  
+[schola in unison, hurdy-gurdy drone]  
+Insanus est, mente captus  
+Furiosus et periculosus  
+Quis scit quid nunc faciet  
+Boni homines, orate
+
+**[Chorus]**  
+[solo cantor over hurdy-gurdy drone]  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Hostis publicus primus  
+Hodie mane fugit
+
+**[Verse 4]**  
+[solo cantor, slow, recitation tone, hurdy-gurdy drone]  
+Septem annos in carcere  
+Pro scelere non commisso  
+Dixit: cum exiero  
+Occidam omnes qui me damnaverunt  
+Iudices, testes, iurati  
+Nemo eorum evadet
+
+**[Chorus]**  
+[schola in unison, hurdy-gurdy drone]  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Cavete  
+Hostis publicus primus  
+Hodie mane fugit
+
+**[Outro: Amen, schola in unison, drone fades]**
+
+---
+
+## Deutsch (Sprechgesang)
+
+**[Intro: single soft atonal piano chord]**
+
+**[Verse 1]**  
+[Sprechgesang, expressive]  
+Alle reden nur noch davon  
+Im Radio und im Fernsehn  
+Panik, die Leute verrammeln sich  
+Auf den Straßen keine Seele
+
+**[Chorus]**  
+[Sprechgesang, insistent, chamber ensemble]  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Der große Staatsfeind Nummer eins  
+Entfloh er im Morgengraun
+
+**[Verse 2]**  
+[Sprechgesang, expressive]  
+Er verkriecht sich irgendwo auf Erden  
+Bereit zu schießen beim kleinsten Alarm  
+Die Polizei sucht ihn überall  
+Sein Foto ist in jeder Zeitung
+
+**[Chorus]**  
+[Sprechgesang, insistent, chamber ensemble]  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Der große Staatsfeind Nummer eins  
+Entfloh er im Morgengraun
+
+**[Instrumental: chamber ensemble, sparse expressionist counterpoint]**
+
+**[Verse 3]**  
+[Sprechgesang, restless, uneasy]  
+Er ist irre, ein Verrückter  
+Ein Psychopath, ein gefährlicher Irrer  
+Wer weiß schon, was er jetzt tun wird  
+Ihr guten Leute, betet jetzt
+
+**[Chorus]**  
+[Sprechgesang, insistent, chamber ensemble]  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Der große Staatsfeind Nummer eins  
+Entfloh er im Morgengraun
+
+**[Verse 4]**  
+[spoken, almost toneless, piano and cello only]  
+Sieben Jahre im Gefängnis  
+Für eine Tat, die er nie beging  
+Er sagte: Komm ich einmal raus  
+Bring ich alle um, die mich verurteilt haben  
+Die Geschworenen, Zeugen, Richter  
+Keiner von ihnen kommt davon
+
+**[Chorus]**  
+[Sprechgesang, full chamber ensemble, intense]  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Alarm  
+Der große Staatsfeind Nummer eins  
+Entfloh er im Morgengraun
+
+**[Outro: single high flute note, silence]**
+
+---
+
+## English (Delta blues version)
+
+**[Intro: 1 bar, bottleneck slide lick]**
+
+**[Verse 1]**  
+[deep earthy female blues vocal]  
+Well, everybody's talkin' 'bout it  
+On the radio, on the TV  
+Folks done panicked, lockin' up their doors  
+Ain't a soul out on the street
+
+**[Chorus]**  
+[solo single deep male blues vocal, one note, slide guitar answers]  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert
+
+**[Post-Chorus]**  
+[deep earthy female blues vocal]  
+Public enemy number one  
+Busted outta jail this mornin'
+
+**[Verse 2]**  
+[deep earthy female blues vocal]  
+He's hidin' somewhere down on this earth  
+Finger on the trigger at the first alert  
+Police lookin' high and low  
+His face in every paper, Lord
+
+**[Chorus]**  
+[solo single deep male blues vocal, one note, slide guitar answers]  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert
+
+**[Post-Chorus]**  
+[deep earthy female blues vocal]  
+Public enemy number one  
+Busted outta jail this mornin'
+
+**[Instrumental: bottleneck slide guitar solo, foot stomping]**
+
+**[Verse 3]**  
+[deep earthy female blues vocal]  
+He's a crazy man, done lost his mind  
+Psycho man, the dangerous kind  
+Lord knows what he's gonna do  
+Good people, y'all better pray
+
+**[Chorus]**  
+[solo single deep male blues vocal, one note, slide guitar answers]  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert
+
+**[Post-Chorus]**  
+[deep earthy female blues vocal]  
+Public enemy number one  
+Busted outta jail this mornin'
+
+**[Verse 4]**  
+[deep earthy female blues vocal]  
+He done seven years in the penitentiary  
+For a crime he ain't never done  
+He said:
+
+**[Verse 5]**  
+[solo deep male blues vocal, nearly spoken, over sparse slide notes]  
+When I get out of here  
+I'm gonna kill every one that sent me down  
+The jury, the witness, and the judge  
+Ain't a one of 'em gon' get away
+
+**[Chorus]**  
+[solo deep male blues vocal, slide guitar and foot stomping]  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert  
+Alert
+
+**[Post-Chorus]**  
+[deep earthy female blues vocal]  
+Public enemy number one  
+Busted outta jail this mornin'
+
+**[Outro: slide guitar, final moan]**
+
+---

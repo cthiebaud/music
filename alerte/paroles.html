@@ -47,7 +47,7 @@
     <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
       <div class="d-flex flex-column">
         <h1 class="h3 mb-0">Alerte</h1>
-        <p class="text-body-secondary mb-0" id="subtitle">Nineteen Shades of Alerte</p>
+        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Two Shades of Alerte</p>
       </div>
       <div class="d-flex flex-column align-items-end gap-2">
         <a href="index.html" target="alerte-index" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Musique</a>
@@ -171,7 +171,10 @@
       'Español (Andalucía)': 'es-fl',
       'Gàidhlig': 'gd',
       'Português (Brasil)': 'pt-br',
-      'Português (Portugal)': 'pt-pt'
+      'Português (Portugal)': 'pt-pt',
+      'Latina': 'la',
+      'Deutsch (Sprechgesang)': 'de-sg',
+      'English (Delta blues version)': 'en-blues'
     };
 
     function getLangCode(title, index) {
@@ -235,7 +238,7 @@
 
         section.blocks.forEach(block => {
           const label = block.label.trim();
-          const isVerseOrChorus = /^verse\b/i.test(label) || /^(chorus|hook)$/i.test(label);
+          const isVerseOrChorus = /verse/i.test(label) || /chorus/i.test(label) || /^hook$/i.test(label);
           if (!isVerseOrChorus) return; // skip Intro/Instrumental/Outro/Dance break/etc.
 
           let lines = block.lines;
