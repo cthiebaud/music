@@ -219,6 +219,7 @@
         item.addEventListener('click', e => {
           e.preventDefault();
           activatePane(id);
+          history.replaceState(null, '', '#' + id);
         });
 
         li.appendChild(item);
@@ -232,16 +233,25 @@
         if (section.rtl) pane.setAttribute('dir', 'rtl');
 
         section.blocks.forEach(block => {
+          const label = block.label.trim();
+          const isVerseOrChorus = /^verse\b/i.test(label) || /^(chorus|hook)$/i.test(label);
+          if (!isVerseOrChorus) return; // skip Intro/Instrumental/Outro/Dance break/etc.
+
+          let lines = block.lines;
+          if (lines.length && /^\[.+\]$/.test(lines[0].trim())) {
+            lines = lines.slice(1); // drop the leading Suno vocal/style direction
+          }
+
           const verse = document.createElement('div');
           verse.className = 'lyrics-verse';
 
-          const label = document.createElement('div');
-          label.className = 'lyrics-label text-uppercase text-body-secondary fw-semibold mb-1';
-          label.textContent = block.label;
+          const labelEl = document.createElement('div');
+          labelEl.className = 'lyrics-label text-uppercase text-body-secondary fw-semibold mb-1';
+          labelEl.textContent = block.label;
 
           const text = document.createElement('p');
           text.className = 'lyrics-text';
-          const collapsed = collapseRepeatedLines(block.lines);
+          const collapsed = collapseRepeatedLines(lines);
           collapsed.forEach((line, idx) => {
             text.appendChild(document.createTextNode(line.text));
             if (line.count) {
@@ -253,7 +263,7 @@
             if (idx < collapsed.length - 1) text.appendChild(document.createElement('br'));
           });
 
-          verse.appendChild(label);
+          verse.appendChild(labelEl);
           verse.appendChild(text);
           pane.appendChild(verse);
         });
