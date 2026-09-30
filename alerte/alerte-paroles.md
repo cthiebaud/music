@@ -898,3 +898,84 @@ Fugiu hoje de manhã
 **[Outro: strings and guitar fade]**
 
 ---
+
+## Português (Portugal)
+
+**[Intro: 2 bars, classical guitar vamping on the tonic chord only]**
+
+**[Verse 1]**  
+Toda a gente só fala disso  
+Na rádio, na televisão  
+Que pânico, as pessoas trancam-se  
+Nas ruas, nem vivalma
+
+**[Chorus]**  
+[solo voice, guitarra portuguesa countermelody]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Verse 2]**  
+Esconde-se algures na terra  
+Pronto a disparar ao menor alerta  
+A polícia anda-lhe no encalço  
+A cara dele em todos os jornais
+
+**[Chorus]**  
+[solo voice, guitarra portuguesa countermelody]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Instrumental: guitarra portuguesa solo]**
+
+**[Verse 3]**  
+É um louco, um desvairado  
+Um psicopata, um perigo à solta  
+Quem sabe agora o que irá fazer  
+Boa gente, ponham-se a rezar
+
+**[Chorus]**  
+[solo voice, guitarra portuguesa countermelody]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Verse 4]**  
+[slower, rubato, voice with guitarra portuguesa only]  
+Passou sete anos na prisão  
+Por um crime que não cometeu  
+Disse: quando eu sair daqui  
+Mato todos os que me condenaram  
+Jurados, testemunhas, juízes  
+Nem um só há de escapar
+
+**[Chorus]**  
+[solo voice, full fado trio]  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+Alerta  
+O inimigo público número um  
+Fugiu hoje de manhã
+
+**[Outro: guitarra portuguesa, final chord]**
+
+---
