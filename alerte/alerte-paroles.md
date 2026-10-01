@@ -1449,3 +1449,103 @@ Niitiin daisan negdügeer
 **[Outro: instrumental, instruments only, same harmony as the chorus, balalaika, accordion and choir hum, final held chord]**
 
 ---
+
+## 日本語
+
+**[Intro: short, solo shakuhachi]**
+
+**[Verse 1]**  
+[soft gentle male voice, subtle kobushi, calm]  
+誰もがその話ばかり  
+ラジオも テレビも  
+人々は怯えて 戸を閉ざし  
+通りには 人影もない
+
+**[Interlude: instrumental, short, shamisen and koto, A minor with a descending inner voice, Am7 to Am6, very soft]**
+
+**[Refrain]**  
+[soft gentle male voice, hushed, each "警報" long and gentle, pianissimo, shamisen and koto only]  
+警報  
+警報  
+警報  
+警報  
+警報  
+警報  
+[soft gentle male voice, hushed, back to the interlude harmony, Am7 to Am6]  
+社会の敵 ナンバーワン  
+今朝 逃げ出した
+
+**[Break: instrumental, instruments only, shakuhachi and koto, very soft]**
+
+**[Verse 2]**  
+[soft gentle male voice, subtle kobushi, calm]  
+この世のどこかに 潜んでいる  
+警報ひとつで 撃つ構え  
+警察が 血眼で 捜してる  
+新聞には 奴の顔
+
+**[Interlude: instrumental, short, shamisen and koto, A minor with a descending inner voice, Am7 to Am6, very soft]**
+
+**[Refrain]**  
+[soft gentle male voice, hushed, each "警報" long and gentle, pianissimo, shamisen and koto only]  
+警報  
+警報  
+警報  
+警報  
+警報  
+警報  
+[soft gentle male voice, hushed, back to the interlude harmony, Am7 to Am6]  
+社会の敵 ナンバーワン  
+今朝 逃げ出した
+
+**[Break: instrumental, instruments only, shakuhachi and koto, very soft]**
+
+**[Instrumental: gentle shakuhachi solo over soft shamisen]**
+
+**[Verse 3]**  
+[soft gentle male voice, subtle kobushi, calm]  
+狂った男 正気を失くし  
+血に飢えた 危険な男  
+何をしでかすか 誰が知る  
+善き人々よ 祈りなさい
+
+**[Interlude: instrumental, short, shamisen and koto, A minor with a descending inner voice, Am7 to Am6, very soft]**
+
+**[Refrain]**  
+[soft gentle male voice, hushed, each "警報" long and gentle, pianissimo, shamisen and koto only]  
+警報  
+警報  
+警報  
+警報  
+警報  
+警報  
+[soft gentle male voice, hushed, back to the interlude harmony, Am7 to Am6]  
+社会の敵 ナンバーワン  
+今朝 逃げ出した
+
+**[Verse 4]**  
+[soft gentle male voice, very slow, shamisen only]  
+七年 牢屋で過ごした  
+犯してもいない 罪のために  
+奴は言った  
+[spoken, soft male voice, calm but determined, over soft shamisen]  
+ここを出たら  
+俺を裁いた 奴ら皆殺し  
+陪審員も 証人も 判事も  
+一人たりとも 逃がしはしない
+
+**[Refrain]**  
+[soft gentle male voice, hushed, each "警報" long and gentle, pianissimo, shamisen and koto only, as quiet as the others]  
+警報  
+警報  
+警報  
+警報  
+警報  
+警報  
+[soft gentle male voice, hushed, back to the interlude harmony, Am7 to Am6]  
+社会の敵 ナンバーワン  
+今朝 逃げ出した
+
+**[Outro: instrumental, shakuhachi fading to silence]**
+
+---

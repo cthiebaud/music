@@ -47,7 +47,7 @@
     <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
       <div class="d-flex flex-column">
         <h1 class="h3 mb-0">Alerte</h1>
-        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Six Shades of Alerte</p>
+        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Seven Shades of Alerte</p>
       </div>
       <div class="d-flex flex-column align-items-end gap-2">
         <a href="index.html" target="alerte-index" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Musique</a>
@@ -176,7 +176,8 @@
       'Deutsch (Sprechgesang)': 'de-sg',
       'English (Delta blues)': 'en-blues',
       'Монгол': 'mn',
-      'Русский': 'ru'
+      'Русский': 'ru',
+      '日本語': 'ja'
     };
 
     function getLangCode(title, index) {
@@ -240,7 +241,7 @@
 
         section.blocks.forEach(block => {
           const label = block.label.trim();
-          const isVerseOrChorus = /verse/i.test(label) || /chorus/i.test(label) || /^hook$/i.test(label);
+          const isVerseOrChorus = /verse/i.test(label) || /chorus/i.test(label) || /^hook$/i.test(label) || /^refrain$/i.test(label);
           if (!isVerseOrChorus) return; // skip Intro/Instrumental/Outro/Dance break/etc.
 
           // Drop any line that is purely a Suno vocal/style direction
