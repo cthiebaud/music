@@ -106,7 +106,7 @@
     <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
       <div class="d-flex flex-column">
         <h1 class="h3 mb-0">Alerte</h1>
-        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Two Shades of Alerte</p>
+        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Three Shades of Alerte</p>
       </div>
       <a href="paroles.html" target="alerte-paroles" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Paroles</a>
     </div>
@@ -142,7 +142,7 @@
               </div>
             </div>
             <div class="player-row d-flex align-items-center gap-2 flex-wrap">
-              <audio controls preload="none" class="flex-grow-1 track-audio" style="min-width: 160px; height: 36px;"></audio>
+              <audio controls preload="metadata" class="flex-grow-1 track-audio" style="min-width: 160px; height: 36px;"></audio>
               <div class="stars" role="radiogroup" aria-label="Note">
                 <button type="button" data-value="1" aria-label="1 étoile">★</button>
                 <button type="button" data-value="2" aria-label="2 étoiles">★</button>
@@ -156,9 +156,13 @@
       </li>
     </template>
 
-    <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mb-4">
       <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">Envoyer via WhatsApp</a>
       <button type="button" id="clearAll" class="btn btn-outline-secondary btn-sm rounded-pill">Effacer mes votes</button>
+      <div class="form-check form-switch mb-0">
+        <input class="form-check-input" type="checkbox" role="switch" id="playlistMode" checked>
+        <label class="form-check-label small" for="playlistMode">Mode playlist</label>
+      </div>
     </div>
 
     <footer>
@@ -521,6 +525,20 @@
             }
       },
       {
+            "key": "reggae",
+            "badge": 23,
+            "src": "23_reggae.mp3",
+            "code": "en",
+            "label": "EN",
+            "titles": {
+                  "en": "Reggae",
+                  "fr": "Reggae",
+                  "it": "Reggae",
+                  "de": "Reggae",
+                  "es": "Reggae"
+            }
+      },
+      {
             "key": "guess-what",
             "badge": null,
             "src": "guess-what.mp3",
@@ -599,11 +617,24 @@
       openOrFocusNamed(e.currentTarget.href, 'alerte-paroles');
     });
 
-    document.querySelectorAll('audio').forEach(audio => {
+    const playlistCheckbox = document.getElementById('playlistMode');
+    const PLAYLIST_MODE_KEY = 'alertePlaylistMode';
+    playlistCheckbox.checked = localStorage.getItem(PLAYLIST_MODE_KEY) !== 'off';
+    playlistCheckbox.addEventListener('change', () => {
+      localStorage.setItem(PLAYLIST_MODE_KEY, playlistCheckbox.checked ? 'on' : 'off');
+    });
+
+    const allAudios = Array.from(document.querySelectorAll('audio'));
+    allAudios.forEach(audio => {
       audio.addEventListener('play', () => {
-        document.querySelectorAll('audio').forEach(other => {
+        allAudios.forEach(other => {
           if (other !== audio && !other.paused) other.pause();
         });
+      });
+      audio.addEventListener('ended', () => {
+        if (!playlistCheckbox.checked) return;
+        const next = allAudios[(allAudios.indexOf(audio) + 1) % allAudios.length];
+        next.play();
       });
     });
 
@@ -640,11 +671,11 @@
     };
 
     const buttonLabelsByLang = {
-      en: { send: 'Send via WhatsApp', clear: 'Clear my ratings' },
-      fr: { send: 'Envoyer via WhatsApp', clear: 'Effacer mes votes' },
-      it: { send: 'Invia via WhatsApp', clear: 'Cancella le mie valutazioni' },
-      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen' },
-      es: { send: 'Enviar por WhatsApp', clear: 'Borrar mis valoraciones' }
+      en: { send: 'Send via WhatsApp', clear: 'Clear my ratings', playlist: 'Playlist mode' },
+      fr: { send: 'Envoyer via WhatsApp', clear: 'Effacer mes votes', playlist: 'Mode playlist' },
+      it: { send: 'Invia via WhatsApp', clear: 'Cancella le mie valutazioni', playlist: 'Modalità playlist' },
+      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen', playlist: 'Playlist-Modus' },
+      es: { send: 'Enviar por WhatsApp', clear: 'Borrar mis valoraciones', playlist: 'Modo playlist' }
     };
 
     const subtitleByLang = ALERTE_SUBTITLE_BY_LANG;
@@ -733,6 +764,7 @@
       langParagraphs.forEach(p => p.classList.toggle('d-none', p.dataset.lang !== lang));
       sendAllBtn.textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
+      document.querySelector('label[for="playlistMode"]').textContent = buttonLabelsByLang[lang].playlist;
       document.getElementById('subtitle').textContent = subtitleByLang[lang];
       document.getElementById('pageNavLink').textContent = ALERTE_NAV_LABELS.lyrics[lang];
       document.querySelectorAll('li[data-key]').forEach(track => {
