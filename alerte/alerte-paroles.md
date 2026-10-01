@@ -1245,3 +1245,207 @@ Busted outta jail this mornin'
 **[Outro: slide guitar, final moan]**
 
 ---
+
+## Монгол
+
+**[Intro: short, morin khuur drone only]**
+
+**[Verse 1]**  
+[solo high open-throated male voice, Mongolian long song style]  
+Bügd l üüniig yarij baina  
+Radiogoor, zuragtaar  
+Sandral, khümüüs khaalgaa tügjij baina  
+Gudamjind khün ch alga
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, morin khuur and tovshuur, building tension]**
+
+**[Chorus]**  
+[solo kargyraa deep throat singing, single monotone pitch with overtones]  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+[solo high open-throated male voice, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, sung melody on top]  
+Niitiin daisan negdügeer  
+Önöö öglöö orgoson
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, morin khuur, galloping rhythm]**
+
+**[Verse 2]**  
+[solo high open-throated male voice, Mongolian long song style]  
+Khaa negtee nuugdaj baina  
+Ankhny tügshüürt l buudakhad belen  
+Tsagdaa khaa saigüi khaij baina  
+Zurag ni bükh sonind garsan
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, morin khuur and tovshuur, building tension]**
+
+**[Chorus]**  
+[solo kargyraa deep throat singing, single monotone pitch with overtones]  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+[solo high open-throated male voice, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, sung melody on top]  
+Niitiin daisan negdügeer  
+Önöö öglöö orgoson
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, morin khuur, galloping rhythm]**
+
+**[Instrumental: khöömii overtone whistling solo over morin khuur drone]**
+
+**[Verse 3]**  
+[solo high open-throated male voice, Mongolian long song style]  
+Ter galzuu, ukhaan muutai  
+Aimshigt, ayuultai maniak  
+Odoo yuu khiikhiig khen medekh ve  
+Sain khümüüs ee, zalbirtsgaa
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, morin khuur and tovshuur, building tension]**
+
+**[Chorus]**  
+[solo kargyraa deep throat singing, single monotone pitch with overtones]  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+[solo high open-throated male voice, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, sung melody on top]  
+Niitiin daisan negdügeer  
+Önöö öglöö orgoson
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, morin khuur, galloping rhythm]**
+
+**[Verse 4]**  
+[solo high open-throated male voice, morin khuur drone only]  
+Doloon jil shorond suusan  
+Khiigeegüi gemt khergiin tölöö  
+Ter khelsen ni:  
+[spoken, deep male voice, low and menacing, over morin khuur drone]  
+Bi garakhaaraa  
+Namaig shiitgesen bügdiig alnaa  
+Tangaragtan, gerch, shüügch  
+Neg ni ch amid üldekhgüi
+
+**[Chorus]**  
+[solo kargyraa deep throat singing, single monotone pitch with overtones, full ensemble]  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+Tügshüür  
+[solo high open-throated male voice, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, sung melody on top]  
+Niitiin daisan negdügeer  
+Önöö öglöö orgoson
+
+**[Outro: instrumental, instruments only, same harmony as the chorus, morin khuur and khöömii overtones, fade out]**
+
+---
+
+## Русский
+
+**[Intro: short, balalaika tremolo chord]**
+
+**[Verse 1]**  
+[solo male tenor, heroic]  
+Все говорят только об этом  
+Радио, телевидение  
+Паника, люди запирают двери  
+На улицах ни души
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, accordion and balalaika, building tension]**
+
+**[Chorus]**  
+[solo basso profundo, single unharmonized voice, monotone, every "Тревога" on the same single pitch]  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+[full male choir, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, powerful]  
+Враг народа номер один  
+Сбежал сегодня утром
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, balalaika and accordion]**
+
+**[Verse 2]**  
+[solo male tenor, heroic]  
+Он скрывается где-то на земле  
+Готов стрелять при первой тревоге  
+Полиция ищет его повсюду  
+Его фото во всех газетах
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, accordion and balalaika, building tension]**
+
+**[Chorus]**  
+[solo basso profundo, single unharmonized voice, monotone, every "Тревога" on the same single pitch]  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+[full male choir, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, powerful]  
+Враг народа номер один  
+Сбежал сегодня утром
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, balalaika and accordion]**
+
+**[Instrumental: balalaika ensemble and accordion, snare drum]**
+
+**[Verse 3]**  
+[solo male tenor, heroic]  
+Он безумец, он помешанный  
+Психопат, опасный маньяк  
+Кто знает, что он теперь сделает  
+Добрые люди, молитесь
+
+**[Pre-Chorus: instrumental, short, A minor with a descending inner voice, Am7 to Am6, accordion and balalaika, building tension]**
+
+**[Chorus]**  
+[solo basso profundo, single unharmonized voice, monotone, every "Тревога" on the same single pitch]  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+[full male choir, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, powerful]  
+Враг народа номер один  
+Сбежал сегодня утром
+
+**[Post-Chorus: instrumental, instruments only, same harmony as the chorus, balalaika and accordion]**
+
+**[Verse 4]**  
+[solo male tenor, accordion only, slow and grave]  
+Семь лет он отсидел в тюрьме  
+За то, чего не совершал  
+Он сказал:  
+[spoken, deep male voice, low and menacing, over sustained choir hum]  
+Когда я выйду  
+Убью всех, кто меня осудил  
+Присяжных, свидетелей, судей  
+Ни один не уйдёт
+
+**[Chorus]**  
+[solo basso profundo, single unharmonized voice, monotone, every "Тревога" on the same single pitch, full ensemble]  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+Тревога  
+[full male choir, balalaika and accordion, back to the pre-chorus harmony, A minor with descending inner voice, Am7 to Am6, triumphant]  
+Враг народа номер один  
+Сбежал сегодня утром
+
+**[Outro: instrumental, instruments only, same harmony as the chorus, balalaika, accordion and choir hum, final held chord]**
+
+---

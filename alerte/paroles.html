@@ -47,7 +47,7 @@
     <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
       <div class="d-flex flex-column">
         <h1 class="h3 mb-0">Alerte</h1>
-        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Three Shades of Alerte</p>
+        <p class="text-body-secondary mb-0" id="subtitle">Twenty-Five Shades of Alerte</p>
       </div>
       <div class="d-flex flex-column align-items-end gap-2">
         <a href="index.html" target="alerte-index" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Musique</a>
@@ -174,7 +174,9 @@
       'Português (Portugal)': 'pt-pt',
       'Latina': 'la',
       'Deutsch (Sprechgesang)': 'de-sg',
-      'English (Delta blues)': 'en-blues'
+      'English (Delta blues)': 'en-blues',
+      'Монгол': 'mn',
+      'Русский': 'ru'
     };
 
     function getLangCode(title, index) {
@@ -241,10 +243,11 @@
           const isVerseOrChorus = /verse/i.test(label) || /chorus/i.test(label) || /^hook$/i.test(label);
           if (!isVerseOrChorus) return; // skip Intro/Instrumental/Outro/Dance break/etc.
 
-          let lines = block.lines;
-          if (lines.length && /^\[.+\]$/.test(lines[0].trim())) {
-            lines = lines.slice(1); // drop the leading Suno vocal/style direction
-          }
+          // Drop any line that is purely a Suno vocal/style direction
+          // (e.g. a mid-block "[solo kargyraa throat singing]" cue), not
+          // just a leading one.
+          const lines = block.lines.filter(line => !/^\[.+\]$/.test(line.trim()));
+          if (lines.length === 0) return; // purely instrumental block, e.g. "Pre-Chorus: instrumental..."
 
           const verse = document.createElement('div');
           verse.className = 'lyrics-verse';
