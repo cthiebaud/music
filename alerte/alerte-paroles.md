@@ -1549,3 +1549,107 @@ Niitiin daisan negdügeer
 **[Outro: instrumental, shakuhachi fading to silence]**
 
 ---
+
+## עברית
+
+<div dir="rtl">
+
+**[Intro: short, solo clarinet]**
+
+**[Verse 1]**  
+[male singer, cantorial ornaments, restrained]  
+כולם מדברים רק על זה  
+ברדיו, בטלוויזיה  
+פאניקה, כולם ננעלים  
+ברחובות אין נפש חיה
+
+**[Interlude: instrumental, short, accordion and tsimbl, A minor with a descending inner voice, Am7 to Am6]**
+
+**[Refrain]**  
+[male singer, each word long and sustained, clarinet answering]  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+[male singer, back to the interlude harmony, Am7 to Am6]  
+אויב העם מספר אחד  
+הוא ברח הבוקר
+
+**[Break: instrumental, fiddle melody over accordion]**
+
+**[Verse 2]**  
+[male singer, cantorial ornaments, restrained]  
+הוא מסתתר איפשהו בעולם  
+מוכן לירות בכל רגע  
+המשטרה רודפת אחריו  
+תמונתו בכל העיתונים
+
+**[Interlude: instrumental, short, accordion and tsimbl, A minor with a descending inner voice, Am7 to Am6]**
+
+**[Refrain]**  
+[male singer, each word long and sustained, clarinet answering]  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+[male singer, back to the interlude harmony, Am7 to Am6]  
+אויב העם מספר אחד  
+הוא ברח הבוקר
+
+**[Break: instrumental, fiddle melody over accordion]**
+
+**[Instrumental: clarinet solo with krekhts, fiddle answers]**
+
+**[Verse 3]**  
+[male singer, cantorial ornaments, restrained]  
+הוא משוגע, יצא מדעתו  
+פסיכופט, מטורף מסוכן  
+מי יודע מה הוא יעשה עכשיו  
+אנשים טובים, התפללו
+
+**[Interlude: instrumental, short, accordion and tsimbl, A minor with a descending inner voice, Am7 to Am6]**
+
+**[Refrain]**  
+[male singer, each word long and sustained, clarinet answering]  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+[male singer, back to the interlude harmony, Am7 to Am6]  
+אויב העם מספר אחד  
+הוא ברח הבוקר
+
+**[Verse 4]**  
+[male singer, slow, clarinet and tsimbl only, cantorial]  
+שבע שנים ישב בכלא  
+על פשע שלא ביצע  
+הוא אמר:  
+[spoken, male voice, calm but determined, over soft tsimbl]  
+כשאצא מכאן  
+אהרוג את כל מי ששפט אותי  
+המושבעים, העדים, השופטים  
+אף אחד לא יינצל
+
+**[Refrain]**  
+[male singer, each word long and sustained, clarinet answering, as restrained as the others]  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+אזעקה  
+[male singer, back to the interlude harmony, Am7 to Am6]  
+אויב העם מספר אחד  
+הוא ברח הבוקר
+
+**[Outro: instrumental, clarinet and fiddle, final cadence]**
+
+</div>
+
+---
