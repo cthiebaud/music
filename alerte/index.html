@@ -106,7 +106,17 @@
     <div class="d-flex justify-content-between align-items-start gap-2 mb-4">
       <div class="d-flex flex-column">
         <h1 class="h3 mb-0">Alerte</h1>
-        <p class="text-body-secondary mb-0" id="subtitle">Thirty Shades of Alerte</p>
+        <p class="text-body-secondary mb-0 d-flex align-items-center gap-1" id="subtitle">
+          <span id="subtitleText">Exercises in Style</span>
+          <a id="subtitleLink" href="https://en.wikipedia.org/wiki/Exercises_in_Style" target="_blank" rel="noopener" aria-label="Wikipedia" class="d-inline-flex text-body-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </p>
+        <p class="text-body-secondary mb-0" id="subtitleCount">Thirty Variations on Alerte</p>
       </div>
       <a href="paroles.html" target="alerte-paroles" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Paroles</a>
     </div>
@@ -953,7 +963,9 @@
       sendAllBtn.textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
       document.querySelector('label[for="playlistMode"]').textContent = buttonLabelsByLang[lang].playlist;
-      document.getElementById('subtitle').textContent = subtitleByLang[lang];
+      document.getElementById('subtitleText').textContent = subtitleByLang[lang];
+      document.getElementById('subtitleLink').href = ALERTE_SUBTITLE_LINK_BY_LANG[lang];
+      document.getElementById('subtitleCount').textContent = ALERTE_SUBTITLE_COUNT_BY_LANG[lang];
       document.getElementById('pageNavLink').textContent = ALERTE_NAV_LABELS.lyrics[lang];
       document.querySelectorAll('li[data-key]').forEach(track => {
         const t = TRACKS_BY_KEY[track.dataset.key];

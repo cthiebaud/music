@@ -4,11 +4,34 @@
 const ALERTE_AVAILABLE_LANGS = ['en', 'fr', 'it', 'de', 'es'];
 
 const ALERTE_SUBTITLE_BY_LANG = {
-  en: 'Thirty Shades of Alerte',
-  fr: "Trente nuances d'Alerte",
-  it: 'Trenta sfumature di Alerte',
-  de: 'Dreißig Schattierungen von Alerte',
-  es: 'Treinta sombras de Alerte'
+  en: 'Exercises in Style',
+  fr: 'Exercices de style',
+  it: 'Esercizi di stile',
+  de: 'Stilübungen',
+  es: 'Ejercicios de estilo'
+};
+
+// A nod to Raymond Queneau's book of the same name — 99 retellings of one
+// trivial story, the literary equivalent of this page's musical variations.
+// No Spanish Wikipedia article exists, so the Spanish subtitle links to the
+// English one rather than the loosely-related Catalan edition.
+const ALERTE_SUBTITLE_LINK_BY_LANG = {
+  en: 'https://en.wikipedia.org/wiki/Exercises_in_Style',
+  fr: 'https://fr.wikipedia.org/wiki/Exercices_de_style',
+  it: 'https://it.wikipedia.org/wiki/Esercizi_di_stile',
+  de: 'https://de.wikipedia.org/wiki/Stil%C3%BCbungen_(Queneau)',
+  es: 'https://en.wikipedia.org/wiki/Exercises_in_Style'
+};
+
+// Sober, pun-free: just how many variations are on the page. Update by hand
+// whenever a numbered variant is added or removed (not the Original track,
+// and not any of the non-Alerte bonus tracks like Guess What or Matsubaba).
+const ALERTE_SUBTITLE_COUNT_BY_LANG = {
+  en: 'Thirty Variations on Alerte',
+  fr: "Trente variations d'Alerte",
+  it: 'Trenta variazioni di Alerte',
+  de: 'Dreißig Variationen von Alerte',
+  es: 'Treinta variaciones de Alerte'
 };
 
 const ALERTE_NAV_LABELS = {
