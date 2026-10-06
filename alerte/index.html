@@ -72,6 +72,10 @@
       color: var(--bs-secondary-color);
     }
 
+    .track-vote-link {
+      display: none !important; /* temporarily hidden, restore the style collapse instead */
+    }
+
     .download-btn {
       display: inline-flex;
       align-items: center;
@@ -98,6 +102,22 @@
     .note-text a {
       color: var(--accent);
     }
+
+    #trackList .card.track-playing {
+      background-color: hsl(var(--track-hue) 65% 93%);
+    }
+
+    [data-bs-theme="dark"] #trackList .card.track-playing {
+      background-color: hsl(var(--track-hue) 30% 16%);
+    }
+
+    #nowPlayingWrap {
+      color: hsl(var(--track-hue, 0) 70% 35%);
+    }
+
+    [data-bs-theme="dark"] #nowPlayingWrap {
+      color: hsl(var(--track-hue, 0) 70% 65%);
+    }
   </style>
 </head>
 
@@ -118,7 +138,28 @@
         </p>
         <p class="text-body-secondary mb-0" id="subtitleCount">Thirty Variations on Alerte</p>
       </div>
-      <a href="paroles.html" target="alerte-paroles" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Paroles</a>
+      <div class="d-flex flex-column align-items-end gap-2">
+        <a href="paroles.html" target="alerte-paroles" class="btn btn-light btn-sm rounded-pill" id="pageNavLink">Paroles</a>
+        <div class="d-flex align-items-center gap-2">
+          <div class="form-check form-switch small mb-0" id="playlistControl">
+            <input class="form-check-input" type="checkbox" role="switch" id="shuffleToggle" checked>
+            <label class="form-check-label" for="shuffleToggle" id="shuffleToggleLabel">Shuffle</label>
+          </div>
+          <button type="button" class="btn btn-light btn-sm rounded-pill d-inline-flex align-items-center" id="playlistStartBtn" title="Play" aria-label="Play">
+            <svg id="playlistStartIcon" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="small invisible d-flex align-items-center gap-1" id="nowPlayingWrap">
+          <span id="nowPlayingText">&nbsp;</span>
+          <a href="#" id="nowPlayingLink" class="d-inline-flex align-items-center" aria-label="Jump to track" title="Jump to track">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+              <polyline points="9 6 15 12 9 18"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <ul class="list-unstyled vstack gap-3 mb-4" id="trackList"></ul>
@@ -161,6 +202,12 @@
                 <button type="button" data-value="4" aria-label="4 étoiles">★</button>
                 <button type="button" data-value="5" aria-label="5 étoiles">★</button>
               </div>
+              <a class="track-vote-link btn btn-sm btn-link ms-auto p-0 disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <polyline points="5 6 11 12 5 18"></polyline>
+                  <polyline points="12 6 18 12 12 18"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -168,12 +215,14 @@
     </template>
 
     <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mb-4">
-      <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">Envoyer via WhatsApp</a>
+      <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled d-inline-flex align-items-center gap-1" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">
+        <span id="sendAllLabel">Vote via</span>
+        <svg viewBox="0 0 24 24" width="14" height="14">
+          <circle cx="12" cy="12" r="11" fill="#25D366"></circle>
+          <path d="M7 10.5a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5H9l-2.5 1.5.5-2A5 5 0 0 1 7 10.5z" fill="#fff"></path>
+        </svg>
+      </a>
       <button type="button" id="clearAll" class="btn btn-outline-secondary btn-sm rounded-pill">Effacer mes votes</button>
-      <div class="form-check form-switch mb-0">
-        <input class="form-check-input" type="checkbox" role="switch" id="playlistMode" checked>
-        <label class="form-check-label small" for="playlistMode">Mode playlist</label>
-      </div>
     </div>
 
     <footer>
@@ -748,10 +797,12 @@
     function renderTracks() {
       const template = document.getElementById('track-template');
       const list = document.getElementById('trackList');
-      TRACKS.forEach(t => {
+      TRACKS.forEach((t, index) => {
         const node = template.content.cloneNode(true);
         const li = node.querySelector('li');
         li.dataset.key = t.key;
+        const hue = Math.round((index / TRACKS.length) * 360);
+        node.querySelector('.card').style.setProperty('--track-hue', hue);
 
         const badgeEl = node.querySelector('.track-badge');
         if (t.badge != null) {
@@ -789,6 +840,7 @@
 
         if (t.rateable === false) {
           node.querySelector('.stars').remove();
+          node.querySelector('.track-vote-link').remove();
         }
 
         const link = node.querySelector('.track-lyrics-link');
@@ -815,11 +867,11 @@
       openOrFocusNamed(e.currentTarget.href, 'alerte-paroles');
     });
 
-    const playlistCheckbox = document.getElementById('playlistMode');
-    const PLAYLIST_MODE_KEY = 'alertePlaylistMode';
-    playlistCheckbox.checked = localStorage.getItem(PLAYLIST_MODE_KEY) !== 'off';
-    playlistCheckbox.addEventListener('change', () => {
-      localStorage.setItem(PLAYLIST_MODE_KEY, playlistCheckbox.checked ? 'on' : 'off');
+    const SHUFFLE_KEY = 'alerteShuffle';
+    const shuffleToggle = document.getElementById('shuffleToggle');
+    shuffleToggle.checked = localStorage.getItem(SHUFFLE_KEY) !== 'off';
+    shuffleToggle.addEventListener('change', () => {
+      localStorage.setItem(SHUFFLE_KEY, shuffleToggle.checked ? 'on' : 'off');
     });
 
     const allAudios = Array.from(document.querySelectorAll('audio'));
@@ -828,12 +880,71 @@
         allAudios.forEach(other => {
           if (other !== audio && !other.paused) other.pause();
         });
+        updatePlaylistStartButton();
+        updateNowPlaying();
+      });
+      audio.addEventListener('pause', () => {
+        updatePlaylistStartButton();
+        updateNowPlaying();
       });
       audio.addEventListener('ended', () => {
-        if (!playlistCheckbox.checked) return;
-        const next = allAudios[(allAudios.indexOf(audio) + 1) % allAudios.length];
+        const next = shuffleToggle.checked
+          ? allAudios[Math.floor(Math.random() * allAudios.length)]
+          : allAudios[(allAudios.indexOf(audio) + 1) % allAudios.length];
         next.play();
       });
+    });
+
+    const playlistStartBtn = document.getElementById('playlistStartBtn');
+    const playlistStartIcon = document.getElementById('playlistStartIcon');
+    const PLAY_ICON = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
+    const STOP_ICON = '<rect x="5" y="5" width="14" height="14"></rect>';
+
+    function updatePlaylistStartButton() {
+      const isPlaying = allAudios.some(a => !a.paused);
+      playlistStartIcon.innerHTML = isPlaying ? STOP_ICON : PLAY_ICON;
+      const label = buttonLabelsByLang[currentLang][isPlaying ? 'stop' : 'play'];
+      playlistStartBtn.title = label;
+      playlistStartBtn.setAttribute('aria-label', label);
+    }
+
+    const nowPlayingWrap = document.getElementById('nowPlayingWrap');
+    const nowPlayingText = document.getElementById('nowPlayingText');
+    const nowPlayingLink = document.getElementById('nowPlayingLink');
+    let nowPlayingKey = null;
+
+    function updateNowPlaying() {
+      const playing = allAudios.find(a => !a.paused);
+      document.querySelectorAll('.card.track-playing').forEach(card => card.classList.remove('track-playing'));
+      if (playing) {
+        const li = playing.closest('li[data-key]');
+        const card = li.querySelector('.card');
+        nowPlayingKey = li.dataset.key;
+        nowPlayingText.textContent = li.querySelector('h2').textContent;
+        nowPlayingWrap.classList.remove('invisible');
+        nowPlayingWrap.style.setProperty('--track-hue', card.style.getPropertyValue('--track-hue'));
+        card.classList.add('track-playing');
+      } else {
+        nowPlayingKey = null;
+        nowPlayingWrap.classList.add('invisible');
+      }
+    }
+
+    nowPlayingLink.addEventListener('click', e => {
+      e.preventDefault();
+      if (!nowPlayingKey) return;
+      document.querySelector(`li[data-key="${nowPlayingKey}"]`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    playlistStartBtn.addEventListener('click', () => {
+      if (allAudios.some(a => !a.paused)) {
+        allAudios.forEach(a => a.pause());
+      } else {
+        const start = shuffleToggle.checked
+          ? allAudios[Math.floor(Math.random() * allAudios.length)]
+          : allAudios[0];
+        start.play();
+      }
     });
 
     const langButtons = document.querySelectorAll('.note-langs button');
@@ -869,11 +980,11 @@
     };
 
     const buttonLabelsByLang = {
-      en: { send: 'Send via WhatsApp', clear: 'Clear my ratings', playlist: 'Playlist mode' },
-      fr: { send: 'Envoyer via WhatsApp', clear: 'Effacer mes votes', playlist: 'Mode playlist' },
-      it: { send: 'Invia via WhatsApp', clear: 'Cancella le mie valutazioni', playlist: 'Modalità playlist' },
-      de: { send: 'Per WhatsApp senden', clear: 'Meine Bewertungen löschen', playlist: 'Playlist-Modus' },
-      es: { send: 'Enviar por WhatsApp', clear: 'Borrar mis valoraciones', playlist: 'Modo playlist' }
+      en: { send: 'Vote via', clear: 'Clear my ratings', shuffle: 'Shuffle', play: 'Play', stop: 'Stop' },
+      fr: { send: 'Votez via', clear: 'Effacer mes votes', shuffle: 'Aléatoire', play: 'Lecture', stop: 'Arrêt' },
+      it: { send: 'Vota via', clear: 'Cancella le mie valutazioni', shuffle: 'Casuale', play: 'Riproduci', stop: 'Stop' },
+      de: { send: 'Abstimmen via', clear: 'Meine Bewertungen löschen', shuffle: 'Zufällig', play: 'Wiedergabe', stop: 'Stopp' },
+      es: { send: 'Vota por', clear: 'Borrar mis valoraciones', shuffle: 'Aleatoria', play: 'Reproducir', stop: 'Detener' }
     };
 
     const subtitleByLang = ALERTE_SUBTITLE_BY_LANG;
@@ -960,9 +1071,10 @@
       currentLang = lang;
       langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
       langParagraphs.forEach(p => p.classList.toggle('d-none', p.dataset.lang !== lang));
-      sendAllBtn.textContent = buttonLabelsByLang[lang].send;
+      document.getElementById('sendAllLabel').textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
-      document.querySelector('label[for="playlistMode"]').textContent = buttonLabelsByLang[lang].playlist;
+      document.getElementById('shuffleToggleLabel').textContent = buttonLabelsByLang[lang].shuffle;
+      updatePlaylistStartButton();
       document.getElementById('subtitleText').textContent = subtitleByLang[lang];
       document.getElementById('subtitleLink').href = ALERTE_SUBTITLE_LINK_BY_LANG[lang];
       document.getElementById('subtitleCount').textContent = ALERTE_SUBTITLE_COUNT_BY_LANG[lang];
@@ -970,9 +1082,11 @@
       document.querySelectorAll('li[data-key]').forEach(track => {
         const t = TRACKS_BY_KEY[track.dataset.key];
         if (t) track.querySelector('h2').textContent = t.titles[lang] || t.titles.fr;
+        updateTrackVoteButton(track);
       });
       applyStyleDescriptions();
       updateSendAllButton();
+      updateNowPlaying();
     }
 
     langButtons.forEach(btn => {
@@ -981,12 +1095,40 @@
 
     setLang(detectAlerteLang());
 
+    function updateTrackVoteButton(track) {
+      const key = track.dataset.key;
+      const link = track.querySelector('.track-vote-link');
+      if (!link) return;
+      const value = ratings[key];
+      if (!value) {
+        link.classList.add('disabled');
+        link.setAttribute('aria-disabled', 'true');
+        link.setAttribute('tabindex', '-1');
+        link.href = '#';
+        return;
+      }
+      const title = track.querySelector('h2').textContent.trim();
+      const stars = '★'.repeat(value) + '☆'.repeat(5 - value);
+      const message = `${introByLang[currentLang]}\n${title} : ${stars} (${value}/5)`;
+      link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      link.classList.remove('disabled');
+      link.removeAttribute('aria-disabled');
+      link.removeAttribute('tabindex');
+    }
+
+    document.querySelectorAll('.track-vote-link').forEach(link => {
+      link.addEventListener('click', e => {
+        if (link.classList.contains('disabled')) e.preventDefault();
+      });
+    });
+
     clearAllBtn.addEventListener('click', () => {
       document.querySelectorAll('li[data-key]').forEach(track => {
         const key = track.dataset.key;
         delete ratings[key];
         try { localStorage.removeItem(storageKey(key)); } catch (e) { /* ignore */ }
         track.querySelectorAll('.stars button').forEach(b => b.classList.remove('filled'));
+        updateTrackVoteButton(track);
       });
       updateSendAllButton();
     });
@@ -1006,6 +1148,7 @@
         paint(value);
         try { localStorage.setItem(storageKey(key), String(value)); } catch (e) { /* ignore */ }
         updateSendAllButton();
+        updateTrackVoteButton(track);
       }
 
       starButtons.forEach(btn => {
