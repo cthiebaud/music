@@ -51,6 +51,14 @@ const ALERTE_LAST_UPDATED_BY_LANG = {
   es: 'Última actualización: 7 de octubre de 2026.'
 };
 
+const ALERTE_ABOUT_LABELS = {
+  en: { trigger: 'About', title: 'About "Alerte"', then: '1984', now: 'Now' },
+  fr: { trigger: 'À propos', title: '« Alerte », en coulisses', then: '1984', now: "Aujourd'hui" },
+  it: { trigger: 'Info', title: 'Dietro le quinte di "Alerte"', then: '1984', now: 'Oggi' },
+  de: { trigger: 'Info', title: 'Hinter den Kulissen von „Alerte“', then: '1984', now: 'Heute' },
+  es: { trigger: 'Acerca de', title: 'Detrás de "Alerte"', then: '1984', now: 'Ahora' }
+};
+
 const ALERTE_NAV_LABELS = {
   music: { en: 'Music', fr: 'Musique', it: 'Musica', de: 'Musik', es: 'Música' },
   lyrics: { en: 'Lyrics', fr: 'Paroles', it: 'Testi', de: 'Texte', es: 'Letras' }
