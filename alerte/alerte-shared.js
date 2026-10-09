@@ -35,11 +35,31 @@ const ALERTE_SUBTITLE_COUNT_BY_LANG = {
 };
 
 const ALERTE_AUTHOR_BY_LANG = {
-  en: 'Author of "Alerte": Éric Mugnier, lyrics and music.',
-  fr: 'Auteur d’Alerte : Éric Mugnier, paroles et musique.',
-  it: 'Autore di Alerte: Éric Mugnier, testo e musica.',
-  de: 'Autor von Alerte: Éric Mugnier, Text und Musik.',
-  es: 'Autor de Alerte: Éric Mugnier, letra y música.'
+  en: {
+    heading: 'Authors',
+    mugnier: 'Éric Mugnier: lyrics 100%, music 98%.',
+    thiebaud: 'Christophe Thiebaud: music 2%, production 100%.'
+  },
+  fr: {
+    heading: 'Auteurs',
+    mugnier: 'Éric Mugnier : paroles 100 %, musique 98 %.',
+    thiebaud: 'Christophe Thiebaud : musique 2 %, production 100 %.'
+  },
+  it: {
+    heading: 'Autori',
+    mugnier: 'Éric Mugnier: testo 100%, musica 98%.',
+    thiebaud: 'Christophe Thiebaud: musica 2%, produzione 100%.'
+  },
+  de: {
+    heading: 'Autoren',
+    mugnier: 'Éric Mugnier: Text 100 %, Musik 98 %.',
+    thiebaud: 'Christophe Thiebaud: Musik 2 %, Produktion 100 %.'
+  },
+  es: {
+    heading: 'Autores',
+    mugnier: 'Éric Mugnier: letra 100%, música 98%.',
+    thiebaud: 'Christophe Thiebaud: música 2%, producción 100%.'
+  }
 };
 
 // Update by hand whenever a substantive change is made to the page.

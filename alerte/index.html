@@ -271,9 +271,13 @@
       </div>
     </footer>
 
-    <p class="text-center text-body-secondary small mt-3 mb-0" id="pageMeta">
-      <span id="authorCredit">Author of "Alerte": Éric Mugnier, lyrics and music.</span>
-      <span aria-hidden="true"> · </span>
+    <div class="text-center text-body-secondary small mt-3" id="authorCredit">
+      <div class="fw-semibold" id="authorCreditHeading">Authors</div>
+      <div id="authorCreditMugnier">Éric Mugnier: lyrics 100%, music 99.99%.</div>
+      <div id="authorCreditThiebaud">Christophe Thiebaud: music 0.01%, production 100%.</div>
+    </div>
+
+    <p class="text-center text-body-secondary small mb-0" id="pageMeta">
       <span id="lastUpdated">Last updated: October 7, 2026.</span>
     </p>
   </div>
@@ -785,11 +789,11 @@
       {
             "key": "guess-what",
             "sectionBreak": {
-                  "en": "Other productions from the same era",
-                  "fr": "Autres productions de la même époque",
-                  "it": "Altre produzioni della stessa epoca",
-                  "de": "Weitere Produktionen aus derselben Zeit",
-                  "es": "Otras producciones de la misma época"
+                  "en": "Other songs from 1984, recently produced with Suno",
+                  "fr": "D'autres chansons de 1984, produites récemment avec Suno",
+                  "it": "Altre canzoni del 1984, prodotte di recente con Suno",
+                  "de": "Weitere Lieder von 1984, kürzlich mit Suno produziert",
+                  "es": "Otras canciones de 1984, producidas recientemente con Suno"
             },
             "badge": null,
             "src": "guess-what.mp3",
@@ -1163,7 +1167,9 @@
       currentLang = lang;
       langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
       langParagraphs.forEach(p => p.classList.toggle('d-none', p.dataset.lang !== lang));
-      document.getElementById('authorCredit').textContent = ALERTE_AUTHOR_BY_LANG[lang];
+      document.getElementById('authorCreditHeading').textContent = ALERTE_AUTHOR_BY_LANG[lang].heading;
+      document.getElementById('authorCreditMugnier').textContent = ALERTE_AUTHOR_BY_LANG[lang].mugnier;
+      document.getElementById('authorCreditThiebaud').textContent = ALERTE_AUTHOR_BY_LANG[lang].thiebaud;
       document.getElementById('lastUpdated').textContent = ALERTE_LAST_UPDATED_BY_LANG[lang];
       document.getElementById('aboutTriggerBtn').title = ALERTE_ABOUT_LABELS[lang].trigger;
       document.getElementById('aboutTriggerBtn').setAttribute('aria-label', ALERTE_ABOUT_LABELS[lang].trigger);
