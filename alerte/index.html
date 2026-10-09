@@ -923,6 +923,10 @@
     });
 
     const allAudios = Array.from(document.querySelectorAll('audio'));
+    const alerteAudios = allAudios.filter(audio => {
+      const t = TRACKS_BY_KEY[audio.closest('li[data-key]').dataset.key];
+      return t && t.rateable !== false;
+    });
     allAudios.forEach(audio => {
       audio.addEventListener('play', () => {
         allAudios.forEach(other => {
@@ -989,8 +993,8 @@
         allAudios.forEach(a => a.pause());
       } else {
         const start = shuffleToggle.checked
-          ? allAudios[Math.floor(Math.random() * allAudios.length)]
-          : allAudios[0];
+          ? alerteAudios[Math.floor(Math.random() * alerteAudios.length)]
+          : alerteAudios[0];
         start.play();
       }
     });
