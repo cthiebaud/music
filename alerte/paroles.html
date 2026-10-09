@@ -133,6 +133,16 @@
     document.querySelectorAll('.about-then-label').forEach(el => el.textContent = ALERTE_ABOUT_LABELS[headerLang].then);
     document.querySelectorAll('.about-now-label').forEach(el => el.textContent = ALERTE_ABOUT_LABELS[headerLang].now);
 
+    document.getElementById('aboutModal').addEventListener('show.bs.modal', () => {
+      const row = document.querySelector('#aboutModal .row');
+      const cols = Array.from(row.children);
+      for (let i = cols.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cols[i], cols[j]] = [cols[j], cols[i]];
+      }
+      cols.forEach(col => row.appendChild(col));
+    });
+
     document.getElementById('pageNavLink').addEventListener('click', e => {
       e.preventDefault();
       openOrFocusNamed(e.currentTarget.href, 'alerte-index');
