@@ -76,6 +76,17 @@
       display: none !important; /* temporarily hidden, restore the style collapse instead */
     }
 
+    .section-divider {
+      margin: 0.5rem 0;
+    }
+
+    .section-divider hr {
+      border: none;
+      border-top: 2px dotted var(--bs-border-color);
+      opacity: 1;
+      margin: 0;
+    }
+
     .download-btn {
       display: inline-flex;
       align-items: center;
@@ -214,17 +225,6 @@
       </li>
     </template>
 
-    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mb-4">
-      <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled d-inline-flex align-items-center gap-1" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">
-        <span id="sendAllLabel">Vote via</span>
-        <svg viewBox="0 0 24 24" width="14" height="14">
-          <circle cx="12" cy="12" r="11" fill="#25D366"></circle>
-          <path d="M7 10.5a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5H9l-2.5 1.5.5-2A5 5 0 0 1 7 10.5z" fill="#fff"></path>
-        </svg>
-      </a>
-      <button type="button" id="clearAll" class="btn btn-outline-secondary btn-sm rounded-pill">Effacer mes votes</button>
-    </div>
-
     <footer>
       <div class="card">
         <div class="card-body">
@@ -258,6 +258,12 @@
         </div>
       </div>
     </footer>
+
+    <p class="text-center text-body-secondary small mt-3 mb-0" id="pageMeta">
+      <span id="authorCredit">Author of "Alerte": Éric Mugnier, lyrics and music.</span>
+      <span aria-hidden="true"> · </span>
+      <span id="lastUpdated">Last updated: October 7, 2026.</span>
+    </p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -295,11 +301,11 @@
             "code": "fr",
             "label": "FR",
             "titles": {
-                  "en": "Normal",
-                  "fr": "Normal",
-                  "it": "Normale",
-                  "de": "Normal",
-                  "es": "Normal"
+                  "en": "Contemporary Rock",
+                  "fr": "Rock contemporain",
+                  "it": "Rock contemporaneo",
+                  "de": "Zeitgenössischer Rock",
+                  "es": "Rock contemporáneo"
             }
       },
       {
@@ -385,11 +391,11 @@
             "code": "es",
             "label": "ES",
             "titles": {
-                  "en": "South America",
-                  "fr": "Amérique du Sud",
-                  "it": "Sud America",
-                  "de": "Südamerika",
-                  "es": "Sudamérica"
+                  "en": "Venezuelan",
+                  "fr": "Vénézuélien",
+                  "it": "Venezuelano",
+                  "de": "Venezolanisch",
+                  "es": "Venezolano"
             }
       },
       {
@@ -401,10 +407,10 @@
             "label": "UA",
             "titles": {
                   "en": "Ukrainian Death Metal",
-                  "fr": "Death Metal Ukrainien",
-                  "it": "Death Metal Ucraino",
+                  "fr": "Death Metal ukrainien",
+                  "it": "Death Metal ucraino",
                   "de": "Ukrainischer Death Metal",
-                  "es": "Death Metal Ucraniano"
+                  "es": "Death Metal ucraniano"
             }
       },
       {
@@ -426,7 +432,7 @@
             "key": "egyptian",
             "badge": 10,
             "src": "10_alerte_egyptian.mp3",
-            "voice": "f",
+            "voice": "mf",
             "code": "ar",
             "label": "AR",
             "titles": {
@@ -738,6 +744,13 @@
       },
       {
             "key": "guess-what",
+            "sectionBreak": {
+                  "en": "Other productions from the same era",
+                  "fr": "Autres productions de la même époque",
+                  "it": "Altre produzioni della stessa epoca",
+                  "de": "Weitere Produktionen aus derselben Zeit",
+                  "es": "Otras producciones de la misma época"
+            },
             "badge": null,
             "src": "guess-what.mp3",
             "voice": "m",
@@ -746,11 +759,11 @@
             "rateable": false,
             "downloadable": false,
             "titles": {
-                  "en": "This Is Not Alerte",
-                  "fr": "Ceci n'est pas Alerte",
-                  "it": "Questo non è Alerte",
-                  "de": "Das ist nicht Alerte",
-                  "es": "Esto no es Alerte"
+                  "en": "Brouillard",
+                  "fr": "Brouillard",
+                  "it": "Brouillard",
+                  "de": "Brouillard",
+                  "es": "Brouillard"
             }
       },
       {
@@ -763,11 +776,11 @@
             "rateable": false,
             "downloadable": false,
             "titles": {
-                  "en": "This Is Neither Alerte Nor Brouillard",
-                  "fr": "Ceci n'est ni Alerte ni Brouillard",
-                  "it": "Questo non è né Alerte né Brouillard",
-                  "de": "Das ist weder Alerte noch Brouillard",
-                  "es": "Esto no es ni Alerte ni Brouillard"
+                  "en": "Matsubaba",
+                  "fr": "Matsubaba",
+                  "it": "Matsubaba",
+                  "de": "Matsubaba",
+                  "es": "Matsubaba"
             }
       },
       {
@@ -780,11 +793,11 @@
             "rateable": false,
             "downloadable": false,
             "titles": {
-                  "en": "This Is Neither Alerte Nor Brouillard Nor Matsubaba",
-                  "fr": "Ceci n'est ni Alerte ni Brouillard ni Matsubaba",
-                  "it": "Questo non è né Alerte né Brouillard né Matsubaba",
-                  "de": "Das ist weder Alerte noch Brouillard noch Matsubaba",
-                  "es": "Esto no es ni Alerte ni Brouillard ni Matsubaba"
+                  "en": "Nous partirons",
+                  "fr": "Nous partirons",
+                  "it": "Nous partirons",
+                  "de": "Nous partirons",
+                  "es": "Nous partirons"
             }
       }
 ];
@@ -794,10 +807,45 @@
     // rather than the free tier. Not displayed anywhere yet.
     const SUNO_PRO_SINCE = { key: 'bossa-nova', date: '2026-09-26' };
 
+    function buildSectionBreak(labels) {
+      const li = document.createElement('li');
+      li.className = 'section-divider d-flex align-items-center gap-3';
+      li.innerHTML = '<hr class="flex-grow-1"><span class="small text-body-secondary text-nowrap section-divider-label"></span><hr class="flex-grow-1">';
+      li.querySelector('.section-divider-label').dataset.labels = JSON.stringify(labels);
+      return li;
+    }
+
+    function updateSectionBreaks(lang) {
+      document.querySelectorAll('.section-divider-label').forEach(span => {
+        const labels = JSON.parse(span.dataset.labels);
+        span.textContent = labels[lang] || labels.en;
+      });
+    }
+
+    function buildVoteSection() {
+      const li = document.createElement('li');
+      li.className = 'd-flex justify-content-center align-items-center gap-3 flex-wrap';
+      li.innerHTML = `
+        <a id="sendAll" class="btn btn-outline-success btn-sm rounded-pill disabled d-inline-flex align-items-center gap-1" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">
+          <span id="sendAllLabel">Vote via</span>
+          <svg viewBox="0 0 24 24" width="14" height="14">
+            <circle cx="12" cy="12" r="11" fill="#25D366"></circle>
+            <path d="M7 10.5a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5H9l-2.5 1.5.5-2A5 5 0 0 1 7 10.5z" fill="#fff"></path>
+          </svg>
+        </a>
+        <button type="button" id="clearAll" class="btn btn-outline-secondary btn-sm rounded-pill">Effacer mes votes</button>
+      `;
+      return li;
+    }
+
     function renderTracks() {
       const template = document.getElementById('track-template');
       const list = document.getElementById('trackList');
       TRACKS.forEach((t, index) => {
+        if (t.sectionBreak) {
+          list.appendChild(buildVoteSection());
+          list.appendChild(buildSectionBreak(t.sectionBreak));
+        }
         const node = template.content.cloneNode(true);
         const li = node.querySelector('li');
         li.dataset.key = t.key;
@@ -1071,6 +1119,9 @@
       currentLang = lang;
       langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
       langParagraphs.forEach(p => p.classList.toggle('d-none', p.dataset.lang !== lang));
+      document.getElementById('authorCredit').textContent = ALERTE_AUTHOR_BY_LANG[lang];
+      document.getElementById('lastUpdated').textContent = ALERTE_LAST_UPDATED_BY_LANG[lang];
+      updateSectionBreaks(lang);
       document.getElementById('sendAllLabel').textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
       document.getElementById('shuffleToggleLabel').textContent = buttonLabelsByLang[lang].shuffle;

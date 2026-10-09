@@ -34,6 +34,23 @@ const ALERTE_SUBTITLE_COUNT_BY_LANG = {
   es: 'Treinta variaciones de Alerte'
 };
 
+const ALERTE_AUTHOR_BY_LANG = {
+  en: 'Author of "Alerte": Éric Mugnier, lyrics and music.',
+  fr: 'Auteur d’Alerte : Éric Mugnier, paroles et musique.',
+  it: 'Autore di Alerte: Éric Mugnier, testo e musica.',
+  de: 'Autor von Alerte: Éric Mugnier, Text und Musik.',
+  es: 'Autor de Alerte: Éric Mugnier, letra y música.'
+};
+
+// Update by hand whenever a substantive change is made to the page.
+const ALERTE_LAST_UPDATED_BY_LANG = {
+  en: 'Last updated: October 7, 2026.',
+  fr: 'Dernière mise à jour : 7 octobre 2026.',
+  it: 'Ultimo aggiornamento: 7 ottobre 2026.',
+  de: 'Letzte Aktualisierung: 7. Oktober 2026.',
+  es: 'Última actualización: 7 de octubre de 2026.'
+};
+
 const ALERTE_NAV_LABELS = {
   music: { en: 'Music', fr: 'Musique', it: 'Musica', de: 'Musik', es: 'Música' },
   lyrics: { en: 'Lyrics', fr: 'Paroles', it: 'Testi', de: 'Texte', es: 'Letras' }
