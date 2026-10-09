@@ -961,9 +961,17 @@
 
     const SHUFFLE_KEY = 'alerteShuffle';
     const shuffleToggle = document.getElementById('shuffleToggle');
+    const shuffleToggleLabel = document.getElementById('shuffleToggleLabel');
+
+    function updateShuffleLabel() {
+      shuffleToggleLabel.classList.toggle('text-decoration-line-through', !shuffleToggle.checked);
+    }
+
     shuffleToggle.checked = localStorage.getItem(SHUFFLE_KEY) !== 'off';
+    updateShuffleLabel();
     shuffleToggle.addEventListener('change', () => {
       localStorage.setItem(SHUFFLE_KEY, shuffleToggle.checked ? 'on' : 'off');
+      updateShuffleLabel();
     });
 
     const allAudios = Array.from(document.querySelectorAll('audio'));
