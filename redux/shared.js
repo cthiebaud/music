@@ -42,8 +42,8 @@ const ALERTE_AUTHOR_BY_LANG = {
   },
   fr: {
     heading: 'Auteurs',
-    mugnier: 'Éric Mugnier : paroles 100 %, musique 98 %.',
-    thiebaud: 'Christophe Thiebaud : musique 2 %, production 100 %.'
+    mugnier: 'Éric Mugnier : paroles 100 %, musique 98 %.',
+    thiebaud: 'Christophe Thiebaud : musique 2 %, production 100 %.'
   },
   it: {
     heading: 'Autori',
@@ -52,8 +52,8 @@ const ALERTE_AUTHOR_BY_LANG = {
   },
   de: {
     heading: 'Autoren',
-    mugnier: 'Éric Mugnier: Text 100 %, Musik 98 %.',
-    thiebaud: 'Christophe Thiebaud: Musik 2 %, Produktion 100 %.'
+    mugnier: 'Éric Mugnier: Text 100 %, Musik 98 %.',
+    thiebaud: 'Christophe Thiebaud: Musik 2 %, Produktion 100 %.'
   },
   es: {
     heading: 'Autores',
@@ -64,11 +64,11 @@ const ALERTE_AUTHOR_BY_LANG = {
 
 // Update by hand whenever a substantive change is made to the page.
 const ALERTE_LAST_UPDATED_BY_LANG = {
-  en: 'Last updated: October 7, 2026.',
-  fr: 'Dernière mise à jour : 7 octobre 2026.',
-  it: 'Ultimo aggiornamento: 7 ottobre 2026.',
-  de: 'Letzte Aktualisierung: 7. Oktober 2026.',
-  es: 'Última actualización: 7 de octubre de 2026.'
+  en: 'Last updated: October 10, 2026.',
+  fr: 'Dernière mise à jour : 10 octobre 2026.',
+  it: 'Ultimo aggiornamento: 10 ottobre 2026.',
+  de: 'Letzte Aktualisierung: 10. Oktober 2026.',
+  es: 'Última actualización: 10 de octubre de 2026.'
 };
 
 const ALERTE_ABOUT_LABELS = {
