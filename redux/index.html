@@ -166,12 +166,18 @@
           <a href="paroles.html" target="alerte-paroles" class="btn btn-outline-secondary btn-sm rounded-pill" id="pageNavLink">Paroles</a>
         </div>
         <div class="d-flex align-items-stretch gap-2">
-          <div class="border rounded-pill px-3 py-1 d-flex align-items-center">
-            <div class="form-check form-switch small mb-0" id="playlistControl">
-              <input class="form-check-input" type="checkbox" role="switch" id="shuffleToggle" checked>
-              <label class="form-check-label" for="shuffleToggle" id="shuffleToggleLabel">Shuffle</label>
-            </div>
-          </div>
+          <!-- Shuffle icon from svgrepo.com (shuffle-random-svgrepo-com.svg) -->
+          <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill d-inline-flex align-items-center" id="shufflePlayBtn" title="Shuffle" aria-label="Shuffle">
+            <svg viewBox="0 0 512 512" fill="currentColor" width="14" height="14">
+              <path d="M512,387.67L405.406,281.024v84.694h-10.435c-48.766,0-80.203-28.752-108.698-68.925
+				c-7.856,12.825-16.14,26.159-25.113,39.387c32.329,41.052,73.081,73.424,133.81,73.424h10.435v84.686L512,387.67z"></path>
+              <path d="M512,124.355L405.406,17.71v84.695h-10.435c-92.763,0-138.917,75.524-179.637,142.158
+				c-39.73,65.009-74.04,121.155-142.191,121.155H0v43.886h73.143c92.763,0,138.917-75.524,179.637-142.158
+				c39.73-65.011,74.04-121.157,142.191-121.157h10.435v84.686L512,124.355z"></path>
+              <path d="M73.143,102.404H0v43.886h73.143c48.766,0,80.203,28.752,108.698,68.925c7.856-12.825,16.14-26.159,25.113-39.387
+				C174.624,134.774,133.872,102.404,73.143,102.404z"></path>
+            </svg>
+          </button>
           <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill d-inline-flex align-items-center" id="playlistStartBtn" title="Play" aria-label="Play">
             <svg id="playlistStartIcon" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
               <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -270,24 +276,24 @@
             </div>
           </div>
           <p class="note-text small text-body-secondary mb-2" data-lang="en">A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not edit Suno's output in any way: what you hear is exactly what it produced. That said, I often had to generate several versions before getting one I could endorse and share.</p>
-          <p class="note-text small text-body-secondary mb-2" data-lang="en"><em>Addendum:</em> after a certain number of variations made with Suno's free tier, I resolved to spend €10.98 on a month of the basic Pro subscription. Can you guess starting from which number? <a href="https://wa.me/393755042951?text=My%20answer%3A%20track%20%23" target="_blank" rel="noopener">Send me your answer via WhatsApp</a>.</p>
-          <p class="note-text small text-body-secondary mb-2" data-lang="en">The original French text was translated into Egyptian Arabic, English (standard, hip-hop and Delta blues versions), German (standard and Sprechgesang/twelve-tone versions), Hebrew, Italian, Japanese, Korean (K-pop version), Latin, Mongolian, Portuguese (Brazilian and European/fado versions), Russian, Scottish Gaelic, Spanish (standard and Andalusian/flamenco versions) and Ukrainian by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.</p>
+          <p class="note-text small text-body-secondary mb-2" data-lang="en"><em>Addendum:</em> after a certain number of variations made with Suno's free tier, I resolved to spend €10.98 on a month of the basic Pro subscription. Can you guess starting from which number? <button type="button" class="btn btn-link border-0 p-0 answer-reveal-btn d-inline-flex align-items-center justify-content-center" style="width: 1.75rem; height: 1.75rem;" aria-label="Reveal answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button> <span class="badge text-bg-info answer-reveal-badge invisible">16</span></p>
+          <p class="note-text small text-body-secondary mb-2" data-lang="en">The original French text was translated into Egyptian Arabic, English (+ hip-hop and Delta blues versions), German (+ Sprechgesang version), Hebrew, Italian, Japanese, Korean, Latin, Mongolian, Portuguese (+ Brazilian version), Russian, Scottish Gaelic, Spanish (+ Andalusian version) and Ukrainian by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.</p>
           <p class="note-text small text-body-secondary mb-0" data-lang="en">Curious what <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" looked like on stage in 1984</a>?</p>
           <p class="note-text small text-body-secondary mb-2 d-none" data-lang="fr">Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai en aucune façon modifié ce que Suno a produit. Cela dit, il m'a souvent fallu générer plusieurs versions avant d'en obtenir une que je pouvais approuver et partager.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="fr"><em>Addendum :</em> après un certain nombre de variantes réalisées avec la version gratuite de Suno, je me suis résolu à investir 10,98 € dans un mois d'abonnement à la version Pro de base. Saurez-vous deviner à partir de quel numéro ? <a href="https://wa.me/393755042951?text=Ma%20r%C3%A9ponse%20%3A%20morceau%20n%C2%B0%20" target="_blank" rel="noopener">Envoyez-moi la réponse via WhatsApp</a>.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="fr">Le texte original en français a été traduit en allemand (version standard et version Sprechgesang/dodécaphonique), anglais (version standard, version hip-hop et version Delta blues), arabe (égyptien), coréen (version K-pop), espagnol (version standard et version andalouse/flamenco), gaélique écossais, hébreu, italien, japonais, latin, mongol, portugais (version brésilienne et version européenne/fado), russe et ukrainien par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. On peut lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.</p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="fr"><em>Addendum :</em> après un certain nombre de variantes réalisées avec la version gratuite de Suno, je me suis résolu à investir 10,98 € dans un mois d'abonnement à la version Pro de base. Saurez-vous deviner à partir de quel numéro ? <button type="button" class="btn btn-link border-0 p-0 answer-reveal-btn d-inline-flex align-items-center justify-content-center" style="width: 1.75rem; height: 1.75rem;" aria-label="Reveal answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button> <span class="badge text-bg-info answer-reveal-badge invisible">16</span></p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="fr">Le texte original en français a été traduit en allemand (+ version Sprechgesang), anglais (+ versions hip-hop et Delta blues), arabe (égyptien), coréen, espagnol (+ version andalouse), gaélique écossais, hébreu, italien, japonais, latin, mongol, portugais (+ version brésilienne), russe et ukrainien par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. On peut lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.</p>
           <p class="note-text small text-body-secondary mb-0 d-none" data-lang="fr">Envie de voir à quoi ressemblait <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">«&nbsp;Alerte&nbsp;» sur scène en 1984</a> ?</p>
           <p class="note-text small text-body-secondary mb-2 d-none" data-lang="it">Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho in alcun modo modificato il risultato prodotto da Suno: quello che si ascolta qui è esattamente ciò che ha generato. Detto questo, ho spesso dovuto generare diverse versioni prima di ottenerne una che potessi approvare e condividere.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="it"><em>Addendum:</em> dopo un certo numero di variazioni realizzate con la versione gratuita di Suno, mi sono risolto a investire 10,98 € in un mese di abbonamento alla versione Pro di base. Saprete indovinare a partire da quale numero? <a href="https://wa.me/393755042951?text=La%20mia%20risposta%3A%20brano%20n.%20" target="_blank" rel="noopener">Inviatemi la risposta via WhatsApp</a>.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="it">Il testo originale in francese è stato tradotto in arabo egiziano, coreano (versione K-pop), ebraico, gaelico scozzese, giapponese, inglese (versione standard, versione hip-hop e versione Delta blues), italiano, latino, mongolo, portoghese (versione brasiliana e versione europea/fado), russo, spagnolo (versione standard e versione andalusa/flamenco), tedesco (versione standard e versione Sprechgesang/dodecafonica) e ucraino da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Il testo può essere letto in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.</p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="it"><em>Addendum:</em> dopo un certo numero di variazioni realizzate con la versione gratuita di Suno, mi sono risolto a investire 10,98 € in un mese di abbonamento alla versione Pro di base. Saprete indovinare a partire da quale numero? <button type="button" class="btn btn-link border-0 p-0 answer-reveal-btn d-inline-flex align-items-center justify-content-center" style="width: 1.75rem; height: 1.75rem;" aria-label="Reveal answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button> <span class="badge text-bg-info answer-reveal-badge invisible">16</span></p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="it">Il testo originale in francese è stato tradotto in arabo egiziano, coreano, ebraico, gaelico scozzese, giapponese, inglese (+ versioni hip-hop e Delta blues), italiano, latino, mongolo, portoghese (+ versione brasiliana), russo, spagnolo (+ versione andalusa), tedesco (+ versione Sprechgesang) e ucraino da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Il testo può essere letto in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.</p>
           <p class="note-text small text-body-secondary mb-0 d-none" data-lang="it">Curiosi di come fosse <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" sul palco nel 1984</a>?</p>
           <p class="note-text small text-body-secondary mb-2 d-none" data-lang="de">Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Das von Suno erzeugte Ergebnis habe ich in keiner Weise bearbeitet: Was man hier hört, ist genau das, was dabei herauskam. Allerdings musste ich oft mehrere Versionen erzeugen, bevor ich eine bekam, die ich guten Gewissens teilen konnte.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="de"><em>Nachtrag:</em> nach einer gewissen Anzahl von mit der kostenlosen Version von Suno erstellten Variationen habe ich mich entschlossen, 10,98 € in einen Monat des einfachen Pro-Abonnements zu investieren. Erraten Sie, ab welcher Nummer? <a href="https://wa.me/393755042951?text=Meine%20Antwort%3A%20Titel%20Nr.%20" target="_blank" rel="noopener">Schicken Sie mir die Antwort per WhatsApp</a>.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="de">Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Ägyptisch-Arabische, Deutsche (Standard- und Sprechgesang-/Zwölfton-Version), Englische (Standard-, Hip-Hop- und Delta-Blues-Version), Hebräische, Italienische, Japanische, Koreanische (K-Pop-Version), Lateinische, Mongolische, Portugiesische (brasilianische und europäische/Fado-Version), Russische, Schottisch-Gälische, Spanische (Standard- und andalusische/Flamenco-Version) und Ukrainische übersetzt. Die Texte in all diesen Sprachen kann man auf der <a href="paroles.html">Liedtext-Seite</a> finden.</p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="de"><em>Nachtrag:</em> nach einer gewissen Anzahl von mit der kostenlosen Version von Suno erstellten Variationen habe ich mich entschlossen, 10,98 € in einen Monat des einfachen Pro-Abonnements zu investieren. Erraten Sie, ab welcher Nummer? <button type="button" class="btn btn-link border-0 p-0 answer-reveal-btn d-inline-flex align-items-center justify-content-center" style="width: 1.75rem; height: 1.75rem;" aria-label="Reveal answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button> <span class="badge text-bg-info answer-reveal-badge invisible">16</span></p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="de">Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Ägyptisch-Arabische, Deutsche (+ Sprechgesang-Version), Englische (+ Hip-Hop- und Delta-Blues-Version), Hebräische, Italienische, Japanische, Koreanische, Lateinische, Mongolische, Portugiesische (+ brasilianische Version), Russische, Schottisch-Gälische, Spanische (+ andalusische Version) und Ukrainische übersetzt. Die Texte in all diesen Sprachen kann man auf der <a href="paroles.html">Liedtext-Seite</a> finden.</p>
           <p class="note-text small text-body-secondary mb-0 d-none" data-lang="de">Neugierig, wie <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">„Alerte" 1984 auf der Bühne</a> aussah?</p>
           <p class="note-text small text-body-secondary mb-2 d-none" data-lang="es">Una palabra rápida sobre cómo surgió esto: subí el original al plan gratuito de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> y le pedí que generara los estilos que escuchas arriba. No edité de ninguna manera lo que produjo Suno: lo que se escucha aquí es exactamente lo que generó. Dicho esto, a menudo tuve que generar varias versiones antes de obtener una que pudiera avalar y compartir.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="es"><em>Adenda:</em> después de un cierto número de variaciones hechas con la versión gratuita de Suno, me resolví a invertir 10,98 € en un mes de suscripción a la versión Pro básica. ¿Sabrán adivinar a partir de qué número? <a href="https://wa.me/393755042951?text=Mi%20respuesta%3A%20pista%20n.%C2%BA%20" target="_blank" rel="noopener">Envíenme la respuesta por WhatsApp</a>.</p>
-          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="es">El texto original en francés fue traducido al alemán (versión estándar y versión Sprechgesang/dodecafónica), árabe egipcio, coreano (versión K-pop), español (versión estándar y versión andaluza/flamenco), gaélico escocés, hebreo, inglés (versión estándar, versión hip-hop y versión Delta blues), italiano, japonés, latín, mongol, portugués (versión brasileña y versión europea/fado), ruso y ucraniano por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Las letras en todos estos idiomas pueden leerse en la <a href="paroles.html">página de las letras</a>.</p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="es"><em>Adenda:</em> después de un cierto número de variaciones hechas con la versión gratuita de Suno, me resolví a invertir 10,98 € en un mes de suscripción a la versión Pro básica. ¿Sabrán adivinar a partir de qué número? <button type="button" class="btn btn-link border-0 p-0 answer-reveal-btn d-inline-flex align-items-center justify-content-center" style="width: 1.75rem; height: 1.75rem;" aria-label="Reveal answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button> <span class="badge text-bg-info answer-reveal-badge invisible">16</span></p>
+          <p class="note-text small text-body-secondary mb-2 d-none" data-lang="es">El texto original en francés fue traducido al alemán (+ versión Sprechgesang), árabe egipcio, coreano, español (+ versión andaluza), gaélico escocés, hebreo, inglés (+ versiones hip-hop y Delta blues), italiano, japonés, latín, mongol, portugués (+ versión brasileña), ruso y ucraniano por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Las letras en todos estos idiomas pueden leerse en la <a href="paroles.html">página de las letras</a>.</p>
           <p class="note-text small text-body-secondary mb-0 d-none" data-lang="es">¿Curiosidad por cómo era <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" en el escenario en 1984</a>?</p>
         </div>
       </div>
@@ -1039,20 +1045,18 @@
       openOrFocusNamed(e.currentTarget.href, 'alerte-paroles');
     });
 
-    const SHUFFLE_KEY = 'alerteShuffle';
-    const shuffleToggle = document.getElementById('shuffleToggle');
-    const shuffleToggleLabel = document.getElementById('shuffleToggleLabel');
+    // Shuffle is no longer a standing preference: it's set true only by the
+    // shuffle-play button, and reset to false by the plain play button or by
+    // starting a track directly from its own native control. Auto-chaining
+    // on 'ended' preserves whatever mode is currently active.
+    let shuffled = false;
+    let suppressShuffleReset = false;
 
-    function updateShuffleLabel() {
-      shuffleToggleLabel.classList.toggle('text-decoration-line-through', !shuffleToggle.checked);
+    function startPlayback(audio) {
+      suppressShuffleReset = true;
+      audio.play();
+      Promise.resolve().then(() => { suppressShuffleReset = false; });
     }
-
-    shuffleToggle.checked = localStorage.getItem(SHUFFLE_KEY) !== 'off';
-    updateShuffleLabel();
-    shuffleToggle.addEventListener('change', () => {
-      localStorage.setItem(SHUFFLE_KEY, shuffleToggle.checked ? 'on' : 'off');
-      updateShuffleLabel();
-    });
 
     const allAudios = Array.from(document.querySelectorAll('audio'));
     const alerteAudios = allAudios.filter(audio => {
@@ -1061,6 +1065,9 @@
     });
     allAudios.forEach(audio => {
       audio.addEventListener('play', () => {
+        if (!suppressShuffleReset) {
+          shuffled = false;
+        }
         allAudios.forEach(other => {
           if (other !== audio && !other.paused) other.pause();
         });
@@ -1072,13 +1079,14 @@
         updateNowPlaying();
       });
       audio.addEventListener('ended', () => {
-        const next = shuffleToggle.checked
+        const next = shuffled
           ? allAudios[Math.floor(Math.random() * allAudios.length)]
           : allAudios[(allAudios.indexOf(audio) + 1) % allAudios.length];
-        next.play();
+        startPlayback(next);
       });
     });
 
+    const shufflePlayBtn = document.getElementById('shufflePlayBtn');
     const playlistStartBtn = document.getElementById('playlistStartBtn');
     const playlistStartIcon = document.getElementById('playlistStartIcon');
     const PLAY_ICON = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
@@ -1091,6 +1099,12 @@
       playlistStartBtn.title = label;
       playlistStartBtn.setAttribute('aria-label', label);
     }
+
+    shufflePlayBtn.addEventListener('click', () => {
+      shuffled = true;
+      const pick = alerteAudios[Math.floor(Math.random() * alerteAudios.length)];
+      startPlayback(pick);
+    });
 
     const nowPlayingWrap = document.getElementById('nowPlayingWrap');
     const nowPlayingText = document.getElementById('nowPlayingText');
@@ -1120,14 +1134,25 @@
       document.querySelector(`li[data-key="${nowPlayingKey}"]`).scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
+    // Reveal the Suno-Pro-switch answer only while the mouse button is held
+    // down on the button; hide it again on release or if the pointer leaves
+    // the button while still held.
+    document.querySelectorAll('.answer-reveal-btn').forEach(btn => {
+      const badge = btn.nextElementSibling;
+      btn.addEventListener('mousedown', e => {
+        if (e.button !== 0) return;
+        badge.classList.remove('invisible');
+      });
+      btn.addEventListener('mouseup', () => badge.classList.add('invisible'));
+      btn.addEventListener('mouseleave', () => badge.classList.add('invisible'));
+    });
+
     playlistStartBtn.addEventListener('click', () => {
       if (allAudios.some(a => !a.paused)) {
         allAudios.forEach(a => a.pause());
       } else {
-        const start = shuffleToggle.checked
-          ? alerteAudios[Math.floor(Math.random() * alerteAudios.length)]
-          : alerteAudios[0];
-        start.play();
+        shuffled = false;
+        startPlayback(alerteAudios[0]);
       }
     });
 
@@ -1164,11 +1189,11 @@
     };
 
     const buttonLabelsByLang = {
-      en: { send: 'Vote via', clear: 'Clear my ratings', shuffle: 'Shuffle', play: 'Play', stop: 'Stop' },
-      fr: { send: 'Votez via', clear: 'Effacer mes votes', shuffle: 'Aléatoire', play: 'Lecture', stop: 'Arrêt' },
-      it: { send: 'Vota via', clear: 'Cancella le mie valutazioni', shuffle: 'Casuale', play: 'Riproduci', stop: 'Stop' },
-      de: { send: 'Abstimmen via', clear: 'Meine Bewertungen löschen', shuffle: 'Zufällig', play: 'Wiedergabe', stop: 'Stopp' },
-      es: { send: 'Vota por', clear: 'Borrar mis valoraciones', shuffle: 'Aleatoria', play: 'Reproducir', stop: 'Detener' }
+      en: { send: 'Vote via', clear: 'Clear my ratings', shuffle: 'Shuffle', play: 'Play', stop: 'Stop', reveal: 'Click and hold to reveal' },
+      fr: { send: 'Votez via', clear: 'Effacer mes votes', shuffle: 'Aléatoire', play: 'Lecture', stop: 'Arrêt', reveal: 'Clic maintenu pour révéler' },
+      it: { send: 'Vota via', clear: 'Cancella le mie valutazioni', shuffle: 'Casuale', play: 'Riproduci', stop: 'Stop', reveal: 'Clic prolungato per rivelare' },
+      de: { send: 'Abstimmen via', clear: 'Meine Bewertungen löschen', shuffle: 'Zufällig', play: 'Wiedergabe', stop: 'Stopp', reveal: 'Klicken und halten zum Aufdecken' },
+      es: { send: 'Vota por', clear: 'Borrar mis valoraciones', shuffle: 'Aleatoria', play: 'Reproducir', stop: 'Detener', reveal: 'Clic mantenido para revelar' }
     };
 
     const subtitleByLang = ALERTE_SUBTITLE_BY_LANG;
@@ -1266,7 +1291,12 @@
       updateSectionBreaks(lang);
       document.getElementById('sendAllLabel').textContent = buttonLabelsByLang[lang].send;
       clearAllBtn.textContent = buttonLabelsByLang[lang].clear;
-      document.getElementById('shuffleToggleLabel').textContent = buttonLabelsByLang[lang].shuffle;
+      shufflePlayBtn.title = buttonLabelsByLang[lang].shuffle;
+      shufflePlayBtn.setAttribute('aria-label', buttonLabelsByLang[lang].shuffle);
+      document.querySelectorAll('.answer-reveal-btn').forEach(btn => {
+        btn.title = buttonLabelsByLang[lang].reveal;
+        btn.setAttribute('aria-label', buttonLabelsByLang[lang].reveal);
+      });
       updatePlaylistStartButton();
       document.getElementById('subtitleText').textContent = subtitleByLang[lang];
       document.getElementById('subtitleLink').href = ALERTE_SUBTITLE_LINK_BY_LANG[lang];
