@@ -106,8 +106,9 @@
     }
 
     .note-langs .btn.active {
-      color: var(--accent);
-      border-color: var(--accent);
+      color: var(--bs-secondary);
+      border-color: var(--bs-secondary);
+      background-color: transparent;
     }
 
     .btn-outline-secondary {
@@ -256,24 +257,22 @@
       <div class="card border-0">
         <div class="card-body">
           <!-- Flags from lipis/flag-icons (MIT License), https://github.com/lipis/flag-icons -->
-          <div class="d-flex justify-content-end mb-3">
-            <div class="btn-group btn-group-sm note-langs" role="group" aria-label="Language">
-              <button type="button" class="btn btn-outline-secondary active d-inline-flex align-items-center" data-lang="en" aria-label="English" title="English">
-                <img src="_images/flags/gb.svg" width="20" height="14" alt="" aria-hidden="true">
-              </button>
-              <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="fr" aria-label="Français" title="Français">
-                <img src="_images/flags/fr.svg" width="20" height="14" alt="" aria-hidden="true">
-              </button>
-              <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="it" aria-label="Italiano" title="Italiano">
-                <img src="_images/flags/it.svg" width="20" height="14" alt="" aria-hidden="true">
-              </button>
-              <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="de" aria-label="Deutsch" title="Deutsch">
-                <img src="_images/flags/de.svg" width="20" height="14" alt="" aria-hidden="true">
-              </button>
-              <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="es" aria-label="Español" title="Español">
-                <img src="_images/flags/es.svg" width="20" height="14" alt="" aria-hidden="true">
-              </button>
-            </div>
+          <div class="btn-group-vertical btn-group-sm note-langs float-end ms-3 mb-2" role="group" aria-label="Language">
+            <button type="button" class="btn btn-outline-secondary active d-inline-flex align-items-center" data-lang="en" aria-label="English" title="English">
+              <img src="_images/flags/gb.svg" width="20" height="14" alt="" aria-hidden="true">
+            </button>
+            <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="fr" aria-label="Français" title="Français">
+              <img src="_images/flags/fr.svg" width="20" height="14" alt="" aria-hidden="true">
+            </button>
+            <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="it" aria-label="Italiano" title="Italiano">
+              <img src="_images/flags/it.svg" width="20" height="14" alt="" aria-hidden="true">
+            </button>
+            <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="de" aria-label="Deutsch" title="Deutsch">
+              <img src="_images/flags/de.svg" width="20" height="14" alt="" aria-hidden="true">
+            </button>
+            <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center" data-lang="es" aria-label="Español" title="Español">
+              <img src="_images/flags/es.svg" width="20" height="14" alt="" aria-hidden="true">
+            </button>
           </div>
           <p class="note-text small text-body-secondary mb-2" id="noteIntro"></p>
           <p class="note-text small text-body-secondary mb-2">
