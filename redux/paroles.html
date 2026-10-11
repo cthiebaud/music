@@ -93,19 +93,19 @@
         <div class="modal-body">
           <div class="row g-3 text-center mb-3">
             <div class="col-6">
-              <img src="images/Mugnier.jpg" alt="Éric Mugnier, 1984" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
+              <img src="_images/Mugnier.jpg" alt="Éric Mugnier, 1984" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
               <div class="small text-body-secondary mt-1">Éric Mugnier — <span class="about-then-label">1984</span></div>
             </div>
             <div class="col-6">
-              <img src="images/Thiebaud.jpg" alt="Christophe Thiebaud, 1984" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
+              <img src="_images/Thiebaud.jpg" alt="Christophe Thiebaud, 1984" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
               <div class="small text-body-secondary mt-1">Christophe Thiebaud — <span class="about-then-label">1984</span></div>
             </div>
             <div class="col-6">
-              <img src="images/Mugnier_now.jpg" alt="Éric Mugnier, now" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
+              <img src="_images/Mugnier_now.jpg" alt="Éric Mugnier, now" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
               <div class="small text-body-secondary mt-1">Éric Mugnier — <span class="about-now-label">Now</span></div>
             </div>
             <div class="col-6">
-              <img src="images/Thiebaud_now.jpg" alt="Christophe Thiebaud, now" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
+              <img src="_images/Thiebaud_now.jpg" alt="Christophe Thiebaud, now" class="img-fluid rounded" style="aspect-ratio: 1; object-fit: cover; width: 100%;">
               <div class="small text-body-secondary mt-1">Christophe Thiebaud — <span class="about-now-label">Now</span></div>
             </div>
           </div>
@@ -264,18 +264,7 @@
       { group: 'Nous Partirons', file: 'nous_partirons/nous_partirons-paroles.md', slug: 'nous-partirons' }
     ];
 
-    // Section-structure words (Verse/Chorus/...), localized to the reader's
-    // UI language — independent of which lyrics language is being shown.
-    // "Refrain" in the source (Japanese, Hebrew) is the chorus-equivalent
-    // for those songs, not a separate structure; "Hook" (hip-hop) is kept
-    // as its own loanword rather than folded into "chorus".
-    const SECTION_WORDS = {
-      en: { verse: 'Verse', chorus: 'Chorus', hook: 'Hook', bridge: 'Bridge' },
-      fr: { verse: 'Couplet', chorus: 'Refrain', hook: 'Hook', bridge: 'Pont' },
-      it: { verse: 'Strofa', chorus: 'Ritornello', hook: 'Hook', bridge: 'Ponte' },
-      de: { verse: 'Strophe', chorus: 'Refrain', hook: 'Hook', bridge: 'Bridge' },
-      es: { verse: 'Estrofa', chorus: 'Estribillo', hook: 'Hook', bridge: 'Puente' }
-    };
+    const SECTION_WORDS = ALERTE_SECTION_WORDS_BY_LANG;
 
     function localizeSectionLabel(label, lang) {
       const words = SECTION_WORDS[lang] || SECTION_WORDS.en;

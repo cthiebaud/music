@@ -84,6 +84,84 @@ const ALERTE_NAV_LABELS = {
   lyrics: { en: 'Lyrics', fr: 'Paroles', it: 'Testi', de: 'Texte', es: 'Letras' }
 };
 
+const ALERTE_STYLE_SUMMARY_BY_LANG = {
+  en: 'Suno style',
+  fr: 'Style Suno',
+  it: 'Stile Suno',
+  de: 'Suno-Stil',
+  es: 'Estilo Suno'
+};
+
+const ALERTE_RATINGS_INTRO_BY_LANG = {
+  en: 'My ratings for Alerte:',
+  fr: 'Mes notes pour Alerte :',
+  it: 'Le mie valutazioni per Alerte:',
+  de: 'Meine Bewertungen für Alerte:',
+  es: 'Mis valoraciones para Alerte:'
+};
+
+const ALERTE_BUTTON_LABELS_BY_LANG = {
+  en: { send: 'Vote via', clear: 'Clear my ratings', shuffle: 'Shuffle', play: 'Play', stop: 'Stop', reveal: 'Click and hold to reveal' },
+  fr: { send: 'Votez via', clear: 'Effacer mes votes', shuffle: 'Aléatoire', play: 'Lecture', stop: 'Arrêt', reveal: 'Clic maintenu pour révéler' },
+  it: { send: 'Vota via', clear: 'Cancella le mie valutazioni', shuffle: 'Casuale', play: 'Riproduci', stop: 'Stop', reveal: 'Clic prolungato per rivelare' },
+  de: { send: 'Abstimmen via', clear: 'Meine Bewertungen löschen', shuffle: 'Zufällig', play: 'Wiedergabe', stop: 'Stopp', reveal: 'Klicken und halten zum Aufdecken' },
+  es: { send: 'Vota por', clear: 'Borrar mis valoraciones', shuffle: 'Aleatoria', play: 'Reproducir', stop: 'Detener', reveal: 'Clic mantenido para revelar' }
+};
+
+// Verse/Chorus/Hook/Bridge, localized to the reader's UI language —
+// independent of which lyrics language is being shown. Used by
+// paroles.html's localizeSectionLabel(). "Hook" (hip-hop) is kept as its
+// own loanword rather than folded into "chorus".
+const ALERTE_SECTION_WORDS_BY_LANG = {
+  en: { verse: 'Verse', chorus: 'Chorus', hook: 'Hook', bridge: 'Bridge' },
+  fr: { verse: 'Couplet', chorus: 'Refrain', hook: 'Hook', bridge: 'Pont' },
+  it: { verse: 'Strofa', chorus: 'Ritornello', hook: 'Hook', bridge: 'Ponte' },
+  de: { verse: 'Strophe', chorus: 'Refrain', hook: 'Hook', bridge: 'Bridge' },
+  es: { verse: 'Estrofa', chorus: 'Estribillo', hook: 'Hook', bridge: 'Puente' }
+};
+
+// The four footer "note" paragraphs on index.html. Trusted HTML (not user
+// input) with hrefs baked in directly, since every link's target is the
+// same across all 5 languages — only the surrounding prose and link text
+// change. Applied via .innerHTML in setLang().
+const ALERTE_NOTES_BY_LANG = {
+  intro: {
+    en: `A quick word on how this happened: I uploaded the original to <a href="https://suno.com" target="_blank" rel="noopener">Suno</a>'s free tier and asked it to generate the styles you hear above. I did not edit Suno's output in any way: what you hear is exactly what it produced. That said, I often had to generate several versions before getting one I could endorse and share.`,
+    fr: `Un mot sur la genèse de ces variations : j'ai uploadé l'original vers la version gratuite de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> et je lui ai demandé de générer les styles présentés ci-dessus. Je n'ai en aucune façon modifié ce que Suno a produit. Cela dit, il m'a souvent fallu générer plusieurs versions avant d'en obtenir une que je pouvais approuver et partager.`,
+    it: `Due parole sulla genesi di queste variazioni: ho caricato l'originale sulla versione gratuita di <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> e gli ho chiesto di generare gli stili qui presentati. Non ho in alcun modo modificato il risultato prodotto da Suno: quello che si ascolta qui è esattamente ciò che ha generato. Detto questo, ho spesso dovuto generare diverse versioni prima di ottenerne una che potessi approvare e condividere.`,
+    de: `Ein paar Worte zur Entstehung dieser Variationen: Ich habe das Original in die kostenlose Version von <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> hochgeladen und Suno gebeten, die oben präsentierten Stile zu erzeugen. Das von Suno erzeugte Ergebnis habe ich in keiner Weise bearbeitet: Was man hier hört, ist genau das, was dabei herauskam. Allerdings musste ich oft mehrere Versionen erzeugen, bevor ich eine bekam, die ich guten Gewissens teilen konnte.`,
+    es: `Una palabra rápida sobre cómo surgió esto: subí el original al plan gratuito de <a href="https://suno.com" target="_blank" rel="noopener">Suno</a> y le pedí que generara los estilos que escuchas arriba. No edité de ninguna manera lo que produjo Suno: lo que se escucha aquí es exactamente lo que generó. Dicho esto, a menudo tuve que generar varias versiones antes de obtener una que pudiera avalar y compartir.`
+  },
+  addendumLabel: {
+    en: `Addendum:`,
+    fr: `Addendum :`,
+    it: `Addendum:`,
+    de: `Nachtrag:`,
+    es: `Adenda:`
+  },
+  addendumText: {
+    en: `after a certain number of variations made with Suno's free tier, I resolved to spend €10.98 on a month of the basic Pro subscription. Can you guess starting from which number?`,
+    fr: `après un certain nombre de variantes réalisées avec la version gratuite de Suno, je me suis résolu à investir 10,98 € dans un mois d'abonnement à la version Pro de base. Saurez-vous deviner à partir de quel numéro ?`,
+    it: `dopo un certo numero di variazioni realizzate con la versione gratuita di Suno, mi sono risolto a investire 10,98 € in un mese di abbonamento alla versione Pro di base. Saprete indovinare a partire da quale numero?`,
+    de: `nach einer gewissen Anzahl von mit der kostenlosen Version von Suno erstellten Variationen habe ich mich entschlossen, 10,98 € in einen Monat des einfachen Pro-Abonnements zu investieren. Erraten Sie, ab welcher Nummer?`,
+    es: `después de un cierto número de variaciones hechas con la versión gratuita de Suno, me resolví a invertir 10,98 € en un mes de suscripción a la versión Pro básica. ¿Sabrán adivinar a partir de qué número?`
+  },
+  translated: {
+    en: `The original French text was translated into Egyptian Arabic, English (+ hip-hop and Delta blues versions), German (+ Sprechgesang version), Hebrew, Italian, Japanese, Korean, Latin, Mongolian, Portuguese (+ Brazilian version), Russian, Scottish Gaelic, Spanish (+ Andalusian version) and Ukrainian by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. You can read the lyrics in every language on the <a href="paroles.html">lyrics page</a>.`,
+    fr: `Le texte original en français a été traduit en allemand (+ version Sprechgesang), anglais (+ versions hip-hop et Delta blues), arabe (égyptien), coréen, espagnol (+ version andalouse), gaélique écossais, hébreu, italien, japonais, latin, mongol, portugais (+ version brésilienne), russe et ukrainien par <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. On peut lire les paroles dans toutes ces langues sur la <a href="paroles.html">page des paroles</a>.`,
+    it: `Il testo originale in francese è stato tradotto in arabo egiziano, coreano, ebraico, gaelico scozzese, giapponese, inglese (+ versioni hip-hop e Delta blues), italiano, latino, mongolo, portoghese (+ versione brasiliana), russo, spagnolo (+ versione andalusa), tedesco (+ versione Sprechgesang) e ucraino da <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Il testo può essere letto in tutte queste lingue nella <a href="paroles.html">pagina dei testi</a>.`,
+    de: `Der ursprüngliche französische Text wurde von <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ins Ägyptisch-Arabische, Deutsche (+ Sprechgesang-Version), Englische (+ Hip-Hop- und Delta-Blues-Version), Hebräische, Italienische, Japanische, Koreanische, Lateinische, Mongolische, Portugiesische (+ brasilianische Version), Russische, Schottisch-Gälische, Spanische (+ andalusische Version) und Ukrainische übersetzt. Die Texte in all diesen Sprachen kann man auf der <a href="paroles.html">Liedtext-Seite</a> finden.`,
+    es: `El texto original en francés fue traducido al alemán (+ versión Sprechgesang), árabe egipcio, coreano, español (+ versión andaluza), gaélico escocés, hebreo, inglés (+ versiones hip-hop y Delta blues), italiano, japonés, latín, mongol, portugués (+ versión brasileña), ruso y ucraniano por <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>. Las letras en todos estos idiomas pueden leerse en la <a href="paroles.html">página de las letras</a>.`
+  },
+  stage: {
+    en: `Curious what <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" looked like on stage in 1984</a>?`,
+    fr: `Envie de voir à quoi ressemblait <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">«&nbsp;Alerte&nbsp;» sur scène en 1984</a> ?`,
+    it: `Curiosi di come fosse <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" sul palco nel 1984</a>?`,
+    de: `Neugierig, wie <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">„Alerte" 1984 auf der Bühne</a> aussah?`,
+    es: `¿Curiosidad por cómo era <a href="https://www.youtube.com/watch?v=OZuS8QQsQK8&amp;t=540s" target="_blank" rel="noopener">"Alerte" en el escenario en 1984</a>?`
+  }
+};
+
 function detectAlerteLang() {
   const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
   return ALERTE_AVAILABLE_LANGS.includes(browserLang) ? browserLang : 'en';
