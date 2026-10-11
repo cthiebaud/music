@@ -264,6 +264,41 @@
       { group: 'Nous Partirons', file: 'nous_partirons/nous_partirons.md', slug: 'nous-partirons' }
     ];
 
+    // Section-structure words (Verse/Chorus/...), localized to the reader's
+    // UI language — independent of which lyrics language is being shown.
+    // "Refrain" in the source (Japanese, Hebrew) is the chorus-equivalent
+    // for those songs, not a separate structure; "Hook" (hip-hop) is kept
+    // as its own loanword rather than folded into "chorus".
+    const SECTION_WORDS = {
+      en: { verse: 'Verse', chorus: 'Chorus', hook: 'Hook', bridge: 'Bridge' },
+      fr: { verse: 'Couplet', chorus: 'Refrain', hook: 'Hook', bridge: 'Pont' },
+      it: { verse: 'Strofa', chorus: 'Ritornello', hook: 'Hook', bridge: 'Ponte' },
+      de: { verse: 'Strophe', chorus: 'Refrain', hook: 'Hook', bridge: 'Bridge' },
+      es: { verse: 'Estrofa', chorus: 'Estribillo', hook: 'Hook', bridge: 'Puente' }
+    };
+
+    function localizeSectionLabel(label, lang) {
+      const words = SECTION_WORDS[lang] || SECTION_WORDS.en;
+      const trimmed = label.trim();
+      let m;
+      if ((m = trimmed.match(/^verse\s*(\d+)?$/i))) {
+        return m[1] ? `${words.verse} ${m[1]}` : words.verse;
+      }
+      if ((m = trimmed.match(/^(?:final\s+)?chorus\s*(\d+)?$/i))) {
+        return m[1] ? `${words.chorus} ${m[1]}` : words.chorus;
+      }
+      if (/^refrain$/i.test(trimmed)) {
+        return words.chorus;
+      }
+      if (/^hook$/i.test(trimmed)) {
+        return words.hook;
+      }
+      if (/^bridge$/i.test(trimmed)) {
+        return words.bridge;
+      }
+      return label; // unrecognized label: show as-is rather than guessing
+    }
+
     function renderLyrics(groups) {
       const dropdownWrap = document.getElementById('langDropdownWrap');
       const dropdownBtn = document.getElementById('langDropdownBtn');
@@ -365,7 +400,7 @@
 
           const labelEl = document.createElement('div');
           labelEl.className = 'lyrics-label text-uppercase text-body-secondary fw-semibold mb-1';
-          labelEl.textContent = block.label;
+          labelEl.textContent = localizeSectionLabel(block.label, headerLang);
 
           const text = document.createElement('p');
           text.className = 'lyrics-text';

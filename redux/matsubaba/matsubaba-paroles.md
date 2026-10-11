@@ -113,9 +113,9 @@ que ellos untan
 sus puntas de flecha
 
 **[Chorus]**  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán
 
 **[Verse 2]**  
@@ -129,13 +129,13 @@ lo único que temen
 es el aterrador
 
 **[Chorus]**  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán
 
 **[Bridge]**  
@@ -157,9 +157,9 @@ no pisen nuestro
 territorio Baba
 
 **[Chorus]**  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán
 
 **[Verse 4]**  
@@ -173,11 +173,11 @@ buscan en vano a Tarzán
 que tiembla de miedo
 
 **[Final Chorus]**  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán  
-Mat-sü-ba-ba  
+Matsubaba  
 es el nombre de su dios  
-Mat-sü-ba-ba  
+Matsubaba  
 y por él te inmolarán
