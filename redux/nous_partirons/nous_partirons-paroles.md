@@ -1,6 +1,6 @@
 ## Français (original)
 
-**[Verse 1]**  
+[Verse 1]  
 Nous partirons  
 Ça j'en suis sûr  
 Nous en irons  
@@ -10,7 +10,7 @@ Pour ne plus revenir
 Et nos yeux verront  
 Ce que nul ne peut dire
 
-**[Chorus]**  
+[Chorus]  
 Nous partirons  
 Quelque part  
 Au hasard  
@@ -26,7 +26,7 @@ Sans savoir
 Où nos pas  
 Nous conduisent
 
-**[Verse 2]**  
+[Verse 2]  
 Tel Reverdy à Solesmes  
 Aux sources du vent  
 Dans les sables mouvants  
@@ -36,7 +36,7 @@ Montre ni boussole
 Au hasard des cours d'eau  
 Pieds nus dans l'herbe folle
 
-**[Chorus]**  
+[Chorus]  
 Nous partirons  
 Un matin  
 De bonne heure  
@@ -51,7 +51,7 @@ Et nos yeux verront
 Ce que nul  
 Ne peut dire
 
-**[Chorus]**  
+[Chorus]  
 Nous partirons  
 Quelque part  
 Au hasard  
@@ -60,7 +60,7 @@ Sans savoir
 Où nos pas  
 Nous conduisent
 
-**[Verse 3]**  
+[Verse 3]  
 Nous partirons  
 Je te le dis  
 Lundi, mardi  
@@ -106,7 +106,7 @@ Et les comètes
 Seront les voiles  
 De notre goélette
 
-**[Chorus]**  
+[Chorus]  
 Nous partirons  
 Quelque part  
 Au hasard  

@@ -1,6 +1,6 @@
 ## Français (original)
 
-**[Verse 1]**  
+[Verse 1]  
 Les indiens Baba  
 sont anthropophages  
 ce sont des sauvages  
@@ -10,7 +10,7 @@ avec du poison
 dont ils badigeonnent  
 le bout de leurs flèches
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 c'est le nom de leur idole  
 Matsubaba  
@@ -20,7 +20,7 @@ c'est le nom de leur idole
 Matsubaba  
 c'est pour lui qu'on vous immole
 
-**[Verse 2]**  
+[Verse 2]  
 Et quand ils attrapent  
 un explorateur  
 ils le font bouillir  
@@ -30,7 +30,7 @@ chasseurs de trésor
 n'allez pas sur le  
 territoire Baba
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 c'est le nom de leur idole  
 Matsubaba  
@@ -40,12 +40,12 @@ c'est le nom de leur idole
 Matsubaba  
 c'est pour lui qu'on vous immole
 
-**[Bridge]**  
+[Bridge]  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh
 
-**[Verse 3]**  
+[Verse 3]  
 Les indiens Baba  
 sont très primitifs  
 ils en sont restés  
@@ -55,7 +55,7 @@ pas même du tonnerre
 la seule chose qu'ils craignent  
 c'est le terrifiant
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 c'est le nom de leur idole  
 Matsubaba  
@@ -65,7 +65,7 @@ c'est le nom de leur idole
 Matsubaba  
 c'est pour lui qu'ils vous immole
 
-**[Verse 4]**  
+[Verse 4]  
 Quand dans la forêt  
 Résonnent les tam-tams  
 Même l'hippopotame  
@@ -75,7 +75,7 @@ Jusqu'aux os glacés
 Cherchent en vain Tarzan  
 Qui tremble de peur
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 c'est le nom de leur idole  
 Matsubaba  
@@ -93,7 +93,7 @@ c'est pour lui qu'on vous immole
 
 ## Español
 
-**[Verse 1]**  
+[Verse 1]  
 Los indios Baba  
 son antropófagos  
 son unos salvajes  
@@ -103,13 +103,13 @@ con un veneno
 que ellos untan  
 sus puntas de flecha
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 es el nombre de su dios  
 Matsubaba  
 y por él te inmolarán
 
-**[Verse 2]**  
+[Verse 2]  
 Los indios Baba  
 son muy primitivos  
 se quedaron en  
@@ -119,7 +119,7 @@ ni siquiera al trueno
 lo único que temen  
 es el aterrador
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 es el nombre de su dios  
 Matsubaba  
@@ -129,12 +129,12 @@ es el nombre de su dios
 Matsubaba  
 y por él te inmolarán
 
-**[Bridge]**  
+[Bridge]  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh  
 Ooh, oh-ooh, ooh / Ooh, oh-ooh
 
-**[Verse 3]**  
+[Verse 3]  
 Si atrapamos  
 a un explorador  
 lo hacemos hervir  
@@ -144,13 +144,13 @@ buscatesoros
 no pisen nuestro  
 territorio Baba
 
-**[Chorus]**  
+[Chorus]  
 Matsubaba  
 es el nombre de su dios  
 Matsubaba  
 y por él te inmolarán
 
-**[Verse 4]**  
+[Verse 4]  
 Cuando en la selva  
 resuenan los tambores  
 hasta el hipopótamo  
@@ -160,7 +160,7 @@ helados hasta los huesos
 buscan en vano a Tarzán  
 que tiembla de miedo
 
-**[Final Chorus]**  
+[Final Chorus]  
 Matsubaba  
 es el nombre de su dios  
 Matsubaba  

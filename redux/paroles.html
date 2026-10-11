@@ -206,7 +206,7 @@
           openBlock = null;
         } else if (token.type === 'paragraph' && current) {
           const inline = token.tokens || [];
-          const isLabeled = inline.length > 0 && inline[0].type === 'strong' && /^\[.+\]$/.test(inline[0].text);
+          const isLabeled = inline.length > 0 && inline[0].type === 'text' && /^\[.+\]$/.test(inline[0].text);
 
           if (isLabeled) {
             const label = inline[0].text.replace(/^\[|\]$/g, '');
@@ -259,9 +259,9 @@
     // titles like "Français (original)" don't collide across songs.
     const LYRICS_SOURCES = [
       { group: 'Alerte', file: 'alerte/alerte-paroles.md', slug: '' },
-      { group: 'Brouillard', file: 'brouillard/brouillard.md', slug: 'brouillard' },
+      { group: 'Brouillard', file: 'brouillard/brouillard-paroles.md', slug: 'brouillard' },
       { group: 'Matsubaba', file: 'matsubaba/matsubaba-paroles.md', slug: 'matsubaba' },
-      { group: 'Nous Partirons', file: 'nous_partirons/nous_partirons.md', slug: 'nous-partirons' }
+      { group: 'Nous Partirons', file: 'nous_partirons/nous_partirons-paroles.md', slug: 'nous-partirons' }
     ];
 
     // Section-structure words (Verse/Chorus/...), localized to the reader's
