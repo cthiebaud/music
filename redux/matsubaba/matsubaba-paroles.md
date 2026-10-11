@@ -41,18 +41,9 @@ Matsubaba
 c'est pour lui qu'on vous immole
 
 **[Bridge]**  
-Ooooooooh  
-oh oh ooooooooh  
-Ooooooooh  
-oh ooooooooh  
-Ooooooooh  
-oh oh ooooooooh  
-Ooooooooh  
-oh ooooooooh  
-Ooooooooh  
-oh oh ooooooooh  
-Ooooooooh  
-oh ooooooooh
+Ooh, oh-ooh, ooh / Ooh, oh-ooh  
+Ooh, oh-ooh, ooh / Ooh, oh-ooh  
+Ooh, oh-ooh, ooh / Ooh, oh-ooh
 
 **[Verse 3]**  
 Les indiens Baba  
@@ -139,12 +130,9 @@ Matsubaba
 y por él te inmolarán
 
 **[Bridge]**  
-Ooooh oh oh ooooh  
-Ooooh oh ooooh  
-Ooooh oh oh ooooh  
-Ooooh oh ooooh  
-Ooooh oh oh ooooh  
-Ooooh oh ooooh ooooh
+Ooh, oh-ooh, ooh / Ooh, oh-ooh  
+Ooh, oh-ooh, ooh / Ooh, oh-ooh  
+Ooh, oh-ooh, ooh / Ooh, oh-ooh
 
 **[Verse 3]**  
 Si atrapamos  
