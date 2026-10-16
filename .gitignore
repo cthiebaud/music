@@ -1,2 +1,8 @@
 *.logicx
 extras/
+
+__pycache__/
+*.bak
+*-autosave.ustx
+*.humanized*.ustx
+.claude/
